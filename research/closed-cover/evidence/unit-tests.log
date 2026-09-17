@@ -1,0 +1,15 @@
+test_every_small_complementary_side_identity (test_finite_model.FiniteClosedCoverModels) ... ok
+test_every_small_cover_quotient_and_missing_cover (test_finite_model.FiniteClosedCoverModels) ... ok
+test_changed_inputs_change_fingerprint (test_verify.ClosedCoverVerificationTests) ... ok
+test_changed_stage_log_rejected (test_verify.ClosedCoverVerificationTests) ... ok
+test_escaping_source_rejected (test_verify.ClosedCoverVerificationTests) ... ok
+test_fingerprint_is_order_independent (test_verify.ClosedCoverVerificationTests) ... ok
+test_missing_kernel_completion_rejected (test_verify.ClosedCoverVerificationTests) ... ok
+test_missing_or_duplicate_audit_rejected (test_verify.ClosedCoverVerificationTests) ... ok
+test_placeholder_axiom_rejected (test_verify.ClosedCoverVerificationTests) ... ok
+test_standard_axioms (test_verify.ClosedCoverVerificationTests) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.010s
+
+OK

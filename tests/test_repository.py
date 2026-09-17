@@ -61,6 +61,19 @@ class CompletenessTests(unittest.TestCase):
             (root / "proof.lean").write_text("-- public proof source\n")
             self.assertEqual([p.name for p in verify.public_files(root)], ["proof.lean"])
 
+    def test_closed_cover_component_has_source_bound_evidence(self):
+        component = ROOT / "research/closed-cover"
+        self.assertGreater(verify.check_record(component, component / "evidence/verification.json"), 10)
+        record = json.loads((component / "evidence/verification.json").read_text())
+        self.assertFalse(record["eligible_complete_original_problem_submission"])
+        self.assertFalse(record["collar_and_separation_existence_proved"])
+        self.assertIn("PoincareClosedCover.both_closed_cover_caps_simplyConnected", record["production_theorems"])
+
+    def test_closed_cover_result_cannot_replace_full_poincare(self):
+        self.state["full_theorem_declaration"] = "PoincareClosedCover.caps_of_collared_separation_simplyConnected"
+        with self.assertRaisesRegex(ValueError, "Unverified"):
+            verify.check_completeness(self.state, False)
+
     def test_preserved_repository(self):
         result = verify.validate(ROOT)
         self.assertFalse(result["submission_ready"])

@@ -1,0 +1,201 @@
+{
+  "status": "LOCAL_VERIFIED_NOT_OFFICIALLY_REVIEWED",
+  "scope": "Actual closed-cover boundary gluing and simply connected caps; closed-side connectivity derived from a supplied collared separation",
+  "generation": "a764ea34-5cd9-49b8-9594-ed20e96f3898",
+  "started_at_utc": "2026-09-17T17:29:39.291965+00:00",
+  "completed_at_utc": "2026-09-17T17:46:22.637448+00:00",
+  "lean_version": "Lean (version 4.32.1, arm64-apple-darwin24.6.0, commit f054605aea4b840552cca2e725580bffd1e1b704, Release)",
+  "source_files": {
+    "AttachmentOpen.lean": "3cfa8836b43e00d324515ba00d7808431fe92b02da4fac0614f11ea94c16bae7",
+    "CapFilling.lean": "9f281b4afc6837b0b79c6a4415f745e483d9ccd168397c905815046fd1f0363c",
+    "CappingTheorem.lean": "fda7cf780b782ed444d9d9876cc331ee1cebff3878a844176cd98ecc4483cbf0",
+    "ClosedCover.lean": "fadfbd80ccb455935bfb44d320cd95d390bfef73dc16e3d8c3f26b468030ae0a",
+    "ClosedCoverAudit.lean": "cd4471d64f0c301268687946aabf0913c54f48d8184a312b9fa10b5b93176bf0",
+    "ClosedCoverTests.lean": "b5fe7ab0914e2dbb361c3fadbd183c5719f0e6a51c23eded993bea39b2f681a7",
+    "ConnectedCap.lean": "9818f38a07bd59b4df0da97c5ae70b876ae3a60f50e2d734deaf862299275807",
+    "CutSides.lean": "60429d47fd8e4267f10dc6395c49ae83a8291c377ec451419ebcba4618d55e54",
+    "HomotopicFactorization.lean": "c03d895b4ad40732c46e6318426b7fd0c456056e37d916bede443b0bf9d0945d",
+    "PuncturedCap.lean": "13c2f8f37e0cad9d66860c15a8f6501a62704c27b57962a75126d455471a36cc",
+    "lakefile.lean": "aefd3f3769844918020bf494fc6f172d67dfdf33563ee9bc8878cf03ec495b50",
+    "lean-toolchain": "8e3538e0ab5f81a3ee04927d8838c8c674e0e112838b4b3ce87ec218143276af",
+    "lake-manifest.json": "0295aa916a477998116a6aa3e2849385493a138e1967deedacbb4a9fd2286f4f"
+  },
+  "dependency_pins": {
+    "HatcherLib": "bb91a091f0b968f8bbe8d861e025a88d82b161be",
+    "mathlib": "520045ab14e26149ee970e2e617ca04b09bde5d6",
+    "plausible": "e12c1910fe855cbfc38803cd4e55543906d5fa62",
+    "LeanSearchClient": "c5d5b8fe6e5158def25cd28eb94e4141ad97c843",
+    "importGraph": "7e9612bf0b9ee66db3cb5b9988a35afc706f5a12",
+    "proofwidgets": "6e311e2a844da9b2cc3971187df2fe0066947b93",
+    "aesop": "a7dbf0c63b694e47f425f3dcddbc0e178bb432d3",
+    "Qq": "38d591e778f100aec9762bb582f9c7f55f50e9dc",
+    "batteries": "023ce7d62a0531e22a5331e20b587817a80d49ff",
+    "Cli": "88679d088c9720c27ebdf2ba4dafe17341747f94"
+  },
+  "production_theorems": [
+    "PoincareClosedCover.closedCoverProjection_left",
+    "PoincareClosedCover.closedCoverProjection_right",
+    "PoincareClosedCover.closedCoverProjection_injective",
+    "PoincareClosedCover.closedCoverProjection_surjective",
+    "PoincareClosedCover.sphericalBoundaryLeft_isClosedEmbedding",
+    "PoincareClosedCover.sphericalBoundaryRight_isClosedEmbedding",
+    "PoincareClosedCover.both_closed_cover_caps_simplyConnected",
+    "PoincareClosedCover.isPathConnected_of_boundary_access",
+    "PoincareClosedCover.complementSide_pathConnected_of_halfCollar",
+    "PoincareClosedCover.positiveHalfTime_zero",
+    "PoincareClosedCover.negativeHalfTime_zero",
+    "PoincareClosedCover.complementary_closed_sides_pathConnected",
+    "PoincareClosedCover.caps_of_collared_separation_simplyConnected"
+  ],
+  "regression_theorems": [
+    "PoincareClosedCoverTests.twoPointCover_left",
+    "PoincareClosedCoverTests.twoPointCover_right",
+    "PoincareClosedCoverTests.duplicate_cover_identifies_overlap",
+    "PoincareClosedCoverTests.covering_condition_is_necessary",
+    "PoincareClosedCoverTests.ballBoundary_isClosed",
+    "PoincareClosedCoverTests.ballBoundary_pathConnected",
+    "PoincareClosedCoverTests.actual_closed_ball_cover_caps",
+    "PoincareClosedCoverTests.positive_half_stays_inside",
+    "PoincareClosedCoverTests.negative_half_stays_inside"
+  ],
+  "axioms": {
+    "PoincareClosedCover.closedCoverProjection_left": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareClosedCover.closedCoverProjection_right": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareClosedCover.closedCoverProjection_injective": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareClosedCover.closedCoverProjection_surjective": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareClosedCover.sphericalBoundaryLeft_isClosedEmbedding": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareClosedCover.sphericalBoundaryRight_isClosedEmbedding": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareClosedCover.both_closed_cover_caps_simplyConnected": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareClosedCover.isPathConnected_of_boundary_access": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareClosedCover.complementSide_pathConnected_of_halfCollar": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareClosedCover.positiveHalfTime_zero": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareClosedCover.negativeHalfTime_zero": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareClosedCover.complementary_closed_sides_pathConnected": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareClosedCover.caps_of_collared_separation_simplyConnected": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareClosedCoverTests.twoPointCover_left": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareClosedCoverTests.twoPointCover_right": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareClosedCoverTests.duplicate_cover_identifies_overlap": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareClosedCoverTests.covering_condition_is_necessary": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareClosedCoverTests.ballBoundary_isClosed": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareClosedCoverTests.ballBoundary_pathConnected": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareClosedCoverTests.actual_closed_ball_cover_caps": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareClosedCoverTests.positive_half_stays_inside": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareClosedCoverTests.negative_half_stays_inside": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "namespace_wide_audit": true,
+  "default_warning_as_error_build": true,
+  "full_fresh_kernel_replay": true,
+  "replay_seconds": 402.03,
+  "negative_controls": {
+    "extra_axiom": "REJECTED",
+    "placeholder": "REJECTED",
+    "missing_cover": "REJECTED",
+    "missing_original_simple_connectivity": "REJECTED",
+    "missing_disjointness": "REJECTED",
+    "missing_boundary_access": "REJECTED"
+  },
+  "previous_cap_sources_byte_identical": true,
+  "source_and_dependencies_checked_before_and_after": true,
+  "actual_gluing_homeomorphism_constructed": true,
+  "actual_closed_ball_cover_regression": true,
+  "collar_and_separation_existence_proved": false,
+  "concrete_full_collar_model_regression": false,
+  "ricci_surgery_or_metric_cap_constructed": false,
+  "full_poincare_formalization": false,
+  "eligible_complete_original_problem_submission": false,
+  "independent_checker_implementation": false,
+  "independent_human_review": false,
+  "clean_full_dependency_rebuild": false,
+  "verifier_hashes": {
+    "verify.py": "623e365b4e5aa8bd4f8bebffa93cdea85c8ba79158ab935e632ba4a2de38fc17",
+    "../../submissions/jsp-000007-dini-extinction/scripts/verify_topology_extension.py": "d03ec5f9eff170173f59de4c4ad763854fa5ea58ff45879f2996275414203539"
+  }
+}

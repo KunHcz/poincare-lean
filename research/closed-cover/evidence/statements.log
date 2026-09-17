@@ -1,0 +1,51 @@
+@PoincareClosedCover.closedCoverHomeomorph : {M : Type u_1} →
+  [inst : TopologicalSpace M] →
+    [CompactSpace M] →
+      [T2Space M] →
+        (A B : Set M) → IsClosed A → IsClosed B → A ∪ B = Set.univ → PoincareClosedCover.ClosedCoverAdjunction A B ≃ₜ M
+@PoincareClosedCover.both_closed_cover_caps_simplyConnected : ∀ {M : Type u_1} [inst : TopologicalSpace M]
+  [CompactSpace M] [T2Space M] [SimplyConnectedSpace M] (A B : Set M),
+  IsClosed A →
+    IsClosed B →
+      A ∪ B = Set.univ →
+        ∀ (e : PoincareConjecture.Sphere2 ≃ₜ ↑(A ∩ B)),
+          IsPathConnected A →
+            IsPathConnected B →
+              SimplyConnectedSpace
+                  (PoincareConjecture.BallAttachment (PoincareClosedCover.sphericalBoundaryLeft A B e)) ∧
+                SimplyConnectedSpace
+                  (PoincareConjecture.BallAttachment (PoincareClosedCover.sphericalBoundaryRight A B e))
+@PoincareClosedCover.caps_of_collared_separation_simplyConnected : ∀ {M : Type u_1} [inst : TopologicalSpace M]
+  [CompactSpace M] [T2Space M] [SimplyConnectedSpace M] (U V : Set M),
+  IsOpen U →
+    IsOpen V →
+      Disjoint U V →
+        IsPathConnected U →
+          IsPathConnected V →
+            ∀ (e : PoincareConjecture.Sphere2 ≃ₜ ↑(U ∪ V)ᶜ)
+              (c : PoincareConjecture.Sphere2 × PoincareClosedCover.CollarTime → M),
+              Topology.IsOpenEmbedding c →
+                (∀ (s : PoincareConjecture.Sphere2), c (s, PoincareClosedCover.collarCentre) = ↑(e s)) →
+                  (∀ (s : PoincareConjecture.Sphere2) (t : PoincareClosedCover.CollarTime), ↑t < 0 → c (s, t) ∈ U) →
+                    (∀ (s : PoincareConjecture.Sphere2) (t : PoincareClosedCover.CollarTime), 0 < ↑t → c (s, t) ∈ V) →
+                      have e' := e.trans (PoincareClosedCover.complementBoundaryHomeomorph U V);
+                      SimplyConnectedSpace
+                          (PoincareConjecture.BallAttachment (PoincareClosedCover.sphericalBoundaryLeft Vᶜ Uᶜ e')) ∧
+                        SimplyConnectedSpace
+                          (PoincareConjecture.BallAttachment (PoincareClosedCover.sphericalBoundaryRight Vᶜ Uᶜ e'))
+inductive PoincareConjecture.BoundaryGluingRel.{u, v, w} : {C : Type u} →
+  {X : Type v} → {Y : Type w} → (C → X) → (C → Y) → X ⊕ Y → X ⊕ Y → Prop
+number of parameters: 5
+constructors:
+PoincareConjecture.BoundaryGluingRel.glue : ∀ {C : Type u} {X : Type v} {Y : Type w} {i : C → X} {j : C → Y} (c : C),
+  PoincareConjecture.BoundaryGluingRel i j (Sum.inl (i c)) (Sum.inr (j c))
+@[reducible] def PoincareConjecture.BoundaryGluing.{u, v, w} : {C : Type u} →
+  {X : Type v} → {Y : Type w} → (C → X) → (C → Y) → Type (max w v) :=
+fun {C} {X} {Y} i j => Quot (PoincareConjecture.BoundaryGluingRel i j)
+def PoincareClosedCover.sphericalBoundaryLeft.{u_1} : {M : Type u_1} →
+  [inst : TopologicalSpace M] →
+    (A B : Set M) → PoincareConjecture.Sphere2 ≃ₜ ↑(A ∩ B) → C(PoincareConjecture.Sphere2, ↑A) :=
+fun {M} [TopologicalSpace M] A B e =>
+  (PoincareClosedCover.intersectionLeft A B).comp { toFun := ⇑e, continuous_toFun := ⋯ }
+@[reducible] def PoincareClosedCover.CollarTime : Type :=
+↑(Set.Ioo (-1) 1)

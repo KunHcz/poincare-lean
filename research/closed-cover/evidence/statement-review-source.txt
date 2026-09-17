@@ -1,0 +1,8 @@
+import ClosedCoverAudit
+#check @PoincareClosedCover.closedCoverHomeomorph
+#check @PoincareClosedCover.both_closed_cover_caps_simplyConnected
+#check @PoincareClosedCover.caps_of_collared_separation_simplyConnected
+#print PoincareConjecture.BoundaryGluingRel
+#print PoincareConjecture.BoundaryGluing
+#print PoincareClosedCover.sphericalBoundaryLeft
+#print PoincareClosedCover.CollarTime

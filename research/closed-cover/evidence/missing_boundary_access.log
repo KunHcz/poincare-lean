@@ -1,0 +1,21 @@
+$PROJECT/.lake/verification-stages/missing_boundary_access.lean:37:12: error: Function expected at
+  haccess
+but this term has type
+  True
+
+Note: Expected a function because this term is being applied to the argument
+  x
+$PROJECT/.lake/verification-stages/missing_boundary_access.lean:55:8: error: Tactic `introN` failed: There are no additional binders or `let` bindings in the goal to introduce
+
+M : Type u_1
+inst✝ : TopologicalSpace M
+U V : Set M
+hdisjoint : Disjoint U V
+hU : IsPathConnected U
+e : Sphere2 → M
+hboundary : ∀ x ∉ U, x ∉ V → ∃ s, e s = x
+c : C(Sphere2 × ↑I, M)
+hzero : ∀ (s : Sphere2), c (s, 0) = e s
+hpositive : ∀ (s : Sphere2) (t : ↑I), 0 < ↑t → c (s, t) ∈ U
+hUV : U ⊆ Vᶜ
+⊢ True

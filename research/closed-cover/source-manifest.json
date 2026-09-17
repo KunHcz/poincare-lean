@@ -1,0 +1,44 @@
+{
+  "scope": "Closed-cover cutting and supplied-collar cap topology, not full Poincare",
+  "files": {
+    "AttachmentOpen.lean": "3cfa8836b43e00d324515ba00d7808431fe92b02da4fac0614f11ea94c16bae7",
+    "CapFilling.lean": "9f281b4afc6837b0b79c6a4415f745e483d9ccd168397c905815046fd1f0363c",
+    "CappingTheorem.lean": "fda7cf780b782ed444d9d9876cc331ee1cebff3878a844176cd98ecc4483cbf0",
+    "ClosedCover.lean": "fadfbd80ccb455935bfb44d320cd95d390bfef73dc16e3d8c3f26b468030ae0a",
+    "ClosedCoverAudit.lean": "cd4471d64f0c301268687946aabf0913c54f48d8184a312b9fa10b5b93176bf0",
+    "ClosedCoverTests.lean": "b5fe7ab0914e2dbb361c3fadbd183c5719f0e6a51c23eded993bea39b2f681a7",
+    "ConnectedCap.lean": "9818f38a07bd59b4df0da97c5ae70b876ae3a60f50e2d734deaf862299275807",
+    "CutSides.lean": "60429d47fd8e4267f10dc6395c49ae83a8291c377ec451419ebcba4618d55e54",
+    "HomotopicFactorization.lean": "c03d895b4ad40732c46e6318426b7fd0c456056e37d916bede443b0bf9d0945d",
+    "PuncturedCap.lean": "13c2f8f37e0cad9d66860c15a8f6501a62704c27b57962a75126d455471a36cc",
+    "lakefile.lean": "aefd3f3769844918020bf494fc6f172d67dfdf33563ee9bc8878cf03ec495b50",
+    "lean-toolchain": "8e3538e0ab5f81a3ee04927d8838c8c674e0e112838b4b3ce87ec218143276af",
+    "lake-manifest.json": "0295aa916a477998116a6aa3e2849385493a138e1967deedacbb4a9fd2286f4f"
+  },
+  "production_theorems": [
+    "PoincareClosedCover.closedCoverProjection_left",
+    "PoincareClosedCover.closedCoverProjection_right",
+    "PoincareClosedCover.closedCoverProjection_injective",
+    "PoincareClosedCover.closedCoverProjection_surjective",
+    "PoincareClosedCover.sphericalBoundaryLeft_isClosedEmbedding",
+    "PoincareClosedCover.sphericalBoundaryRight_isClosedEmbedding",
+    "PoincareClosedCover.both_closed_cover_caps_simplyConnected",
+    "PoincareClosedCover.isPathConnected_of_boundary_access",
+    "PoincareClosedCover.complementSide_pathConnected_of_halfCollar",
+    "PoincareClosedCover.positiveHalfTime_zero",
+    "PoincareClosedCover.negativeHalfTime_zero",
+    "PoincareClosedCover.complementary_closed_sides_pathConnected",
+    "PoincareClosedCover.caps_of_collared_separation_simplyConnected"
+  ],
+  "regression_theorems": [
+    "PoincareClosedCoverTests.twoPointCover_left",
+    "PoincareClosedCoverTests.twoPointCover_right",
+    "PoincareClosedCoverTests.duplicate_cover_identifies_overlap",
+    "PoincareClosedCoverTests.covering_condition_is_necessary",
+    "PoincareClosedCoverTests.ballBoundary_isClosed",
+    "PoincareClosedCoverTests.ballBoundary_pathConnected",
+    "PoincareClosedCoverTests.actual_closed_ball_cover_caps",
+    "PoincareClosedCoverTests.positive_half_stays_inside",
+    "PoincareClosedCoverTests.negative_half_stays_inside"
+  ]
+}
