@@ -1,0 +1,74 @@
+'PoincareConjecture.le_at_endpoint_of_no_upward_jump' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareConjecture.dini_le_on_Icc_of_halfOpen' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareConjecture.dini_le_of_finite_jumps' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareConjecture.UpperRightDiniLE.mono' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareConjecture.upperRightDiniLE_of_hasDerivWithinAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareConjecture.dini_le_of_oneSided' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareConjecture.dini_le_of_contDiffOn' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareConjecture.extinctionBarrier_initial' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareConjecture.hasDerivAt_extinctionBarrier' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareConjecture.extinctionBarrier_sub' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareConjecture.extinctionBarrier_mono' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareConjecture.extinctionBarrier_eventually_neg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareConjecture.contDiffOn_extinctionRHS' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareConjecture.width_le_extinctionBarrier' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareConjecture.exists_width_lifetime_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareConjecture.orientationFrame_involutive' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareConjecture.orientationFrame_det' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareConjecture.orientationFrame_transition_det' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareConjecture.simplyConnected_threeManifold_orientable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareConjecture.simplyConnected_threeManifold_positiveTangentFrames' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PoincareConjecture.contMDiffAt_localBranch_comp_projection' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareConjecture.isManifold_quotientChartedSpace' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareConjecture.contMDiff_quotientProjection' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareConjecture.contMDiffOn_quotientLocalInverse' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareConjecture.isLocalDiffeomorph_quotientProjection' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareConjecture.finiteSmoothAction_isManifold' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareConjecture.finiteSmoothAction_isLocalDiffeomorph' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareConjecture.diffeomorph_sphere3_of_finite_quotient' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareConjecture.quotientCovering_group_subsingleton' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareConjecture.quotientCovering_bijective' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareConjecture.quotientCoveringHomeomorph_apply' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareConjecture.finiteAction_group_subsingleton' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareConjecture.finiteActionQuotientHomeomorph_apply' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareConjecture.sphere3_quotient_homeomorph' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareConjecture.homeomorph_sphere3_of_finite_quotient' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareConjecture.simplyConnected_of_fundamentalGroup_subsingleton' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PoincareConjecture.freeProduct_factor_subsingleton' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareConjecture.freeProduct_subsingleton' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareConjecture.freeProduct_subsingleton_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareConjecture.fundamentalGroup_freeProduct_factors' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareConjecture.freeProduct_no_infiniteCyclic_factor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareConjecture.simplyConnected_factors_of_fundamentalGroup_coprod' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PoincareConjecture.mappingTorus_isQuotientCoveringMap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareConjecture.mappingTorus_not_simplyConnected' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareConjecture.mappingTorus_fundamentalGroup_not_subsingleton' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PoincareConjecture.orientationChange_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareConjecture.orientationChange_positive' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareConjecture.orientationDet_self' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareConjecture.orientationDet_comp' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareConjecture.orientationDet_ne_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareConjecture.orientationChange_continuousOn' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareConjecture.orientationCover_isCoveringMap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareConjecture.orientationCover_exists_section' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareConjecture.exists_compatible_orientationSigns' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareConjecture.hasPositiveOrientationAtlas_of_simplyConnected' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PoincareConjecture.covering_injective_of_simplyConnected' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareConjecture.simplyConnectedCoverHomeomorph_apply' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareConjecture.untwistedSphereMappingTorus_not_simplyConnected' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PoincareConjecture.twistedSphereMappingTorus_not_simplyConnected' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PoincareConjecture.sphere2Circle_not_simplyConnected' depends on axioms: [propext, Classical.choice, Quot.sound]

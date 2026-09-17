@@ -1,0 +1,12 @@
+test_allowed (test_verify.AxiomParsingTests.test_allowed) ... ok
+test_duplicate (test_verify.AxiomParsingTests.test_duplicate) ... ok
+test_exact_name (test_verify.AxiomParsingTests.test_exact_name) ... ok
+test_missing (test_verify.AxiomParsingTests.test_missing) ... ok
+test_multiline (test_verify.AxiomParsingTests.test_multiline) ... ok
+test_no_axioms (test_verify.AxiomParsingTests.test_no_axioms) ... ok
+test_rejects_nonstandard_axioms (test_verify.AxiomParsingTests.test_rejects_nonstandard_axioms) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.000s
+
+OK

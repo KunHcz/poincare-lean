@@ -1,0 +1,227 @@
+{
+  "status": "PASS",
+  "local_markdown_links_checked": 13,
+  "links": [
+    {
+      "document": "README.md",
+      "target": "../../problems/catalog-0001-0100.md#JSP-000007"
+    },
+    {
+      "document": "README.md",
+      "target": "STATEMENT.md"
+    },
+    {
+      "document": "README.md",
+      "target": "verification-config.json"
+    },
+    {
+      "document": "README.md",
+      "target": "evidence/verification.json"
+    },
+    {
+      "document": "README.md",
+      "target": "evidence/axioms.log"
+    },
+    {
+      "document": "README.md",
+      "target": "PRIOR_ART.md"
+    },
+    {
+      "document": "README.md",
+      "target": "LICENSE"
+    },
+    {
+      "document": "README.md",
+      "target": "NOTICE"
+    },
+    {
+      "document": "README.md",
+      "target": "../../LICENSE-CONTENT"
+    },
+    {
+      "document": "STATEMENT.md",
+      "target": "PoincareConjecture/Analysis/RightDini.lean"
+    },
+    {
+      "document": "STATEMENT.md",
+      "target": "PoincareConjecture/Analysis/FiniteJumps.lean"
+    },
+    {
+      "document": "STATEMENT.md",
+      "target": "PoincareConjecture/Extinction/ScalarBarrier.lean"
+    },
+    {
+      "document": "STATEMENT.md",
+      "target": "verification-config.json"
+    }
+  ],
+  "record_checks": [
+    {
+      "command": [
+        "python",
+        "scripts/manage.py",
+        "validate"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "python",
+        "scripts/manage.py",
+        "links"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "python",
+        "scripts/manage.py",
+        "build"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "python",
+        "scripts/manage.py",
+        "check"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "python",
+        "scripts/manage.py",
+        "history",
+        "--base",
+        "f4e7173d89dfe91022a185427d63452c8ffbf6ae"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "exit_code": 0
+    }
+  ],
+  "package_unit_tests": 6,
+  "repository_unit_tests": 22,
+  "official_records_changed": false,
+  "reviewed_files": [
+    {
+      "path": "LICENSE",
+      "bytes": 11358
+    },
+    {
+      "path": "PoincareConjectureTests.lean",
+      "bytes": 6610
+    },
+    {
+      "path": "lean-toolchain",
+      "bytes": 25
+    },
+    {
+      "path": "PRIOR_ART.md",
+      "bytes": 3096
+    },
+    {
+      "path": "NOTICE",
+      "bytes": 812
+    },
+    {
+      "path": "README.md",
+      "bytes": 5445
+    },
+    {
+      "path": "lake-manifest.json",
+      "bytes": 3161
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 41
+    },
+    {
+      "path": "PoincareConjecture.lean",
+      "bytes": 189
+    },
+    {
+      "path": "verification-config.json",
+      "bytes": 2046
+    },
+    {
+      "path": "lakefile.lean",
+      "bytes": 513
+    },
+    {
+      "path": "STATEMENT.md",
+      "bytes": 5123
+    },
+    {
+      "path": "evidence/package-tests.log",
+      "bytes": 510
+    },
+    {
+      "path": "evidence/placeholder.log",
+      "bytes": 215
+    },
+    {
+      "path": "evidence/false_initial_value.log",
+      "bytes": 463
+    },
+    {
+      "path": "evidence/repository-checks.log",
+      "bytes": 2855
+    },
+    {
+      "path": "evidence/kernel-replay.log",
+      "bytes": 47
+    },
+    {
+      "path": "evidence/axioms.log",
+      "bytes": 1598
+    },
+    {
+      "path": "evidence/verification.json",
+      "bytes": 5410
+    },
+    {
+      "path": "evidence/extra_axiom.log",
+      "bytes": 156
+    },
+    {
+      "path": "evidence/build.log",
+      "bytes": 406
+    },
+    {
+      "path": "PoincareConjecture/Basic.lean",
+      "bytes": 283
+    },
+    {
+      "path": "PoincareConjecture/Extinction/ScalarBarrier.lean",
+      "bytes": 7681
+    },
+    {
+      "path": "PoincareConjecture/Analysis/RightDini.lean",
+      "bytes": 5939
+    },
+    {
+      "path": "PoincareConjecture/Analysis/FiniteJumps.lean",
+      "bytes": 5103
+    },
+    {
+      "path": "scripts/test_verify.py",
+      "bytes": 1242
+    },
+    {
+      "path": "scripts/verify.py",
+      "bytes": 8156
+    }
+  ]
+}

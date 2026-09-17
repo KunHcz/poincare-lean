@@ -1,0 +1,9 @@
+$PROJECT/.lake/verification/missing_curvature.lean:50:29: error(lean.unknownIdentifier): Unknown identifier `hconst`
+$PROJECT/.lake/verification/missing_curvature.lean:57:16: error: Function expected at
+  constantPositiveCurvature_poincare hM
+but this term has type
+  Nonempty (M ≃ₘ⟮𝓡 3, 𝓡 3⟯ Sphere3)
+
+Note: Expected a function because this term is being applied to the argument
+  hconst
+$PROJECT/.lake/verification/missing_curvature.lean:57:9: error: Tactic `rcases` failed: `x✝ : ?m.84` is not an inductive datatype

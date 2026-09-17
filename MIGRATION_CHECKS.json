@@ -1,0 +1,40 @@
+{
+  "status": "PASS",
+  "migrated_proof_bytes_unchanged": true,
+  "new_directory_builds": [
+    {
+      "component": "constant-curvature",
+      "command": [
+        "lake",
+        "--wfail",
+        "build"
+      ],
+      "exit_code": 0
+    },
+    {
+      "component": "positive-ricci",
+      "command": [
+        "lake",
+        "--wfail",
+        "build"
+      ],
+      "exit_code": 0
+    },
+    {
+      "component": "scalar-flow-bounds",
+      "command": [
+        "lake",
+        "--wfail",
+        "build"
+      ],
+      "exit_code": 0
+    }
+  ],
+  "historical_full_replays_preserved_not_rerun": true,
+  "unit_tests_passed": 46,
+  "complete_submission_gate": "REJECTED_NOT_READY",
+  "elapsed_seconds": 25.66,
+  "preserved_original_formatting_notes": [
+    "submissions/jsp-000007-dini-extinction/constant-curvature/PoincareHamilton/SpaceFormAudit.lean:31: new blank line at EOF."
+  ]
+}

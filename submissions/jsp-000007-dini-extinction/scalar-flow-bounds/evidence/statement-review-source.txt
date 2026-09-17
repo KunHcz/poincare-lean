@@ -1,0 +1,10 @@
+import ScalarFlowBounds
+set_option pp.universes true in
+#check @PoincareScalarFlow.normalized_scalar_lower_bound
+set_option pp.universes true in
+#check @PoincareScalarFlow.universal_scalar_lower_bound
+#check @PoincareScalarFlow.normalized_scalar_lower_bound_after_restart
+#print DifferentialGeometry.PDE.RicciFlow.IsSolutionOn
+#print DifferentialGeometry.PDE.RicciFlow.SolutionOn.scalar
+#print DifferentialGeometry.PDE.RicciFlow.SolutionFamily.scalar
+#print PoincareScalarFlow.metricConnectionFamily

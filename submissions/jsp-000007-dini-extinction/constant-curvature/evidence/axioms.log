@@ -1,0 +1,13 @@
+'PoincareHamilton.roundQuotient_proj_surjective' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareHamilton.roundQuotient_mfderiv_surjective' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareHamilton.roundQuotient_proj_localDiffeomorph' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareHamilton.roundQuotientDiffeomorph' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareHamilton.diffeomorph_sphere_of_sphericalSpaceForm' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareHamilton.constantPositiveCurvature_poincare' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareHamilton.constantPositiveCurvature_homeomorph_sphere' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'DifferentialGeometry.Geometry.constant_positive_sectional_curvature_implies_spherical_space_form' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PoincareHamiltonTests.literal_metric_endpoint' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,210 @@
+{
+  "status": "LOCAL_VERIFIED_NOT_OFFICIALLY_REVIEWED",
+  "problem_id": "JSP-000007",
+  "scope": "Geometric scalar lower bounds and global-clock restart for compact smooth three-dimensional Ricci flows",
+  "started_at_utc": "2026-09-17T13:14:32.185408+00:00",
+  "completed_at_utc": "2026-09-17T13:22:47.409033+00:00",
+  "lean_version": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "source_files": {
+    "ScalarFlowBounds.lean": "f1775a5cac8b9a5d4207ae7e06e333da37cc473a4def9ac57e663e78162596f3",
+    "ScalarFlowBoundsTests.lean": "c872828c15ada01d310f1e03013700bf9aec089e78a4f807d1f9db294a0f7645",
+    "ScalarFlowBoundsAudit.lean": "d20fd771bd7fd8328e98134b3e3336dc6926a79616588adb9e6f721b2db780d4",
+    "lean-toolchain": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
+    "lakefile.toml": "b846f887619d984e3fadff2c24a850ce9ed78677cf15cbc2170937c7ac6e5f37",
+    "lake-manifest.json": "ffbf8a5ccf4a7fc4cca6bb615a147a5786f01c5c376ceda38f6d541cf4537d9a"
+  },
+  "dependency_pins": {
+    "DifferentialGeometry": "ad76f2f1dfb959f4d8fc46fac9ed9feffdf497d9",
+    "mathlib": "0df444a360eaa60ab8c11dca51a86af692955474",
+    "plausible": "b7eb3304aeae834b12dda98993a37f6a41f6f0bb",
+    "LeanSearchClient": "5f4d51b81cbd3f6b32b156bfad9056621a040404",
+    "importGraph": "16f02aa7642864af59f1ff0e384a015994db9118",
+    "proofwidgets": "4be2e3d5087eeb272cf5a8853b8f9dd025ef5957",
+    "aesop": "3448c0bcc5ce01b2d1546e483ec3620e32df3d0e",
+    "Qq": "92c15be17b7caf78c2ad767ec40f89052d908d81",
+    "batteries": "4488d40d070b9700d4d5a6aa342f0d40c31b2a2d",
+    "Cli": "6130a47896ce867c6a4a55373441e59e565bad0f"
+  },
+  "production_theorems": [
+    "PoincareScalarFlow.barrier_denominator_pos",
+    "PoincareScalarFlow.barrier_nonpos",
+    "PoincareScalarFlow.barrier_restart",
+    "PoincareScalarFlow.barrier_ge_universal",
+    "PoincareScalarFlow.normalized_barrier",
+    "PoincareScalarFlow.scalar_trace_bound",
+    "PoincareScalarFlow.scalar_lower_bound_on_slab",
+    "PoincareScalarFlow.scalar_lower_bound",
+    "PoincareScalarFlow.normalized_scalar_lower_bound",
+    "PoincareScalarFlow.exists_initial_nonpositive_scalar_bound",
+    "PoincareScalarFlow.universal_scalar_lower_bound",
+    "PoincareScalarFlow.scalar_lower_bound_after_restart",
+    "PoincareScalarFlow.normalized_scalar_lower_bound_after_restart"
+  ],
+  "regression_theorems": [
+    "PoincareScalarFlowTests.normalized_initial_exact",
+    "PoincareScalarFlowTests.normalized_time_one_exact",
+    "PoincareScalarFlowTests.restart_keeps_global_time",
+    "PoincareScalarFlowTests.negative_time_cannot_be_allowed",
+    "PoincareScalarFlowTests.constant_scalar_is_not_enough",
+    "PoincareScalarFlowTests.universal_bound_is_weaker",
+    "PoincareScalarFlowTests.literal_metric_normalized_bound",
+    "PoincareScalarFlowTests.literal_metric_universal_bound"
+  ],
+  "axioms": {
+    "PoincareScalarFlow.barrier_denominator_pos": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareScalarFlow.barrier_nonpos": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareScalarFlow.barrier_restart": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareScalarFlow.barrier_ge_universal": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareScalarFlow.normalized_barrier": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareScalarFlow.scalar_trace_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareScalarFlow.scalar_lower_bound_on_slab": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareScalarFlow.scalar_lower_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareScalarFlow.normalized_scalar_lower_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareScalarFlow.exists_initial_nonpositive_scalar_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareScalarFlow.universal_scalar_lower_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareScalarFlow.scalar_lower_bound_after_restart": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareScalarFlow.normalized_scalar_lower_bound_after_restart": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareScalarFlowTests.normalized_initial_exact": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareScalarFlowTests.normalized_time_one_exact": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareScalarFlowTests.restart_keeps_global_time": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareScalarFlowTests.negative_time_cannot_be_allowed": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareScalarFlowTests.constant_scalar_is_not_enough": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareScalarFlowTests.universal_bound_is_weaker": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareScalarFlowTests.literal_metric_normalized_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareScalarFlowTests.literal_metric_universal_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "namespace_wide_audit": true,
+  "default_build_pass": true,
+  "warnings_as_errors": true,
+  "full_fresh_kernel_replay": true,
+  "replay_process": {
+    "exit_code": 0,
+    "elapsed_seconds": 454.78,
+    "peak_rss_kib": 4614400,
+    "memory_limit_mb": 24576,
+    "guard": null
+  },
+  "negative_controls": {
+    "extra_axiom": {
+      "status": "REJECTED",
+      "exit_code": 1
+    },
+    "placeholder": {
+      "status": "REJECTED",
+      "exit_code": 1
+    },
+    "not_a_ricci_solution": {
+      "status": "REJECTED",
+      "exit_code": 1
+    },
+    "missing_initial_bound": {
+      "status": "REJECTED",
+      "exit_code": 1
+    },
+    "wrong_barrier_value": {
+      "status": "REJECTED",
+      "exit_code": 1
+    }
+  },
+  "source_and_dependency_pins_clean_before_and_after": true,
+  "independent_checker_implementation": false,
+  "independent_human_review": false,
+  "clean_from_scratch_build": false,
+  "full_dependency_source_rebuild": false,
+  "concrete_ricci_flow_model_constructed": false,
+  "positive_curvature_assumed": false,
+  "flow_existence_proved": false,
+  "surgery_scalar_preservation_proved": false,
+  "full_poincare_formalization": false,
+  "novel_mathematical_discovery": false,
+  "award_eligibility": "UNDETERMINED",
+  "formalization_priority": "NOT_ESTABLISHED",
+  "verifier_hashes": {
+    "scripts/verify.py": "e267d51f07585f512f691c5d85a1d20bae096705d5c5ed8bd2568fadc25a13c5",
+    "../constant-curvature/scripts/verify.py": "0d88d7dedc66b48c70369f7e5fecbfc5537676c89c970b551c12f0221bfe6a76"
+  }
+}

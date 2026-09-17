@@ -1,0 +1,38 @@
+{
+  "problem_id": "JSP-000007",
+  "scope": "Complete proofs of the Dini comparison and scalar lifetime components; not a closure or special-case proof of the Poincare theorem.",
+  "lean_version": "4.32.1",
+  "lean_commit": "f054605aea4b840552cca2e725580bffd1e1b704",
+  "mathlib_commit": "520045ab14e26149ee970e2e617ca04b09bde5d6",
+  "upstream_repository": "https://github.com/frenzymath/Poincare-Conjecture",
+  "upstream_commit": "94e8e2d105155e21ca8a78716258c12d22b45562",
+  "upstream_pr": "https://github.com/frenzymath/Poincare-Conjecture/pull/34",
+  "unchanged_files": {
+    "lean-toolchain": "8e3538e0ab5f81a3ee04927d8838c8c674e0e112838b4b3ce87ec218143276af",
+    "lakefile.lean": "f5ba7703edb467afd05b368bfe6b4e42783c139abe4a16e589a27b134a2df952",
+    "lake-manifest.json": "becbea7512c654ea8b05ff51e84461b8a2dca674f1c81b04dcb515e55ad5b434",
+    "PoincareConjecture.lean": "18f99c186eed3b2d5eeb383a76a1d00797e83e5c2abecfe46bb340d5b4b46ee4",
+    "PoincareConjectureTests.lean": "bada39364ad487ff88db018235a60365b54b9dc148f98247669eb5c6ce1f0e06",
+    "PoincareConjecture/Basic.lean": "6353eab34145af3cf95c81f236bdb2e211051e642083a1e13404ec07362da085",
+    "PoincareConjecture/Analysis/RightDini.lean": "c776deff80c6143ca9c12539b46fc3d6cc490f33b497d1ec4982fc5f324b6fff",
+    "PoincareConjecture/Analysis/FiniteJumps.lean": "aa91ba4933600aa0a41951bddea02fc5c7b6a055587e47e209673111d3a841fb",
+    "PoincareConjecture/Extinction/ScalarBarrier.lean": "27decd1e28d891b7be74b7971a2159195cc1e4221066fd62413202cb9364b2c6"
+  },
+  "theorems": [
+    "UpperRightDiniLE.mono",
+    "upperRightDiniLE_of_hasDerivWithinAt",
+    "dini_le_of_oneSided",
+    "dini_le_of_contDiffOn",
+    "le_at_endpoint_of_no_upward_jump",
+    "dini_le_on_Icc_of_halfOpen",
+    "dini_le_of_finite_jumps",
+    "extinctionBarrier_initial",
+    "hasDerivAt_extinctionBarrier",
+    "extinctionBarrier_sub",
+    "extinctionBarrier_mono",
+    "extinctionBarrier_eventually_neg",
+    "contDiffOn_extinctionRHS",
+    "width_le_extinctionBarrier",
+    "exists_width_lifetime_bound"
+  ]
+}

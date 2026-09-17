@@ -1,0 +1,6 @@
+'PoincareScalarFlow.scalar_lower_bound_on_slab' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareScalarFlow.normalized_scalar_lower_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareScalarFlow.universal_scalar_lower_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareScalarFlow.scalar_lower_bound_after_restart' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareScalarFlowTests.literal_metric_normalized_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+$PROJECT/.lake/verification/extra_axiom.lean:11:0: error: PoincareScalarFlow.sentinel depends on non-whitelisted axiom PoincareScalarFlow.sentinel

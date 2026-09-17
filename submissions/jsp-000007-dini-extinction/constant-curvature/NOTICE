@@ -1,0 +1,18 @@
+This is an additive component of the same JSP-000007 submission.
+
+The local covering proof is adapted from the same applicant's earlier
+Poincare-Conjecture contribution at
+f07c59b825f344fa7577907f2427e0aad47704a1, under Apache License 2.0.
+Its reuse here is not counted as an independently originated result.
+
+The unmodified DifferentialGeometry dependency is pinned to
+1b535dd102b94cc42b107cca27059687888f08b3, under Apache License 2.0:
+https://github.com/qinz1yang/differential-geometry
+Its authors retain credit for the metric, curvature, inverse-function,
+and spherical-classification results used by this component.
+
+Mathlib and Lean retain their respective authorship and licenses.
+Dependencies and their binary build caches are not redistributed in this
+source package. The included LICENSE governs the local Lean proof and
+verification code. Submission prose follows the parent repository's
+LICENSE-CONTENT.

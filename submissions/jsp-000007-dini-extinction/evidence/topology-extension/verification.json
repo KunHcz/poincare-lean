@@ -1,0 +1,356 @@
+{
+  "status": "LOCAL_VERIFIED_NOT_OFFICIALLY_REVIEWED",
+  "problem_id": "JSP-000007",
+  "source_repository": "https://github.com/KunHcz/Poincare-Conjecture.git",
+  "source_commit": "f07c59b825f344fa7577907f2427e0aad47704a1",
+  "source_checkout_clean_before_and_after": true,
+  "started_at_utc": "2026-09-17T07:35:05.439053+00:00",
+  "completed_at_utc": "2026-09-17T07:50:13.883020+00:00",
+  "lean_version": "Lean (version 4.32.1, arm64-apple-darwin24.6.0, commit f054605aea4b840552cca2e725580bffd1e1b704, Release)",
+  "dependency_pins": {
+    "HatcherLib": "bb91a091f0b968f8bbe8d861e025a88d82b161be",
+    "mathlib": "520045ab14e26149ee970e2e617ca04b09bde5d6",
+    "plausible": "e12c1910fe855cbfc38803cd4e55543906d5fa62",
+    "LeanSearchClient": "c5d5b8fe6e5158def25cd28eb94e4141ad97c843",
+    "importGraph": "7e9612bf0b9ee66db3cb5b9988a35afc706f5a12",
+    "proofwidgets": "6e311e2a844da9b2cc3971187df2fe0066947b93",
+    "aesop": "a7dbf0c63b694e47f425f3dcddbc0e178bb432d3",
+    "Qq": "38d591e778f100aec9762bb582f9c7f55f50e9dc",
+    "batteries": "023ce7d62a0531e22a5331e20b587817a80d49ff",
+    "Cli": "88679d088c9720c27ebdf2ba4dafe17341747f94"
+  },
+  "default_build_pass": true,
+  "clean_from_scratch_build": false,
+  "pinned_dependency_style_warnings": [
+    "warning: HatcherLib/Ch1/Circle.lean:38:0: Definition `unitCircleCov` is a proposition; use `theorem` instead of `def`"
+  ],
+  "full_fresh_kernel_replay": true,
+  "independent_checker_implementation": false,
+  "independent_human_review": false,
+  "full_dependency_source_rebuild": false,
+  "audited_production_theorems": 45,
+  "axioms": {
+    "PoincareConjecture.le_at_endpoint_of_no_upward_jump": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareConjecture.dini_le_on_Icc_of_halfOpen": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareConjecture.dini_le_of_finite_jumps": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareConjecture.UpperRightDiniLE.mono": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareConjecture.upperRightDiniLE_of_hasDerivWithinAt": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareConjecture.dini_le_of_oneSided": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareConjecture.dini_le_of_contDiffOn": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareConjecture.extinctionBarrier_initial": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareConjecture.hasDerivAt_extinctionBarrier": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareConjecture.extinctionBarrier_sub": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareConjecture.extinctionBarrier_mono": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareConjecture.extinctionBarrier_eventually_neg": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareConjecture.contDiffOn_extinctionRHS": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareConjecture.width_le_extinctionBarrier": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareConjecture.exists_width_lifetime_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareConjecture.contMDiffAt_localBranch_comp_projection": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareConjecture.isManifold_quotientChartedSpace": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareConjecture.contMDiff_quotientProjection": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareConjecture.contMDiffOn_quotientLocalInverse": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareConjecture.isLocalDiffeomorph_quotientProjection": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareConjecture.finiteSmoothAction_isManifold": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareConjecture.finiteSmoothAction_isLocalDiffeomorph": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareConjecture.diffeomorph_sphere3_of_finite_quotient": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareConjecture.quotientCovering_group_subsingleton": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareConjecture.quotientCovering_bijective": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareConjecture.quotientCoveringHomeomorph_apply": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareConjecture.finiteAction_group_subsingleton": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareConjecture.finiteActionQuotientHomeomorph_apply": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareConjecture.sphere3_quotient_homeomorph": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareConjecture.homeomorph_sphere3_of_finite_quotient": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareConjecture.simplyConnected_of_fundamentalGroup_subsingleton": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareConjecture.freeProduct_factor_subsingleton": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareConjecture.freeProduct_subsingleton": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareConjecture.freeProduct_subsingleton_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareConjecture.fundamentalGroup_freeProduct_factors": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareConjecture.freeProduct_no_infiniteCyclic_factor": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareConjecture.simplyConnected_factors_of_fundamentalGroup_coprod": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareConjecture.mappingTorus_isQuotientCoveringMap": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareConjecture.mappingTorus_not_simplyConnected": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareConjecture.mappingTorus_fundamentalGroup_not_subsingleton": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareConjecture.covering_injective_of_simplyConnected": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareConjecture.simplyConnectedCoverHomeomorph_apply": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareConjecture.untwistedSphereMappingTorus_not_simplyConnected": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareConjecture.twistedSphereMappingTorus_not_simplyConnected": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareConjecture.sphere2Circle_not_simplyConnected": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "namespace_wide_audit_in_default_build": true,
+  "negative_controls": {
+    "extra_axiom": {
+      "status": "REJECTED",
+      "exit_code": 1
+    },
+    "placeholder": {
+      "status": "REJECTED",
+      "exit_code": 1
+    },
+    "removed_freeness": {
+      "status": "REJECTED",
+      "exit_code": 1
+    }
+  },
+  "files": {
+    "PoincareConjecture/PoincareConjecture.lean": {
+      "sha256": "b89594031a82b6c6fcf9a8446657f2c0071630650378a2cd892dcbbb32244d7b",
+      "bytes": 437
+    },
+    "PoincareConjecture/PoincareConjecture/Analysis/FiniteJumps.lean": {
+      "sha256": "aa91ba4933600aa0a41951bddea02fc5c7b6a055587e47e209673111d3a841fb",
+      "bytes": 5103
+    },
+    "PoincareConjecture/PoincareConjecture/Analysis/RightDini.lean": {
+      "sha256": "c776deff80c6143ca9c12539b46fc3d6cc490f33b497d1ec4982fc5f324b6fff",
+      "bytes": 5939
+    },
+    "PoincareConjecture/PoincareConjecture/Basic.lean": {
+      "sha256": "6353eab34145af3cf95c81f236bdb2e211051e642083a1e13404ec07362da085",
+      "bytes": 283
+    },
+    "PoincareConjecture/PoincareConjecture/Extinction/ScalarBarrier.lean": {
+      "sha256": "27decd1e28d891b7be74b7971a2159195cc1e4221066fd62413202cb9364b2c6",
+      "bytes": 7681
+    },
+    "PoincareConjecture/PoincareConjecture/Geometry/SmoothQuotient.lean": {
+      "sha256": "5d4a1738d8a5741c6db8bf9af2c8fe6b8fa558577f6aec00a8ed62d7252c4fc7",
+      "bytes": 11772
+    },
+    "PoincareConjecture/PoincareConjecture/Topology/FiniteQuotient.lean": {
+      "sha256": "47f528b0099526bf73c2f1a13adbc44eef35c63919a85dbf1828816aec9dcf68",
+      "bytes": 5536
+    },
+    "PoincareConjecture/PoincareConjecture/Topology/FreeProduct.lean": {
+      "sha256": "75b46e97221ca651e960b46c02c77922fbb9faf02a6823d23131e120b710bad2",
+      "bytes": 4591
+    },
+    "PoincareConjecture/PoincareConjecture/Topology/MappingTorus.lean": {
+      "sha256": "de6930d406cbb2374b99d38f6317c2c065e2ccc52730eb40c120a23eb29d1dcb",
+      "bytes": 7228
+    },
+    "PoincareConjecture/PoincareConjecture/Topology/MappingTorusProduct.lean": {
+      "sha256": "8bd8e5748e59fe09b08ee11b6cd4cf07059be3bc2465a05a598978f476b50d1f",
+      "bytes": 3062
+    },
+    "PoincareConjecture/PoincareConjecture/Topology/SimplyConnectedCover.lean": {
+      "sha256": "76565d50cb85db298f0daf75f3057a3cae25f970dd7491d9924f462f61f05c4d",
+      "bytes": 2806
+    },
+    "PoincareConjecture/PoincareConjecture/Topology/SphereBundle.lean": {
+      "sha256": "4a6f3967955e2e8274650cc7f5b80c7dd5b9133ee76e033b7e366e41e28d8457",
+      "bytes": 4193
+    },
+    "PoincareConjecture/PoincareConjecture/Topology/Statement.lean": {
+      "sha256": "5fccd65fb3e44d04d4c3a4e216eb7c64d32abc4f916592d6229b715ec3a1d012",
+      "bytes": 1040
+    },
+    "PoincareConjecture/PoincareConjectureTests.lean": {
+      "sha256": "afac641890553703a7b5414c37cdaca393e9103874b66804cdbc110f20191fa5",
+      "bytes": 6624
+    },
+    "PoincareConjecture/PoincareConjectureTopologyTests.lean": {
+      "sha256": "4b586c9044548e64467249244e28e93a50bc79629711cf7f0da67aa5ace763ee",
+      "bytes": 7973
+    },
+    "PoincareConjecture/TOPOLOGY_VALIDATION.md": {
+      "sha256": "e6b64cdedd8bc5729496356ac45947e03b5cdd2c34c5cd7fb03a1fde0c9d0e75",
+      "bytes": 7007
+    },
+    "PoincareConjecture/lake-manifest.json": {
+      "sha256": "ae51c27b08ee2b0fb1a74cde6b1d0a793c0425625101dd0baa05846b70f14759",
+      "bytes": 3550
+    },
+    "PoincareConjecture/lakefile.lean": {
+      "sha256": "0a73d1ed3aada014e776e90ba30a7f2a6897d9448328f69facf64633a314c48f",
+      "bytes": 953
+    },
+    "PoincareConjecture/lean-toolchain": {
+      "sha256": "8e3538e0ab5f81a3ee04927d8838c8c674e0e112838b4b3ce87ec218143276af",
+      "bytes": 25
+    }
+  },
+  "full_poincare_formalization": false,
+  "award_eligibility": "UNDETERMINED",
+  "formalization_priority": "NOT_ESTABLISHED",
+  "scope": "Three analytic and three topological endgame blueprint components; not full closure."
+}

@@ -1,0 +1,11 @@
+$PROJECT/.lake/verification/not_a_ricci_solution.lean:120:7: error(lean.invalidField): Invalid field `scalarCont`: The environment does not contain `True.scalarCont`, so it is not possible to project the field `scalarCont` from an expression
+  hS
+of type `True`
+$PROJECT/.lake/verification/not_a_ricci_solution.lean:129:43: error: Application type mismatch: The argument
+  hS
+has type
+  True
+but is expected to have type
+  IsSolutionOn S
+in the application
+  smoothOfSol S hS

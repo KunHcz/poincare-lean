@@ -1,0 +1,19 @@
+The Hamilton positive-Ricci formalization and its geometric-analysis
+infrastructure are independently authored by the DifferentialGeometry
+contributors, documented by Bennett Chow, Yuan Liao and Ziyang Qin in
+arXiv:2608.21502. They are dependencies, not the applicant's original proof.
+
+The source pin ad76f2f1dfb959f4d8fc46fac9ed9feffdf497d9 differs from upstream
+1b535dd102b94cc42b107cca27059687888f08b3 only by the disclosed proof-cost
+repair proposed in https://github.com/qinz1yang/differential-geometry/pull/78.
+All pre-existing theorem statements in that file are unchanged.
+
+The local covering/projection integration reuses the same applicant's
+earlier JSP-000007 components. It is not a second independent result or
+payment claim for those arguments. Classical mathematical credit remains
+with Hamilton, Perelman and the cited sources, and the Lean and Mathlib
+authors retain their attribution.
+
+Local code is supplied under the included Apache-2.0 LICENSE. Dependencies
+and compiled caches are not redistributed. Submission prose follows the
+parent awards repository's LICENSE-CONTENT.

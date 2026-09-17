@@ -1,0 +1,17 @@
+$CHECKOUT/PoincareConjecture/.lake/topology-extension-validation/removed_freeness.lean:77:5: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  IsCancelSMul G E
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+$CHECKOUT/PoincareConjecture/.lake/topology-extension-validation/removed_freeness.lean:83:5: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  IsCancelSMul G E
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+$CHECKOUT/PoincareConjecture/.lake/topology-extension-validation/removed_freeness.lean:85:8: warning: automatically included section variable(s) unused in theorem `PoincareConjecture.finiteActionQuotientHomeomorph_apply`:
+  [Finite G]
+  [ContinuousConstSMul G E]
+  [LocallyCompactSpace E]
+  [T2Space E]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Finite G] [ContinuousConstSMul G E] [LocallyCompactSpace E] [T2Space E] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`

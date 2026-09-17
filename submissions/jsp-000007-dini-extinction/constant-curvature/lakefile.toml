@@ -1,0 +1,20 @@
+name = "PoincareHamilton"
+version = "0.1.0"
+defaultTargets = ["PoincareHamilton", "PoincareHamiltonTests", "PoincareHamiltonAudit"]
+
+[leanOptions]
+autoImplicit = false
+
+[[require]]
+name = "DifferentialGeometry"
+git = "https://github.com/qinz1yang/differential-geometry.git"
+rev = "1b535dd102b94cc42b107cca27059687888f08b3"
+
+[[lean_lib]]
+name = "PoincareHamilton"
+
+[[lean_lib]]
+name = "PoincareHamiltonTests"
+
+[[lean_lib]]
+name = "PoincareHamiltonAudit"

@@ -1,0 +1,2 @@
+$CHECKOUT/PoincareConjecture/.lake/orientability-extension-validation/placeholder.lean:148:8: warning: declaration uses `sorry`
+$CHECKOUT/PoincareConjecture/.lake/orientability-extension-validation/placeholder.lean:149:0: error: PoincareConjecture.orientationSentinel depends on non-whitelisted axiom sorryAx

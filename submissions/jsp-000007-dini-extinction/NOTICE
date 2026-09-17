@@ -1,0 +1,14 @@
+The proof and Lake configuration files in this package are copied unchanged
+from the Poincare-Conjecture project, commit
+94e8e2d105155e21ca8a78716258c12d22b45562, under its Apache License 2.0.
+Upstream project: https://github.com/frenzymath/Poincare-Conjecture
+Contribution PR: https://github.com/frenzymath/Poincare-Conjecture/pull/34
+
+The existing mathematical blueprint and classical sources retain their
+original attribution. Mathlib and its dependencies retain their respective
+licenses and authorship; their sources and build caches are not redistributed
+as part of this submission.
+
+The new verification helper is adapted from the same applicant's earlier
+Apache-2.0 proof-package verifier for awards PR #421; its role is local
+reproduction, not designated independent verification or prize adjudication.

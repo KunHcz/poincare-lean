@@ -1,0 +1,144 @@
+$CHECKOUT/PoincareConjecture/.lake/orientability-extension-validation/no_sign_reversal.lean:34:29: warning: This simp argument is unused:
+  ha.not_gt
+
+Hint: Omit it from the simp argument list.
+  simp [orientationChange, ha̵.̵n̵o̵t̵_̵g̵t̵,̵ ̵h̵b.not_gt, mul_pos_of_neg_of_neg hb ha]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+$CHECKOUT/PoincareConjecture/.lake/orientability-extension-validation/no_sign_reversal.lean:34:40: warning: This simp argument is unused:
+  hb.not_gt
+
+Hint: Omit it from the simp argument list.
+  simp [orientationChange, ha.not_gt, h̵b̵.̵n̵o̵t̵_̵g̵t̵,̵ ̵mul_pos_of_neg_of_neg hb ha]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+$CHECKOUT/PoincareConjecture/.lake/orientability-extension-validation/no_sign_reversal.lean:34:51: warning: This simp argument is unused:
+  mul_pos_of_neg_of_neg hb ha
+
+Hint: Omit it from the simp argument list.
+  simp [orientationChange, ha.not_gt, hb.not_gt,̵ ̵m̵u̵l̵_̵p̵o̵s̵_̵o̵f̵_̵n̵e̵g̵_̵o̵f̵_̵n̵e̵g̵ ̵h̵b̵ ̵h̵a̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+$CHECKOUT/PoincareConjecture/.lake/orientability-extension-validation/no_sign_reversal.lean:35:29: warning: This simp argument is unused:
+  ha.not_gt
+
+Hint: Omit it from the simp argument list.
+  simp [orientationChange, ha̵.̵n̵o̵t̵_̵g̵t̵,̵ ̵h̵b, (mul_neg_of_pos_of_neg hb ha).not_gt]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+$CHECKOUT/PoincareConjecture/.lake/orientability-extension-validation/no_sign_reversal.lean:35:40: warning: This simp argument is unused:
+  hb
+
+Hint: Omit it from the simp argument list.
+  simp [orientationChange, ha.not_gt, h̵b̵,̵ ̵(mul_neg_of_pos_of_neg hb ha).not_gt]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+$CHECKOUT/PoincareConjecture/.lake/orientability-extension-validation/no_sign_reversal.lean:35:44: warning: This simp argument is unused:
+  (mul_neg_of_pos_of_neg hb ha).not_gt
+
+Hint: Omit it from the simp argument list.
+  simp [orientationChange, ha.not_gt, hb,̵ ̵(̵m̵u̵l̵_̵n̵e̵g̵_̵o̵f̵_̵p̵o̵s̵_̵o̵f̵_̵n̵e̵g̵ ̵h̵b̵ ̵h̵a̵)̵.̵n̵o̵t̵_̵g̵t̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+$CHECKOUT/PoincareConjecture/.lake/orientability-extension-validation/no_sign_reversal.lean:36:29: warning: This simp argument is unused:
+  ha
+
+Hint: Omit it from the simp argument list.
+  simp [orientationChange, ha̵,̵ ̵h̵b.not_gt, (mul_neg_of_neg_of_pos hb ha).not_gt]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+$CHECKOUT/PoincareConjecture/.lake/orientability-extension-validation/no_sign_reversal.lean:36:33: warning: This simp argument is unused:
+  hb.not_gt
+
+Hint: Omit it from the simp argument list.
+  simp [orientationChange, ha, h̵b̵.̵n̵o̵t̵_̵g̵t̵,̵ ̵(mul_neg_of_neg_of_pos hb ha).not_gt]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+$CHECKOUT/PoincareConjecture/.lake/orientability-extension-validation/no_sign_reversal.lean:36:44: warning: This simp argument is unused:
+  (mul_neg_of_neg_of_pos hb ha).not_gt
+
+Hint: Omit it from the simp argument list.
+  simp [orientationChange, ha, hb.not_gt,̵ ̵(̵m̵u̵l̵_̵n̵e̵g̵_̵o̵f̵_̵n̵e̵g̵_̵o̵f̵_̵p̵o̵s̵ ̵h̵b̵ ̵h̵a̵)̵.̵n̵o̵t̵_̵g̵t̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+$CHECKOUT/PoincareConjecture/.lake/orientability-extension-validation/no_sign_reversal.lean:37:29: warning: This simp argument is unused:
+  ha
+
+Hint: Omit it from the simp argument list.
+  simp [orientationChange, ha̵,̵ ̵h̵b, mul_pos hb ha]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+$CHECKOUT/PoincareConjecture/.lake/orientability-extension-validation/no_sign_reversal.lean:37:33: warning: This simp argument is unused:
+  hb
+
+Hint: Omit it from the simp argument list.
+  simp [orientationChange, ha, h̵b̵,̵ ̵mul_pos hb ha]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+$CHECKOUT/PoincareConjecture/.lake/orientability-extension-validation/no_sign_reversal.lean:37:37: warning: This simp argument is unused:
+  mul_pos hb ha
+
+Hint: Omit it from the simp argument list.
+  simp [orientationChange, ha, hb,̵ ̵m̵u̵l̵_̵p̵o̵s̵ ̵h̵b̵ ̵h̵a̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+$CHECKOUT/PoincareConjecture/.lake/orientability-extension-validation/no_sign_reversal.lean:46:2: error: unsolved goals
+case neg.false
+d : ℝ
+hd : d ≠ 0
+hpos : ¬0 < d
+hneg : d < 0
+⊢ False
+
+case neg.true
+d : ℝ
+hd : d ≠ 0
+hpos : ¬0 < d
+hneg : d < 0
+⊢ False
+$CHECKOUT/PoincareConjecture/.lake/orientability-extension-validation/no_sign_reversal.lean:47:64: warning: This simp argument is unused:
+  hneg
+
+Hint: Omit it from the simp argument list.
+  simp [orientationChange, orientationSign, hpos,̵ ̵h̵n̵e̵g̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+$CHECKOUT/PoincareConjecture/.lake/orientability-extension-validation/no_sign_reversal.lean:92:2: error: unsolved goals
+B : Type u_1
+F : Type u_2
+ι : Type u_3
+inst✝² : TopologicalSpace B
+inst✝¹ : NormedAddCommGroup F
+inst✝ : NormedSpace ℝ F
+Z : VectorBundleCore ℝ B F ι
+i j : ι
+hd : ContinuousOn (fun x => (Z.coordChange i j x).det) (Z.baseSet i ∩ Z.baseSet j)
+p : B × Bool
+hp : p ∈ (Z.baseSet i ∩ Z.baseSet j) ×ˢ univ
+hc : ContinuousAt (fun q => (Z.coordChange i j q.1).det) p
+hpos : ¬0 < (Z.coordChange i j p.1).det
+hneg : (Z.coordChange i j p.1).det < 0
+q : B × Bool
+hq : (Z.coordChange i j q.1).det < 0
+⊢ False
+$CHECKOUT/PoincareConjecture/.lake/orientability-extension-validation/no_sign_reversal.lean:91:29: warning: This simp argument is unused:
+  hq
+
+Hint: Omit it from the simp argument list.
+  simp [orientationChange,̵ ̵h̵q̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+$CHECKOUT/PoincareConjecture/.lake/orientability-extension-validation/no_sign_reversal.lean:99:29: warning: This simp argument is unused:
+  hq.not_gt
+
+Hint: Omit it from the simp argument list.
+  simp [orientationChange,̵ ̵h̵q̵.̵n̵o̵t̵_̵g̵t̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+$CHECKOUT/PoincareConjecture/.lake/orientability-extension-validation/no_sign_reversal.lean:110:29: warning: This simp argument is unused:
+  orientationDet_self Z i hx
+
+Hint: Omit it from the simp argument list.
+  simp [orientationChange,̵ ̵o̵r̵i̵e̵n̵t̵a̵t̵i̵o̵n̵D̵e̵t̵_̵s̵e̵l̵f̵ ̵Z̵ ̵i̵ ̵h̵x̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`

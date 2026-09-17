@@ -1,0 +1,11 @@
+{
+  "problem_id": "JSP-000007",
+  "target": "Every closed simply connected topological three-manifold is homeomorphic to the standard three-sphere",
+  "full_original_theorem_proved": false,
+  "full_theorem_declaration": null,
+  "full_theorem_root": null,
+  "full_theorem_evidence": null,
+  "submission_ready": false,
+  "official_rule_commit": "82be4c4913b8fe394d68d1391f4c221fde947211",
+  "completed_component_checks_do_not_discharge_full_target": true
+}

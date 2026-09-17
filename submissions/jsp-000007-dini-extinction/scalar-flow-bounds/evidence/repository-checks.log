@@ -1,0 +1,43 @@
+$ python scripts/manage.py validate
+validate: OK
+
+$ python scripts/manage.py links
+links: OK
+
+$ python scripts/manage.py build
+build: OK
+
+$ python scripts/manage.py check
+check: OK
+
+$ python scripts/manage.py history --base f4e7173d89dfe91022a185427d63452c8ffbf6ae
+history: OK
+
+$ python -m unittest discover -s tests -v
+test_alias_and_custom_tag_rejected (test_records.RecordTests.test_alias_and_custom_tag_rejected) ... ok
+test_award_cannot_be_deleted (test_records.RecordTests.test_award_cannot_be_deleted) ... ok
+test_candidate_cannot_publish_award_decision (test_records.RecordTests.test_candidate_cannot_publish_award_decision) ... ok
+test_confirmed_states_need_verification (test_records.RecordTests.test_confirmed_states_need_verification) ... ok
+test_draft_roundtrip_and_drift (test_records.RecordTests.test_draft_roundtrip_and_drift) ... ok
+test_duplicate_entry_ids_rejected (test_records.RecordTests.test_duplicate_entry_ids_rejected) ... ok
+test_duplicate_yaml_keys_rejected (test_records.RecordTests.test_duplicate_yaml_keys_rejected) ... ok
+test_empty_indexes (test_records.RecordTests.test_empty_indexes) ... ok
+test_formal_candidate_needs_statement (test_records.RecordTests.test_formal_candidate_needs_statement) ... ok
+test_internal_record_fields_rejected (test_records.RecordTests.test_internal_record_fields_rejected) ... ok
+test_local_links_and_anchors (test_records.RecordTests.test_local_links_and_anchors) ... ok
+test_nonempty_english_sections (test_records.RecordTests.test_nonempty_english_sections) ... ok
+test_pending_candidate_accepts_incomplete_evidence (test_records.RecordTests.test_pending_candidate_accepts_incomplete_evidence) ... ok
+test_public_award_and_batch_membership (test_records.RecordTests.test_public_award_and_batch_membership) ... ok
+test_published_decision_immutable (test_records.RecordTests.test_published_decision_immutable) ... ok
+test_published_statement_immutable_and_superseded (test_records.RecordTests.test_published_statement_immutable_and_superseded) ... ok
+test_revocation_keeps_original_evidence (test_records.RecordTests.test_revocation_keeps_original_evidence) ... ok
+test_symlinks_and_misplaced_records_rejected (test_records.RecordTests.test_symlinks_and_misplaced_records_rejected) ... ok
+test_unconfirmed_award_rejected (test_records.RecordTests.test_unconfirmed_award_rejected) ... ok
+test_unconfirmed_names_and_duplicate_recipients_rejected (test_records.RecordTests.test_unconfirmed_names_and_duplicate_recipients_rejected) ... ok
+test_unknown_payment_field_rejected (test_records.RecordTests.test_unknown_payment_field_rejected) ... ok
+test_verification_requires_consistent_successful_evidence (test_records.RecordTests.test_verification_requires_consistent_successful_evidence) ... ok
+
+----------------------------------------------------------------------
+Ran 22 tests in 2.049s
+
+OK

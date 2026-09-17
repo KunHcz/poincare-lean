@@ -1,0 +1,1 @@
+$PROJECT/.lake/verification/missing_initial_bound.lean:169:64: error(lean.unknownIdentifier): Unknown identifier `hinit`

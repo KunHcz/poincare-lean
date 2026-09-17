@@ -1,0 +1,170 @@
+{
+  "status": "LOCAL_VERIFIED_NOT_OFFICIALLY_REVIEWED",
+  "problem_id": "JSP-000007",
+  "scope": "Complete proofs of the Dini comparison and scalar lifetime components; not a closure or special-case proof of the Poincare theorem.",
+  "started_at_utc": "2026-09-17T03:32:40.860572+00:00",
+  "completed_at_utc": "2026-09-17T03:38:24.145420+00:00",
+  "lean_version": "Lean (version 4.32.1, arm64-apple-darwin24.6.0, commit f054605aea4b840552cca2e725580bffd1e1b704, Release)",
+  "source_upstream_commit": "94e8e2d105155e21ca8a78716258c12d22b45562",
+  "source_files_unchanged": true,
+  "dependency_pins": {
+    "mathlib": "520045ab14e26149ee970e2e617ca04b09bde5d6",
+    "plausible": "e12c1910fe855cbfc38803cd4e55543906d5fa62",
+    "LeanSearchClient": "c5d5b8fe6e5158def25cd28eb94e4141ad97c843",
+    "importGraph": "7e9612bf0b9ee66db3cb5b9988a35afc706f5a12",
+    "proofwidgets": "6e311e2a844da9b2cc3971187df2fe0066947b93",
+    "aesop": "a7dbf0c63b694e47f425f3dcddbc0e178bb432d3",
+    "Qq": "38d591e778f100aec9762bb582f9c7f55f50e9dc",
+    "batteries": "023ce7d62a0531e22a5331e20b587817a80d49ff",
+    "Cli": "88679d088c9720c27ebdf2ba4dafe17341747f94"
+  },
+  "clean_project_rebuild": true,
+  "warnings_as_errors": true,
+  "full_fresh_kernel_replay": true,
+  "independent_checker_implementation": false,
+  "independent_human_review": false,
+  "full_dependency_source_rebuild": false,
+  "axioms": {
+    "PoincareConjecture.UpperRightDiniLE.mono": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareConjecture.upperRightDiniLE_of_hasDerivWithinAt": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareConjecture.dini_le_of_oneSided": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareConjecture.dini_le_of_contDiffOn": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareConjecture.le_at_endpoint_of_no_upward_jump": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareConjecture.dini_le_on_Icc_of_halfOpen": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareConjecture.dini_le_of_finite_jumps": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareConjecture.extinctionBarrier_initial": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareConjecture.hasDerivAt_extinctionBarrier": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareConjecture.extinctionBarrier_sub": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareConjecture.extinctionBarrier_mono": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareConjecture.extinctionBarrier_eventually_neg": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareConjecture.contDiffOn_extinctionRHS": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareConjecture.width_le_extinctionBarrier": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareConjecture.exists_width_lifetime_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "audited_production_theorems": 15,
+  "namespace_wide_audit_in_default_build": true,
+  "negative_controls": {
+    "extra_axiom": {
+      "status": "REJECTED",
+      "exit_code": 1
+    },
+    "placeholder": {
+      "status": "REJECTED",
+      "exit_code": 1
+    },
+    "false_initial_value": {
+      "status": "REJECTED",
+      "exit_code": 1
+    }
+  },
+  "files": {
+    "lean-toolchain": {
+      "sha256": "8e3538e0ab5f81a3ee04927d8838c8c674e0e112838b4b3ce87ec218143276af",
+      "bytes": 25
+    },
+    "lakefile.lean": {
+      "sha256": "f5ba7703edb467afd05b368bfe6b4e42783c139abe4a16e589a27b134a2df952",
+      "bytes": 513
+    },
+    "lake-manifest.json": {
+      "sha256": "becbea7512c654ea8b05ff51e84461b8a2dca674f1c81b04dcb515e55ad5b434",
+      "bytes": 3161
+    },
+    "PoincareConjecture.lean": {
+      "sha256": "18f99c186eed3b2d5eeb383a76a1d00797e83e5c2abecfe46bb340d5b4b46ee4",
+      "bytes": 189
+    },
+    "PoincareConjectureTests.lean": {
+      "sha256": "bada39364ad487ff88db018235a60365b54b9dc148f98247669eb5c6ce1f0e06",
+      "bytes": 6610
+    },
+    "PoincareConjecture/Basic.lean": {
+      "sha256": "6353eab34145af3cf95c81f236bdb2e211051e642083a1e13404ec07362da085",
+      "bytes": 283
+    },
+    "PoincareConjecture/Analysis/RightDini.lean": {
+      "sha256": "c776deff80c6143ca9c12539b46fc3d6cc490f33b497d1ec4982fc5f324b6fff",
+      "bytes": 5939
+    },
+    "PoincareConjecture/Analysis/FiniteJumps.lean": {
+      "sha256": "aa91ba4933600aa0a41951bddea02fc5c7b6a055587e47e209673111d3a841fb",
+      "bytes": 5103
+    },
+    "PoincareConjecture/Extinction/ScalarBarrier.lean": {
+      "sha256": "27decd1e28d891b7be74b7971a2159195cc1e4221066fd62413202cb9364b2c6",
+      "bytes": 7681
+    },
+    "verification-config.json": {
+      "sha256": "a830633e526b928dbb6e6e89e7d44ddd793eaf37867ac01f1c0fa343c908636a",
+      "bytes": 2046
+    },
+    "scripts/verify.py": {
+      "sha256": "2ae8a0d022f050556c5600cd0b3b5d6b06f6bf41d0aca583692fe4dc070f28ea",
+      "bytes": 8156
+    }
+  },
+  "full_poincare_formalization": false,
+  "award_eligibility": "UNDETERMINED",
+  "novel_mathematical_discovery": false,
+  "formalization_priority": "NOT_ESTABLISHED"
+}

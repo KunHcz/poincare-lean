@@ -1,0 +1,9 @@
+$CHECKOUT/PoincareConjecture/.lake/orientability-extension-validation/removed_simple_connectivity.lean:127:17: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  Nonempty B
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+$CHECKOUT/PoincareConjecture/.lake/orientability-extension-validation/removed_simple_connectivity.lean:129:23: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  SimplyConnectedSpace B
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+$CHECKOUT/PoincareConjecture/.lake/orientability-extension-validation/removed_simple_connectivity.lean:129:9: error: Tactic `rcases` failed: `x✝ : ?m.86` is not an inductive datatype

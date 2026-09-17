@@ -1,0 +1,2 @@
+$PROJECT/.lake/validation/placeholder.lean:146:8: warning: declaration uses `sorry`
+$PROJECT/.lake/validation/placeholder.lean:148:0: error: PoincareConjecture.auditSentinel depends on non-whitelisted axiom sorryAx

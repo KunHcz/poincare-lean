@@ -1,0 +1,72 @@
+{
+  "status": "PASS",
+  "repository_base": "f4e7173d89dfe91022a185427d63452c8ffbf6ae",
+  "repository_tests": 22,
+  "unit_test_command": [
+    "python",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "scripts",
+    "-p",
+    "test_*.py",
+    "-v"
+  ],
+  "local_links": [
+    {
+      "document": "ORIENTABILITY_EXTENSION.md",
+      "target": "evidence/orientability-extension/verification.json"
+    },
+    {
+      "document": "README.md",
+      "target": "TOPOLOGY_EXTENSION.md"
+    },
+    {
+      "document": "README.md",
+      "target": "constant-curvature/README.md"
+    },
+    {
+      "document": "README.md",
+      "target": "ORIENTABILITY_EXTENSION.md"
+    },
+    {
+      "document": "README.md",
+      "target": "../../problems/catalog-0001-0100.md#JSP-000007"
+    },
+    {
+      "document": "README.md",
+      "target": "STATEMENT.md"
+    },
+    {
+      "document": "README.md",
+      "target": "verification-config.json"
+    },
+    {
+      "document": "README.md",
+      "target": "evidence/verification.json"
+    },
+    {
+      "document": "README.md",
+      "target": "evidence/axioms.log"
+    },
+    {
+      "document": "README.md",
+      "target": "PRIOR_ART.md"
+    },
+    {
+      "document": "README.md",
+      "target": "LICENSE"
+    },
+    {
+      "document": "README.md",
+      "target": "NOTICE"
+    },
+    {
+      "document": "README.md",
+      "target": "../../LICENSE-CONTENT"
+    }
+  ],
+  "official_records_changed": false,
+  "blueprint_graph_check": "NOT_RUN; a separate request was permission-blocked; no successful structural audit claimed"
+}

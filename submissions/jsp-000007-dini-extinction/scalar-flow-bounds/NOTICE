@@ -1,0 +1,20 @@
+This is an additive component of the same JSP-000007 application.
+
+The pinned DifferentialGeometry library supplies the independently authored
+metric Ricci-flow predicate, canonical scalar regularity, intrinsic scalar
+evolution, maximum principle and tensor contraction inequalities.
+Repository: https://github.com/qinz1yang/differential-geometry
+Original source: 1b535dd102b94cc42b107cca27059687888f08b3
+Disclosed proof-cost repair: ad76f2f1dfb959f4d8fc46fac9ed9feffdf497d9
+
+The local frame-based Cauchy--Schwarz argument adapts the construction used
+by hamilton_scalar_sq_le_three_ricci_norm_sq to an arbitrary metric-family
+input, without its finite-time-flow wrapper. The metric, connection, tensor,
+maximum-principle and regularity work remains credited to the upstream
+authors, not the applicant. The local statements and verification are not
+claims of new classical mathematics or completion of Poincare.
+
+Lean and Mathlib retain their authorship and licenses. Dependencies and
+compiled caches are not redistributed. Local Lean and Python code uses the
+included Apache License 2.0; submission prose follows LICENSE-CONTENT of the
+parent awards repository.

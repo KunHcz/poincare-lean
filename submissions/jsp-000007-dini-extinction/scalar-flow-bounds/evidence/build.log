@@ -1,0 +1,7 @@
+ℹ [3838/3839] Replayed ScalarFlowBoundsAudit
+info: ScalarFlowBoundsAudit.lean:4:0: 'PoincareScalarFlow.scalar_lower_bound_on_slab' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ScalarFlowBoundsAudit.lean:5:0: 'PoincareScalarFlow.normalized_scalar_lower_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ScalarFlowBoundsAudit.lean:6:0: 'PoincareScalarFlow.universal_scalar_lower_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ScalarFlowBoundsAudit.lean:7:0: 'PoincareScalarFlow.scalar_lower_bound_after_restart' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ScalarFlowBoundsAudit.lean:8:0: 'PoincareScalarFlowTests.literal_metric_normalized_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully (3839 jobs).

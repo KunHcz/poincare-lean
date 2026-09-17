@@ -1,0 +1,1 @@
+$PROJECT/.lake/verification-positive-ricci/missing_positive_ricci.lean:35:29: error(lean.unknownIdentifier): Unknown identifier `hpos`

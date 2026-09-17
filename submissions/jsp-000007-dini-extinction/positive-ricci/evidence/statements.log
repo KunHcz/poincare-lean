@@ -1,0 +1,119 @@
+@PoincareHamilton.positiveRicci_poincare.{u_1} : ∀ {M : Type u_1} [inst : TopologicalSpace.{u_1} M]
+  [inst_1 : ChartedSpace.{0, u_1} (EuclideanSpace.{0, 0} ℝ (Fin 3)) M]
+  [inst_2 :
+    IsManifold.{0, 0, 0, u_1} (modelWithCornersSelf.{0, 0} ℝ (EuclideanSpace.{0, 0} ℝ (Fin 3))) (↑Top.top.{0}) M]
+  [SigmaCompactSpace.{u_1} M] [T2Space.{u_1} M] [SimplyConnectedSpace.{u_1} M],
+  DifferentialGeometry.Topology.ThreeManifold.isClosedThreeManifold.{0, 0, u_1} →
+    DifferentialGeometry.Geometry.Curvature.admitsPositiveRicci.{0, 0, u_1} →
+      Nonempty.{u_1 + 1}
+        (Diffeomorph.{0, 0, 0, 0, 0, u_1, 0} (modelWithCornersSelf.{0, 0} ℝ (EuclideanSpace.{0, 0} ℝ (Fin 3)))
+          (modelWithCornersSelf.{0, 0} ℝ (EuclideanSpace.{0, 0} ℝ (Fin 3))) M PoincareHamilton.Sphere3 ↑Top.top.{0})
+@PoincareHamiltonTests.literal_positive_ricci_endpoint.{u_1} : ∀ {M : Type u_1} [inst : TopologicalSpace.{u_1} M]
+  [inst_1 : ChartedSpace.{0, u_1} (EuclideanSpace.{0, 0} ℝ (Fin 3)) M]
+  [inst_2 :
+    IsManifold.{0, 0, 0, u_1} (modelWithCornersSelf.{0, 0} ℝ (EuclideanSpace.{0, 0} ℝ (Fin 3))) (↑Top.top.{0}) M]
+  [CompactSpace.{u_1} M] [SigmaCompactSpace.{u_1} M] [T2Space.{u_1} M] [SimplyConnectedSpace.{u_1} M]
+  (g :
+    DifferentialGeometry.SmoothRiemannianMetric.{0, 0, u_1}
+      (modelWithCornersSelf.{0, 0} ℝ (EuclideanSpace.{0, 0} ℝ (Fin 3))) M),
+  (∀ (x : M) (v : TangentSpace.{0, 0, 0, u_1} (modelWithCornersSelf.{0, 0} ℝ (EuclideanSpace.{0, 0} ℝ (Fin 3))) x),
+      Ne.{1} v 0 →
+        LT.lt.{0} 0
+          ((DifferentialGeometry.Geometry.Curvature.metricRicciAt.{0, 0, u_1} g x)
+            (DifferentialGeometry.Geometry.Curvature.vec2.{0, 0, u_1} v v))) →
+    Nonempty.{u_1 + 1}
+      (Diffeomorph.{0, 0, 0, 0, 0, u_1, 0} (modelWithCornersSelf.{0, 0} ℝ (EuclideanSpace.{0, 0} ℝ (Fin 3)))
+        (modelWithCornersSelf.{0, 0} ℝ (EuclideanSpace.{0, 0} ℝ (Fin 3))) M PoincareHamilton.Sphere3 ↑Top.top.{0})
+@PoincareHamiltonTests.literal_positive_ricci_homeomorph.{u_1} : ∀ {M : Type u_1} [inst : TopologicalSpace.{u_1} M]
+  [inst_1 : ChartedSpace.{0, u_1} (EuclideanSpace.{0, 0} ℝ (Fin 3)) M]
+  [inst_2 :
+    IsManifold.{0, 0, 0, u_1} (modelWithCornersSelf.{0, 0} ℝ (EuclideanSpace.{0, 0} ℝ (Fin 3))) (↑Top.top.{0}) M]
+  [CompactSpace.{u_1} M] [SigmaCompactSpace.{u_1} M] [T2Space.{u_1} M] [SimplyConnectedSpace.{u_1} M]
+  (g :
+    DifferentialGeometry.SmoothRiemannianMetric.{0, 0, u_1}
+      (modelWithCornersSelf.{0, 0} ℝ (EuclideanSpace.{0, 0} ℝ (Fin 3))) M),
+  (∀ (x : M) (v : TangentSpace.{0, 0, 0, u_1} (modelWithCornersSelf.{0, 0} ℝ (EuclideanSpace.{0, 0} ℝ (Fin 3))) x),
+      Ne.{1} v 0 →
+        LT.lt.{0} 0
+          ((DifferentialGeometry.Geometry.Curvature.metricRicciAt.{0, 0, u_1} g x)
+            (DifferentialGeometry.Geometry.Curvature.vec2.{0, 0, u_1} v v))) →
+    Nonempty.{u_1 + 1} (Homeomorph.{u_1, 0} M PoincareHamilton.Sphere3)
+def DifferentialGeometry.Topology.ThreeManifold.isClosedThreeManifold.{u_1, u_2, u_3} : {E : Type u_1} →
+  [inst : NormedAddCommGroup.{u_1} E] →
+    [inst_1 : NormedSpace.{0, u_1} ℝ E] →
+      {H : Type u_2} →
+        [inst_2 : TopologicalSpace.{u_2} H] →
+          {I : ModelWithCorners.{0, u_1, u_2} ℝ E H} → {M : Type u_3} → [TopologicalSpace.{u_3} M] → Prop :=
+fun {E} [NormedAddCommGroup.{u_1} E] [NormedSpace.{0, u_1} ℝ E] {H} [TopologicalSpace.{u_2} H] {I} {M}
+    [TopologicalSpace.{u_3} M] =>
+  CompactSpace.{u_3} M ∧
+    ConnectedSpace.{u_3} M ∧ ModelWithCorners.Boundaryless.{0, u_1, u_2} I ∧ Eq.{1} (Module.finrank.{0, u_1} ℝ E) 3
+def DifferentialGeometry.Geometry.Curvature.admitsPositiveRicci.{u_1, u_2, u_3} : {E : Type u_1} →
+  [inst : NormedAddCommGroup.{u_1} E] →
+    [inst_1 : InnerProductSpace.{0, u_1} ℝ E] →
+      [FiniteDimensional.{0, u_1} ℝ E] →
+        {H : Type u_2} →
+          [inst_3 : TopologicalSpace.{u_2} H] →
+            {I : ModelWithCorners.{0, u_1, u_2} ℝ E H} →
+              {M : Type u_3} →
+                [inst_4 : TopologicalSpace.{u_3} M] →
+                  [inst_5 : ChartedSpace.{u_2, u_3} H M] → [IsManifold.{0, u_1, u_2, u_3} I (↑Top.top.{0}) M] → Prop :=
+fun {E} [NormedAddCommGroup.{u_1} E] [InnerProductSpace.{0, u_1} ℝ E] [FiniteDimensional.{0, u_1} ℝ E] {H}
+    [TopologicalSpace.{u_2} H] {I} {M} [TopologicalSpace.{u_3} M] [ChartedSpace.{u_2, u_3} H M]
+    [IsManifold.{0, u_1, u_2, u_3} I (↑Top.top.{0}) M] =>
+  ∃ g, DifferentialGeometry.Geometry.Curvature.positiveRicciMetric.{u_1, u_2, u_3} g
+def DifferentialGeometry.Geometry.Curvature.positiveRicciMetric.{u_1, u_2, u_3} : {E : Type u_1} →
+  [inst : NormedAddCommGroup.{u_1} E] →
+    [inst_1 : InnerProductSpace.{0, u_1} ℝ E] →
+      [FiniteDimensional.{0, u_1} ℝ E] →
+        {H : Type u_2} →
+          [inst_3 : TopologicalSpace.{u_2} H] →
+            {I : ModelWithCorners.{0, u_1, u_2} ℝ E H} →
+              {M : Type u_3} →
+                [inst_4 : TopologicalSpace.{u_3} M] →
+                  [inst_5 : ChartedSpace.{u_2, u_3} H M] →
+                    [inst_6 : IsManifold.{0, u_1, u_2, u_3} I (↑Top.top.{0}) M] →
+                      DifferentialGeometry.SmoothRiemannianMetric.{u_1, u_2, u_3} I M → Prop :=
+fun {E} [NormedAddCommGroup.{u_1} E] [InnerProductSpace.{0, u_1} ℝ E] [FiniteDimensional.{0, u_1} ℝ E] {H}
+    [TopologicalSpace.{u_2} H] {I} {M} [TopologicalSpace.{u_3} M] [ChartedSpace.{u_2, u_3} H M]
+    [IsManifold.{0, u_1, u_2, u_3} I (↑Top.top.{0}) M] g =>
+  ∀ (x : M) (v : TangentSpace.{u_1, 0, u_2, u_3} I x),
+    Ne.{u_1 + 1} v 0 →
+      LT.lt.{0} 0
+        ((DifferentialGeometry.Geometry.Curvature.metricRicciAt.{u_1, u_2, u_3} g x)
+          (DifferentialGeometry.Geometry.Curvature.vec2.{u_1, u_2, u_3} v v))
+@[reducible] def PoincareHamilton.Sphere3 : Type :=
+@Set.Elem.{0} (EuclideanSpace.{0, 0} Real (Fin (@OfNat.ofNat.{0} Nat (nat_lit 4) (instOfNatNat (nat_lit 4)))))
+  (@Metric.sphere.{0} (EuclideanSpace.{0, 0} Real (Fin (@OfNat.ofNat.{0} Nat (nat_lit 4) (instOfNatNat (nat_lit 4)))))
+    (@PiLp.instPseudoMetricSpace.{0, 0}
+      (@OfNat.ofNat.{0} ENNReal (nat_lit 2)
+        (@instOfNatAtLeastTwo.{0} ENNReal (nat_lit 2)
+          (@AddMonoidWithOne.toNatCast.{0} ENNReal
+            (@AddCommMonoidWithOne.toAddMonoidWithOne.{0} ENNReal ENNReal.instAddCommMonoidWithOne))
+          PiLp.innerProductSpace._proof_1))
+      (Fin (@OfNat.ofNat.{0} Nat (nat_lit 4) (instOfNatNat (nat_lit 4)))) (fun x => Real) fact_one_le_two_ennreal
+      (Fin.fintype (@OfNat.ofNat.{0} Nat (nat_lit 4) (instOfNatNat (nat_lit 4)))) fun i => Real.pseudoMetricSpace)
+    (@OfNat.ofNat.{0} (EuclideanSpace.{0, 0} Real (Fin (@OfNat.ofNat.{0} Nat (nat_lit 4) (instOfNatNat (nat_lit 4)))))
+      (nat_lit 0)
+      (@Zero.toOfNat0.{0}
+        (EuclideanSpace.{0, 0} Real (Fin (@OfNat.ofNat.{0} Nat (nat_lit 4) (instOfNatNat (nat_lit 4)))))
+        (@NegZeroClass.toZero.{0}
+          (EuclideanSpace.{0, 0} Real (Fin (@OfNat.ofNat.{0} Nat (nat_lit 4) (instOfNatNat (nat_lit 4)))))
+          (@SubNegZeroMonoid.toNegZeroClass.{0}
+            (EuclideanSpace.{0, 0} Real (Fin (@OfNat.ofNat.{0} Nat (nat_lit 4) (instOfNatNat (nat_lit 4)))))
+            (@SubtractionMonoid.toSubNegZeroMonoid.{0}
+              (EuclideanSpace.{0, 0} Real (Fin (@OfNat.ofNat.{0} Nat (nat_lit 4) (instOfNatNat (nat_lit 4)))))
+              (@SubtractionCommMonoid.toSubtractionMonoid.{0}
+                (EuclideanSpace.{0, 0} Real (Fin (@OfNat.ofNat.{0} Nat (nat_lit 4) (instOfNatNat (nat_lit 4)))))
+                (@AddCommGroup.toDivisionAddCommMonoid.{0}
+                  (EuclideanSpace.{0, 0} Real (Fin (@OfNat.ofNat.{0} Nat (nat_lit 4) (instOfNatNat (nat_lit 4)))))
+                  (@WithLp.instAddCommGroup.{0}
+                    (@OfNat.ofNat.{0} ENNReal (nat_lit 2)
+                      (@instOfNatAtLeastTwo.{0} ENNReal (nat_lit 2)
+                        (@AddMonoidWithOne.toNatCast.{0} ENNReal
+                          (@AddCommMonoidWithOne.toAddMonoidWithOne.{0} ENNReal ENNReal.instAddCommMonoidWithOne))
+                        PiLp.innerProductSpace._proof_1))
+                    ((i : Fin (@OfNat.ofNat.{0} Nat (nat_lit 4) (instOfNatNat (nat_lit 4)))) → (fun x => Real) i)
+                    (@Pi.addCommGroup.{0, 0} (Fin (@OfNat.ofNat.{0} Nat (nat_lit 4) (instOfNatNat (nat_lit 4))))
+                      (fun x => Real) fun i => Real.instAddCommGroup)))))))))
+    (@OfNat.ofNat.{0} Real (nat_lit 1) (@One.toOfNat1.{0} Real Real.instOne)))

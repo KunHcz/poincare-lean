@@ -1,0 +1,1 @@
+$PROJECT/.lake/validation/extra_axiom.lean:148:0: error: PoincareConjecture.auditSentinel depends on non-whitelisted axiom PoincareConjecture.auditSentinel

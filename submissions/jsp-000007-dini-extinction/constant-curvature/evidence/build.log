@@ -1,0 +1,17 @@
+ℹ [4145/4149] Replayed PoincareHamilton.SpaceFormAudit
+info: PoincareHamilton/SpaceFormAudit.lean:12:0: 'PoincareHamilton.roundQuotient_proj_surjective' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: PoincareHamilton/SpaceFormAudit.lean:13:0: 'PoincareHamilton.roundQuotient_mfderiv_surjective' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: PoincareHamilton/SpaceFormAudit.lean:14:0: 'PoincareHamilton.roundQuotient_proj_localDiffeomorph' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: PoincareHamilton/SpaceFormAudit.lean:15:0: 'PoincareHamilton.roundQuotientDiffeomorph' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: PoincareHamilton/SpaceFormAudit.lean:16:0: 'PoincareHamilton.diffeomorph_sphere_of_sphericalSpaceForm' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: PoincareHamilton/SpaceFormAudit.lean:17:0: 'PoincareHamilton.constantPositiveCurvature_poincare' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: PoincareHamilton/SpaceFormAudit.lean:18:0: 'PoincareHamilton.constantPositiveCurvature_homeomorph_sphere' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+✔ [4146/4149] Built PoincareHamiltonTests (17s)
+ℹ [4148/4149] Built PoincareHamiltonAudit (3.2s)
+info: PoincareHamiltonAudit.lean:7:0: 'DifferentialGeometry.Geometry.constant_positive_sectional_curvature_implies_spherical_space_form' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: PoincareHamiltonAudit.lean:8:0: 'PoincareHamiltonTests.literal_metric_endpoint' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully (4149 jobs).

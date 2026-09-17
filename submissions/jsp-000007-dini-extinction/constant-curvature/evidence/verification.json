@@ -1,0 +1,123 @@
+{
+  "status": "LOCAL_VERIFIED_NOT_OFFICIALLY_REVIEWED",
+  "problem_id": "JSP-000007",
+  "scope": "Closed simply connected smooth three-manifolds admitting a genuine constant-positive-sectional-curvature metric",
+  "full_poincare_formalization": false,
+  "positive_ricci_case_verified": false,
+  "started_at_utc": "2026-09-17T09:05:34.271482+00:00",
+  "completed_at_utc": "2026-09-17T09:22:20.133086+00:00",
+  "lean_version": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "dependency_pins": {
+    "DifferentialGeometry": "1b535dd102b94cc42b107cca27059687888f08b3",
+    "mathlib": "0df444a360eaa60ab8c11dca51a86af692955474",
+    "plausible": "b7eb3304aeae834b12dda98993a37f6a41f6f0bb",
+    "LeanSearchClient": "5f4d51b81cbd3f6b32b156bfad9056621a040404",
+    "importGraph": "16f02aa7642864af59f1ff0e384a015994db9118",
+    "proofwidgets": "4be2e3d5087eeb272cf5a8853b8f9dd025ef5957",
+    "aesop": "3448c0bcc5ce01b2d1546e483ec3620e32df3d0e",
+    "Qq": "92c15be17b7caf78c2ad767ec40f89052d908d81",
+    "batteries": "4488d40d070b9700d4d5a6aa342f0d40c31b2a2d",
+    "Cli": "6130a47896ce867c6a4a55373441e59e565bad0f"
+  },
+  "source_files": {
+    "PoincareHamilton/RoundQuotient.lean": "c58fbbcd4acf6f05cc4e765e83cedfdc106973eb11c979801e1a0ce1d998b0be",
+    "PoincareHamilton/SimplyConnectedCover.lean": "d8b382e2d98c59f80d704a627bd651204872a77ca5a69dcc06cc593707b63d8b",
+    "PoincareHamilton/SpaceFormAudit.lean": "221fdc5fff4f1ca499f493d74939aecf02e1b54927cef8274064d66da1d62023",
+    "PoincareHamilton/SphericalSpaceForm.lean": "34098f22cf8bf333bcab41b3e3beca84f3d3cf85db6d94e05a25ab6a39f241ea",
+    "PoincareHamilton.lean": "8bda8d0e4c45b36dc602b4c709383788ca80163e27a74bb4f0b733822647ae83",
+    "PoincareHamiltonAudit.lean": "fba14683065e1a1a47c8843045f8ea707de164731b8b7c52318326cf388e0414",
+    "PoincareHamiltonTests.lean": "4228c099da25b5bc20851a19a60b4715431568a40529bab9cc346d23ee9e047e",
+    "lake-manifest.json": "f76e8daebca96550f72f72683244cb2481ffb020b89ab7a99de8862f71d7b619",
+    "lakefile.toml": "c95bebcd592acdbf1e688f91853b996156a9f929e9aaa24947d0fdf777d1801c",
+    "lean-toolchain": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71"
+  },
+  "default_build_pass": true,
+  "warnings_as_errors": true,
+  "from_scratch_build": false,
+  "full_fresh_kernel_replay": true,
+  "independent_checker_implementation": false,
+  "independent_human_review": false,
+  "full_dependency_source_rebuild": false,
+  "key_declarations": [
+    "PoincareHamilton.roundQuotient_proj_surjective",
+    "PoincareHamilton.roundQuotient_mfderiv_surjective",
+    "PoincareHamilton.roundQuotient_proj_localDiffeomorph",
+    "PoincareHamilton.roundQuotientDiffeomorph",
+    "PoincareHamilton.diffeomorph_sphere_of_sphericalSpaceForm",
+    "PoincareHamilton.constantPositiveCurvature_poincare",
+    "PoincareHamilton.constantPositiveCurvature_homeomorph_sphere",
+    "DifferentialGeometry.Geometry.constant_positive_sectional_curvature_implies_spherical_space_form",
+    "PoincareHamiltonTests.literal_metric_endpoint"
+  ],
+  "axioms": {
+    "PoincareHamilton.roundQuotient_proj_surjective": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareHamilton.roundQuotient_mfderiv_surjective": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareHamilton.roundQuotient_proj_localDiffeomorph": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareHamilton.roundQuotientDiffeomorph": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareHamilton.diffeomorph_sphere_of_sphericalSpaceForm": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareHamilton.constantPositiveCurvature_poincare": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareHamilton.constantPositiveCurvature_homeomorph_sphere": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DifferentialGeometry.Geometry.constant_positive_sectional_curvature_implies_spherical_space_form": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareHamiltonTests.literal_metric_endpoint": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "namespace_wide_audit": true,
+  "regression_theorems": 5,
+  "negative_controls": {
+    "extra_axiom": {
+      "status": "REJECTED",
+      "exit_code": 1
+    },
+    "placeholder": {
+      "status": "REJECTED",
+      "exit_code": 1
+    },
+    "missing_curvature": {
+      "status": "REJECTED",
+      "exit_code": 1
+    },
+    "missing_simple_connectivity": {
+      "status": "REJECTED",
+      "exit_code": 1
+    }
+  },
+  "award_eligibility": "UNDETERMINED",
+  "novel_mathematical_discovery": false,
+  "formalization_priority": "NOT_ESTABLISHED",
+  "verifier_sha256": "0d88d7dedc66b48c70369f7e5fecbfc5537676c89c970b551c12f0221bfe6a76"
+}

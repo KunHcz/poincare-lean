@@ -1,0 +1,20 @@
+name = "PoincarePositiveRicci"
+version = "0.1.0"
+defaultTargets = ["PoincareHamilton", "PoincareHamiltonTests", "PoincareHamiltonAudit"]
+
+[leanOptions]
+autoImplicit = false
+
+[[require]]
+name = "DifferentialGeometry"
+git = "https://github.com/KunHcz/differential-geometry.git"
+rev = "ad76f2f1dfb959f4d8fc46fac9ed9feffdf497d9"
+
+[[lean_lib]]
+name = "PoincareHamilton"
+
+[[lean_lib]]
+name = "PoincareHamiltonTests"
+
+[[lean_lib]]
+name = "PoincareHamiltonAudit"

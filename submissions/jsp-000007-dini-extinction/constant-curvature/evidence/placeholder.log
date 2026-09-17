@@ -1,0 +1,6 @@
+'DifferentialGeometry.Geometry.constant_positive_sectional_curvature_implies_spherical_space_form' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PoincareHamiltonTests.literal_metric_endpoint' depends on axioms: [propext, Classical.choice, Quot.sound]
+$PROJECT/.lake/verification/placeholder.lean:10:8: warning: declaration uses `sorry`
+$PROJECT/.lake/verification/placeholder.lean:11:0: error: PoincareHamilton.sentinel depends on non-whitelisted axiom sorryAx

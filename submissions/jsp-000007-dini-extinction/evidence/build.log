@@ -1,0 +1,7 @@
+✔ [1213/1682] Built PoincareConjecture.Basic (317ms)
+✔ [3161/3167] Built PoincareConjecture.Analysis.RightDini (11s)
+✔ [3162/3167] Built PoincareConjecture.Analysis.FiniteJumps (2.2s)
+✔ [3163/3167] Built PoincareConjecture.Extinction.ScalarBarrier (2.5s)
+✔ [3164/3167] Built PoincareConjecture (1.8s)
+✔ [3166/3167] Built PoincareConjectureTests (2.2s)
+Build completed successfully (3167 jobs).

@@ -1,0 +1,1 @@
+$CHECKOUT/PoincareConjecture/.lake/orientability-extension-validation/extra_axiom.lean:149:0: error: PoincareConjecture.orientationSentinel depends on non-whitelisted axiom PoincareConjecture.orientationSentinel

@@ -1,0 +1,11 @@
+test_duplicate (test_verify.AuditParserTests.test_duplicate) ... ok
+test_empty (test_verify.AuditParserTests.test_empty) ... ok
+test_exact_name (test_verify.AuditParserTests.test_exact_name) ... ok
+test_missing (test_verify.AuditParserTests.test_missing) ... ok
+test_standard_axioms (test_verify.AuditParserTests.test_standard_axioms) ... ok
+test_unapproved (test_verify.AuditParserTests.test_unapproved) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.000s
+
+OK

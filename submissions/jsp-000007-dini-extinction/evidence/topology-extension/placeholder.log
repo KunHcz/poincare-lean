@@ -1,0 +1,2 @@
+$CHECKOUT/PoincareConjecture/.lake/topology-extension-validation/placeholder.lean:147:8: warning: declaration uses `sorry`
+$CHECKOUT/PoincareConjecture/.lake/topology-extension-validation/placeholder.lean:148:0: error: PoincareConjecture.sentinel depends on non-whitelisted axiom sorryAx

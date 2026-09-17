@@ -1,0 +1,15 @@
+{
+  "description": "Exact sources for the constant-positive-curvature component, not the general Poincare theorem",
+  "files": {
+    "PoincareHamilton/RoundQuotient.lean": "c58fbbcd4acf6f05cc4e765e83cedfdc106973eb11c979801e1a0ce1d998b0be",
+    "PoincareHamilton/SimplyConnectedCover.lean": "d8b382e2d98c59f80d704a627bd651204872a77ca5a69dcc06cc593707b63d8b",
+    "PoincareHamilton/SpaceFormAudit.lean": "221fdc5fff4f1ca499f493d74939aecf02e1b54927cef8274064d66da1d62023",
+    "PoincareHamilton/SphericalSpaceForm.lean": "34098f22cf8bf333bcab41b3e3beca84f3d3cf85db6d94e05a25ab6a39f241ea",
+    "PoincareHamilton.lean": "8bda8d0e4c45b36dc602b4c709383788ca80163e27a74bb4f0b733822647ae83",
+    "PoincareHamiltonAudit.lean": "fba14683065e1a1a47c8843045f8ea707de164731b8b7c52318326cf388e0414",
+    "PoincareHamiltonTests.lean": "4228c099da25b5bc20851a19a60b4715431568a40529bab9cc346d23ee9e047e",
+    "lake-manifest.json": "f76e8daebca96550f72f72683244cb2481ffb020b89ab7a99de8862f71d7b619",
+    "lakefile.toml": "c95bebcd592acdbf1e688f91853b996156a9f929e9aaa24947d0fdf777d1801c",
+    "lean-toolchain": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71"
+  }
+}

@@ -1,0 +1,143 @@
+@PoincareScalarFlow.normalized_scalar_lower_bound.{u_1} : ∀ {M : Type u_1} [inst : TopologicalSpace.{u_1} M]
+  [inst_1 : ChartedSpace.{0, u_1} PoincareScalarFlow.Model3 M]
+  [inst_2 :
+    IsManifold.{0, 0, 0, u_1} (modelWithCornersSelf.{0, 0} ℝ (EuclideanSpace.{0, 0} ℝ (Fin 3))) (↑Top.top.{0}) M]
+  [inst_3 : T2Space.{u_1} M] [CompactSpace.{u_1} M] {omega : ℝ} (homega : LT.lt.{0} 0 omega)
+  (S :
+    DifferentialGeometry.PDE.RicciFlow.SolutionOn.{0, 0, u_1}
+      (DifferentialGeometry.Geometry.Curvature.RealTimeInterval.closedOpen 0 omega homega)),
+  DifferentialGeometry.PDE.RicciFlow.IsSolutionOn.{0, 0, u_1} S →
+    (∀ (x : M), LE.le.{0} (-6) (DifferentialGeometry.PDE.RicciFlow.SolutionOn.scalar.{0, 0, u_1} S 0 x)) →
+      ∀ {t : ℝ},
+        LE.le.{0} 0 t →
+          LT.lt.{0} t omega →
+            ∀ (x : M),
+              LE.le.{0} (HDiv.hDiv.{0, 0, 0} (-6) (HAdd.hAdd.{0, 0, 0} 1 (HMul.hMul.{0, 0, 0} 4 t)))
+                (DifferentialGeometry.PDE.RicciFlow.SolutionOn.scalar.{0, 0, u_1} S t x)
+@PoincareScalarFlow.universal_scalar_lower_bound.{u_1} : ∀ {M : Type u_1} [inst : TopologicalSpace.{u_1} M]
+  [inst_1 : ChartedSpace.{0, u_1} PoincareScalarFlow.Model3 M]
+  [inst_2 :
+    IsManifold.{0, 0, 0, u_1} (modelWithCornersSelf.{0, 0} ℝ (EuclideanSpace.{0, 0} ℝ (Fin 3))) (↑Top.top.{0}) M]
+  [inst_3 : T2Space.{u_1} M] [CompactSpace.{u_1} M] {omega : ℝ} (homega : LT.lt.{0} 0 omega)
+  (S :
+    DifferentialGeometry.PDE.RicciFlow.SolutionOn.{0, 0, u_1}
+      (DifferentialGeometry.Geometry.Curvature.RealTimeInterval.closedOpen 0 omega homega)),
+  DifferentialGeometry.PDE.RicciFlow.IsSolutionOn.{0, 0, u_1} S →
+    ∀ {t : ℝ},
+      LT.lt.{0} 0 t →
+        LT.lt.{0} t omega →
+          ∀ (x : M),
+            LE.le.{0} (Neg.neg.{0} (HDiv.hDiv.{0, 0, 0} 3 (HMul.hMul.{0, 0, 0} 2 t)))
+              (DifferentialGeometry.PDE.RicciFlow.SolutionOn.scalar.{0, 0, u_1} S t x)
+@PoincareScalarFlow.normalized_scalar_lower_bound_after_restart : ∀ {M : Type u_1} [inst : TopologicalSpace M]
+  [inst_1 : ChartedSpace PoincareScalarFlow.Model3 M]
+  [inst_2 : IsManifold (modelWithCornersSelf ℝ (EuclideanSpace ℝ (Fin 3))) (↑⊤) M] [inst_3 : T2Space M] [CompactSpace M]
+  {omega : ℝ} (homega : 0 < omega)
+  (S :
+    DifferentialGeometry.PDE.RicciFlow.SolutionOn
+      (DifferentialGeometry.Geometry.Curvature.RealTimeInterval.closedOpen 0 omega homega)),
+  DifferentialGeometry.PDE.RicciFlow.IsSolutionOn S →
+    ∀ {a : ℝ},
+      0 ≤ a →
+        (∀ (x : M), -6 / (1 + 4 * a) ≤ S.scalar 0 x) →
+          ∀ {u : ℝ}, 0 ≤ u → u < omega → ∀ (x : M), -6 / (1 + 4 * (a + u)) ≤ S.scalar u x
+structure DifferentialGeometry.PDE.RicciFlow.IsSolutionOn.{u_1, u_2, u_3} {E : Type u_1} [NormedAddCommGroup E]
+  [NormedSpace ℝ E] [FiniteDimensional ℝ E] {H : Type u_2} [TopologicalSpace H] {I : ModelWithCorners ℝ E H}
+  {M : Type u_3} [TopologicalSpace M] [ChartedSpace H M] [IsManifold I (↑⊤) M] [IsManifold I 1 M] [CompleteSpace E]
+  [T2Space M] {D : DifferentialGeometry.Geometry.Curvature.RealTimeInterval}
+  (S : DifferentialGeometry.PDE.RicciFlow.SolutionOn D) : Prop
+number of parameters: 16
+fields:
+  DifferentialGeometry.PDE.RicciFlow.IsSolutionOn.smoothMetric : DifferentialGeometry.Geometry.Curvature.MetricFamilySmoothOn
+      D S.family.metric
+  DifferentialGeometry.PDE.RicciFlow.IsSolutionOn.smoothConnection : DifferentialGeometry.Geometry.Connection.ConnectionFamilySmoothOn
+      S.family
+  DifferentialGeometry.PDE.RicciFlow.IsSolutionOn.equation : DifferentialGeometry.PDE.RicciFlow.MetricVariationEquationOn
+      S
+  DifferentialGeometry.PDE.RicciFlow.IsSolutionOn.scalarCont : ContinuousOn (fun q => S.scalar q.1 q.2)
+      (D.carrier ×ˢ Set.univ)
+  DifferentialGeometry.PDE.RicciFlow.IsSolutionOn.scalarTime : ∀ {K : Set ℝ} {t : ℝ},
+      t ∈ K → K ⊆ D.carrier → ∀ (x : M), DifferentiableWithinAt ℝ (fun s => S.scalar s x) K t
+  DifferentialGeometry.PDE.RicciFlow.IsSolutionOn.ricciCont : DifferentialGeometry.Geometry.Curvature.tensor0SFamilyContinuousOnSet
+      2 D.carrier fun t x => (S.ricci t) x
+  DifferentialGeometry.PDE.RicciFlow.IsSolutionOn.rm04Cont : DifferentialGeometry.Geometry.Curvature.tensor0SFamilyContinuousOnSet
+      4 D.carrier fun t x => (S.base.rm04 t) x
+  DifferentialGeometry.PDE.RicciFlow.IsSolutionOn.ricciNormSpace : ∀ t ∈ D.carrier,
+      ∀ (x : M), MDiffAt (DifferentialGeometry.PDE.RicciFlow.ricciNorm S t) x
+  DifferentialGeometry.PDE.RicciFlow.IsSolutionOn.ricciNormGrad : ∀ t ∈ D.carrier,
+      ∀ (x : M),
+        (MDiffAt fun y =>
+            ⟨y,
+              DifferentialGeometry.Geometry.Operator.gradientFun (S.family.metric t)
+                (DifferentialGeometry.PDE.RicciFlow.ricciNorm S t) y⟩)
+          x
+constructor:
+  DifferentialGeometry.PDE.RicciFlow.IsSolutionOn.mk.{u_1, u_2, u_3} {E : Type u_1} [NormedAddCommGroup E]
+    [NormedSpace ℝ E] [FiniteDimensional ℝ E] {H : Type u_2} [TopologicalSpace H] {I : ModelWithCorners ℝ E H}
+    {M : Type u_3} [TopologicalSpace M] [ChartedSpace H M] [IsManifold I (↑⊤) M] [IsManifold I 1 M] [CompleteSpace E]
+    [T2Space M] {D : DifferentialGeometry.Geometry.Curvature.RealTimeInterval}
+    {S : DifferentialGeometry.PDE.RicciFlow.SolutionOn D}
+    (smoothMetric : DifferentialGeometry.Geometry.Curvature.MetricFamilySmoothOn D S.family.metric)
+    (smoothConnection : DifferentialGeometry.Geometry.Connection.ConnectionFamilySmoothOn S.family)
+    (equation : DifferentialGeometry.PDE.RicciFlow.MetricVariationEquationOn S)
+    (scalarCont : ContinuousOn (fun q => S.scalar q.1 q.2) (D.carrier ×ˢ Set.univ))
+    (scalarTime :
+      ∀ {K : Set ℝ} {t : ℝ}, t ∈ K → K ⊆ D.carrier → ∀ (x : M), DifferentiableWithinAt ℝ (fun s => S.scalar s x) K t)
+    (ricciCont :
+      DifferentialGeometry.Geometry.Curvature.tensor0SFamilyContinuousOnSet 2 D.carrier fun t x => (S.ricci t) x)
+    (rm04Cont :
+      DifferentialGeometry.Geometry.Curvature.tensor0SFamilyContinuousOnSet 4 D.carrier fun t x => (S.base.rm04 t) x)
+    (ricciNormSpace : ∀ t ∈ D.carrier, ∀ (x : M), MDiffAt (DifferentialGeometry.PDE.RicciFlow.ricciNorm S t) x)
+    (ricciNormGrad :
+      ∀ t ∈ D.carrier,
+        ∀ (x : M),
+          (MDiffAt fun y =>
+              ⟨y,
+                DifferentialGeometry.Geometry.Operator.gradientFun (S.family.metric t)
+                  (DifferentialGeometry.PDE.RicciFlow.ricciNorm S t) y⟩)
+            x) :
+    DifferentialGeometry.PDE.RicciFlow.IsSolutionOn S
+def DifferentialGeometry.PDE.RicciFlow.SolutionOn.scalar.{u_1, u_2, u_3} : {E : Type u_1} →
+  [inst : NormedAddCommGroup E] →
+    [inst_1 : NormedSpace ℝ E] →
+      [FiniteDimensional ℝ E] →
+        {H : Type u_2} →
+          [inst_3 : TopologicalSpace H] →
+            {I : ModelWithCorners ℝ E H} →
+              {M : Type u_3} →
+                [inst_4 : TopologicalSpace M] →
+                  [inst_5 : ChartedSpace H M] →
+                    [inst_6 : IsManifold I (↑⊤) M] →
+                      [IsManifold I 1 M] →
+                        [CompleteSpace E] →
+                          {D : DifferentialGeometry.Geometry.Curvature.RealTimeInterval} →
+                            DifferentialGeometry.PDE.RicciFlow.SolutionOn D → ℝ → M → ℝ :=
+fun {E} [NormedAddCommGroup E] [NormedSpace ℝ E] [FiniteDimensional ℝ E] {H} [TopologicalSpace H] {I} {M}
+    [TopologicalSpace M] [ChartedSpace H M] [IsManifold I (↑⊤) M] [IsManifold I 1 M] [CompleteSpace E] {D} S =>
+  S.base.scalar
+def DifferentialGeometry.PDE.RicciFlow.SolutionFamily.scalar.{u_1, u_2, u_3} : {E : Type u_1} →
+  [inst : NormedAddCommGroup E] →
+    [inst_1 : NormedSpace ℝ E] →
+      [FiniteDimensional ℝ E] →
+        {H : Type u_2} →
+          [inst_3 : TopologicalSpace H] →
+            {I : ModelWithCorners ℝ E H} →
+              {M : Type u_3} →
+                [inst_4 : TopologicalSpace M] →
+                  [inst_5 : ChartedSpace H M] →
+                    [inst_6 : IsManifold I (↑⊤) M] →
+                      [IsManifold I 1 M] →
+                        [CompleteSpace E] → DifferentialGeometry.PDE.RicciFlow.SolutionFamily → ℝ → M → ℝ :=
+fun {E} [NormedAddCommGroup E] [NormedSpace ℝ E] [FiniteDimensional ℝ E] {H} [TopologicalSpace H] {I} {M}
+    [TopologicalSpace M] [ChartedSpace H M] [IsManifold I (↑⊤) M] [IsManifold I 1 M] [CompleteSpace E] G t x =>
+  DifferentialGeometry.Geometry.Curvature.metricScalarAt (G.metric t) x
+def PoincareScalarFlow.metricConnectionFamily.{u_1} : {M : Type u_1} →
+  [inst : TopologicalSpace M] →
+    [inst_1 : ChartedSpace PoincareScalarFlow.Model3 M] →
+      [inst_2 : IsManifold (modelWithCornersSelf ℝ (EuclideanSpace ℝ (Fin 3))) (↑⊤) M] →
+        {D : DifferentialGeometry.Geometry.Curvature.RealTimeInterval} →
+          DifferentialGeometry.PDE.RicciFlow.SolutionOn D →
+            DifferentialGeometry.Geometry.Curvature.MetricConnectionFamily ℝ :=
+fun {M} [TopologicalSpace M] [ChartedSpace PoincareScalarFlow.Model3 M]
+    [IsManifold (modelWithCornersSelf ℝ (EuclideanSpace ℝ (Fin 3))) (↑⊤) M] {D} S =>
+  { metric := S.base.metric, connection := S.base.connection, metricCompatible := ⋯ }

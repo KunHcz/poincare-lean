@@ -1,0 +1,15 @@
+{
+  "scope": "Positive-Ricci smooth three-manifold case, not unrestricted topological Poincare",
+  "files": {
+    "PoincareHamilton.lean": "e9b04c8eea944b4f59475b621a2682b0d58159fbac34fae6cbdd5cc95655d974",
+    "PoincareHamiltonTests.lean": "89a70c3db653037152bb6b3fd86ce3b1999b4a3007d7bbf2c10cc0c65a89ad1e",
+    "PoincareHamiltonAudit.lean": "4021704ad78718325f82f967a03f65d96ab80634ae1ff3e565a1b5c5e38d1bfb",
+    "PoincareHamilton/SimplyConnectedCover.lean": "d8b382e2d98c59f80d704a627bd651204872a77ca5a69dcc06cc593707b63d8b",
+    "PoincareHamilton/RoundQuotient.lean": "c58fbbcd4acf6f05cc4e765e83cedfdc106973eb11c979801e1a0ce1d998b0be",
+    "PoincareHamilton/SphericalSpaceForm.lean": "34098f22cf8bf333bcab41b3e3beca84f3d3cf85db6d94e05a25ab6a39f241ea",
+    "PoincareHamilton/PositiveRicci.lean": "ace1bc7f16565a4a19b803edab67aa9fe2ce0d60cd08e32558416ad1cf0fa61f",
+    "lakefile.toml": "466ae28e54ed4298f481ef5ccf02321f13a82591cedf4b2d18158aa3b13d081b",
+    "lake-manifest.json": "10b48fcd7618cc44439f0b072f7fbd11883a3bc43b762a4797320600ac93fdb9",
+    "lean-toolchain": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71"
+  }
+}

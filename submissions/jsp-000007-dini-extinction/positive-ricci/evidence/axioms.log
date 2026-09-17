@@ -1,0 +1,6 @@
+'DifferentialGeometry.PDE.RicciFlow.HamiltonPositiveRicci.hamilton_positive_ricci' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PoincareHamilton.positiveRicci_poincare' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareHamiltonTests.literal_positive_ricci_endpoint' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareHamiltonTests.literal_positive_ricci_homeomorph' depends on axioms: [propext, Classical.choice, Quot.sound]

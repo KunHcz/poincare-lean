@@ -1,0 +1,1 @@
+$CHECKOUT/PoincareConjecture/.lake/topology-extension-validation/extra_axiom.lean:148:0: error: PoincareConjecture.sentinel depends on non-whitelisted axiom PoincareConjecture.sentinel

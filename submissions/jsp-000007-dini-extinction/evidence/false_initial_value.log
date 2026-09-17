@@ -1,0 +1,9 @@
+$PROJECT/.lake/validation/false_initial_value.lean:3:2: error: Type mismatch: After simplification, term
+  PoincareConjecture.extinctionBarrier_initial
+    (Mathlib.Meta.NormNum.isNat_le_true (Mathlib.Meta.NormNum.isNat_ofNat ℝ Nat.cast_zero)
+      (Mathlib.Meta.NormNum.isNat_ofNat ℝ Nat.cast_zero) (Eq.refl true))
+    0
+ has type
+  PoincareConjecture.extinctionBarrier 0 0 0 = 0
+but is expected to have type
+  PoincareConjecture.extinctionBarrier 0 0 0 = 1

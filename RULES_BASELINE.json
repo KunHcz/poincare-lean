@@ -1,0 +1,23 @@
+{
+  "repository": "TheJustinSunPrize/awards",
+  "commit": "82be4c4913b8fe394d68d1391f4c221fde947211",
+  "files": {
+    "CONTRIBUTING.md": {
+      "sha256": "4c5aa9872ff82379a601a8ec752cb68b5d71bcc7523b5d76e5cd60b173728d4f",
+      "url": "https://github.com/TheJustinSunPrize/awards/blob/82be4c4913b8fe394d68d1391f4c221fde947211/CONTRIBUTING.md"
+    },
+    ".github/PULL_REQUEST_TEMPLATE.md": {
+      "sha256": "a82d4c2d208d1fb8efb3a4830b3d7bc509390c3610a679ddac890527b43a5fc9",
+      "url": "https://github.com/TheJustinSunPrize/awards/blob/82be4c4913b8fe394d68d1391f4c221fde947211/.github/PULL_REQUEST_TEMPLATE.md"
+    }
+  },
+  "complete_original_problem_required": true,
+  "proof_source_in_awards_repository_allowed": false,
+  "allowed_awards_edits": [
+    "Current status",
+    "Lean proof",
+    "Attribution basis",
+    "Publication details"
+  ],
+  "current_work_eligible_as_complete_submission": false
+}

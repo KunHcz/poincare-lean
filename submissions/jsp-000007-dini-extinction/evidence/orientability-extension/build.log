@@ -1,0 +1,5 @@
+⚠ [3504/3515] Replayed HatcherLib.Ch1.Circle
+warning: HatcherLib/Ch1/Circle.lean:38:0: Definition `unitCircleCov` is a proposition; use `theorem` instead of `def`
+
+Note: This linter can be disabled with `set_option linter.defProp false`
+Build completed successfully (3515 jobs).

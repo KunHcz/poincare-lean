@@ -1,0 +1,281 @@
+{
+  "status": "PASS",
+  "base_commit": "f4e7173d89dfe91022a185427d63452c8ffbf6ae",
+  "repository_checks": [
+    {
+      "command": [
+        "python",
+        "scripts/manage.py",
+        "validate"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "python",
+        "scripts/manage.py",
+        "links"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "python",
+        "scripts/manage.py",
+        "build"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "python",
+        "scripts/manage.py",
+        "check"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "python",
+        "scripts/manage.py",
+        "history",
+        "--base",
+        "f4e7173d89dfe91022a185427d63452c8ffbf6ae"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "exit_code": 0
+    }
+  ],
+  "repository_tests": 22,
+  "verifier_tests": 7,
+  "local_links": [
+    {
+      "document": "submissions/jsp-000007-dini-extinction/constant-curvature/README.md",
+      "target": "PoincareHamilton/SphericalSpaceForm.lean"
+    },
+    {
+      "document": "submissions/jsp-000007-dini-extinction/constant-curvature/README.md",
+      "target": "PoincareHamiltonTests.lean"
+    },
+    {
+      "document": "submissions/jsp-000007-dini-extinction/constant-curvature/README.md",
+      "target": "PoincareHamilton/RoundQuotient.lean"
+    },
+    {
+      "document": "submissions/jsp-000007-dini-extinction/constant-curvature/README.md",
+      "target": "lake-manifest.json"
+    },
+    {
+      "document": "submissions/jsp-000007-dini-extinction/constant-curvature/README.md",
+      "target": "source-manifest.json"
+    },
+    {
+      "document": "submissions/jsp-000007-dini-extinction/constant-curvature/README.md",
+      "target": "evidence/verification.json"
+    },
+    {
+      "document": "submissions/jsp-000007-dini-extinction/constant-curvature/README.md",
+      "target": "NOTICE"
+    },
+    {
+      "document": "submissions/jsp-000007-dini-extinction/README.md",
+      "target": "TOPOLOGY_EXTENSION.md"
+    },
+    {
+      "document": "submissions/jsp-000007-dini-extinction/README.md",
+      "target": "constant-curvature/README.md"
+    },
+    {
+      "document": "submissions/jsp-000007-dini-extinction/README.md",
+      "target": "../../problems/catalog-0001-0100.md#JSP-000007"
+    },
+    {
+      "document": "submissions/jsp-000007-dini-extinction/README.md",
+      "target": "STATEMENT.md"
+    },
+    {
+      "document": "submissions/jsp-000007-dini-extinction/README.md",
+      "target": "verification-config.json"
+    },
+    {
+      "document": "submissions/jsp-000007-dini-extinction/README.md",
+      "target": "evidence/verification.json"
+    },
+    {
+      "document": "submissions/jsp-000007-dini-extinction/README.md",
+      "target": "evidence/axioms.log"
+    },
+    {
+      "document": "submissions/jsp-000007-dini-extinction/README.md",
+      "target": "PRIOR_ART.md"
+    },
+    {
+      "document": "submissions/jsp-000007-dini-extinction/README.md",
+      "target": "LICENSE"
+    },
+    {
+      "document": "submissions/jsp-000007-dini-extinction/README.md",
+      "target": "NOTICE"
+    },
+    {
+      "document": "submissions/jsp-000007-dini-extinction/README.md",
+      "target": "../../LICENSE-CONTENT"
+    }
+  ],
+  "public_files": [
+    {
+      "path": "source-manifest.json",
+      "bytes": 1165,
+      "sha256": "468cfee77ddd04921de85c9d847f0a6d46291e6827281fbb5abe2aa9d13a5d83"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 11357,
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "path": "lean-toolchain",
+      "bytes": 25,
+      "sha256": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71"
+    },
+    {
+      "path": "NOTICE",
+      "bytes": 916,
+      "sha256": "b4abf8a9fc63ab3c3fbf584eab10ec23e57a6f824a048271e9775fb92a340aaf"
+    },
+    {
+      "path": "README.md",
+      "bytes": 5916,
+      "sha256": "ea99797ebe987269a69e520bedb3f6ff5004c4f72549d3930e1af5489e53facc"
+    },
+    {
+      "path": "lake-manifest.json",
+      "bytes": 3941,
+      "sha256": "f76e8daebca96550f72f72683244cb2481ffb020b89ab7a99de8862f71d7b619"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 41,
+      "sha256": "0386ec6b1aacf84c044544c3a2f6570ade328967d4f2d7959bff498c2fd7638b"
+    },
+    {
+      "path": "lakefile.toml",
+      "bytes": 453,
+      "sha256": "c95bebcd592acdbf1e688f91853b996156a9f929e9aaa24947d0fdf777d1801c"
+    },
+    {
+      "path": "PoincareHamiltonTests.lean",
+      "bytes": 2599,
+      "sha256": "4228c099da25b5bc20851a19a60b4715431568a40529bab9cc346d23ee9e047e"
+    },
+    {
+      "path": "PoincareHamilton.lean",
+      "bytes": 43,
+      "sha256": "8bda8d0e4c45b36dc602b4c709383788ca80163e27a74bb4f0b733822647ae83"
+    },
+    {
+      "path": "PoincareHamiltonAudit.lean",
+      "bytes": 1100,
+      "sha256": "fba14683065e1a1a47c8843045f8ea707de164731b8b7c52318326cf388e0414"
+    },
+    {
+      "path": "evidence/placeholder.log",
+      "bytes": 477,
+      "sha256": "7736fb4fed4d3f1a82114960f774820186f57953a33183045c1739e032a0a69e"
+    },
+    {
+      "path": "evidence/missing_simple_connectivity.log",
+      "bytes": 294,
+      "sha256": "7a15b1bce7724b25aac875168d3b9e51f57af9e51fed2e83e71e048e33546bfb"
+    },
+    {
+      "path": "evidence/missing_curvature.log",
+      "bytes": 535,
+      "sha256": "ca6263ebc23fea614ef2d44d0490d3f311df4d5b1380565b766ce062edc17335"
+    },
+    {
+      "path": "evidence/repository-checks.log",
+      "bytes": 2855,
+      "sha256": "1d8ed2433e6fcd36f129a6badc3029c8dc584386b0ff8b246c946ac104258ab2"
+    },
+    {
+      "path": "evidence/kernel-replay.log",
+      "bytes": 45,
+      "sha256": "e9dca0b94bba2e74d73254a979ff4c08342293fc9e70a47e3762a3ec74ae55b1"
+    },
+    {
+      "path": "evidence/axioms.log",
+      "bytes": 1059,
+      "sha256": "0fd0951bfbb823fd10ccc20761ca695b38d9b7b900fb9fc08815548434ccb256"
+    },
+    {
+      "path": "evidence/verification.json",
+      "bytes": 4943,
+      "sha256": "6cc47ae1da7645d2d9180699c93316ac2e2d39eca7829d3019c16224ec667cad"
+    },
+    {
+      "path": "evidence/verifier-tests.log",
+      "bytes": 609,
+      "sha256": "6ae4f30be7f171a4a7e543bb981639d96816ae44e85b3409d84b3d6d4fbf532e"
+    },
+    {
+      "path": "evidence/extra_axiom.log",
+      "bytes": 410,
+      "sha256": "7b72ec9a2707954765f8c9ce07ce0c770a3254c91e49fafe96fd7a8709059d48"
+    },
+    {
+      "path": "evidence/build.log",
+      "bytes": 1678,
+      "sha256": "9d9ab07a46832e10cf05390452aaa41c2ae82c42c535a4b8725b4dcc536ada07"
+    },
+    {
+      "path": "PoincareHamilton/RoundQuotient.lean",
+      "bytes": 5180,
+      "sha256": "c58fbbcd4acf6f05cc4e765e83cedfdc106973eb11c979801e1a0ce1d998b0be"
+    },
+    {
+      "path": "PoincareHamilton/SpaceFormAudit.lean",
+      "bytes": 1324,
+      "sha256": "221fdc5fff4f1ca499f493d74939aecf02e1b54927cef8274064d66da1d62023"
+    },
+    {
+      "path": "PoincareHamilton/SimplyConnectedCover.lean",
+      "bytes": 2802,
+      "sha256": "d8b382e2d98c59f80d704a627bd651204872a77ca5a69dcc06cc593707b63d8b"
+    },
+    {
+      "path": "PoincareHamilton/SphericalSpaceForm.lean",
+      "bytes": 2641,
+      "sha256": "34098f22cf8bf333bcab41b3e3beca84f3d3cf85db6d94e05a25ab6a39f241ea"
+    },
+    {
+      "path": "scripts/test_verify.py",
+      "bytes": 1355,
+      "sha256": "4f17ceb321f4fbd335822b437376589905986d25181138849177f90a2936e6eb"
+    },
+    {
+      "path": "scripts/verify.py",
+      "bytes": 9109,
+      "sha256": "0d88d7dedc66b48c70369f7e5fecbfc5537676c89c970b551c12f0221bfe6a76"
+    }
+  ],
+  "official_records_changed": false,
+  "retained_source_formatting": [
+    {
+      "path": "submissions/jsp-000007-dini-extinction/constant-curvature/PoincareHamilton/SpaceFormAudit.lean",
+      "diagnostic": "new blank line at EOF",
+      "reason": "Preserved exact bytes of the previously kernel-verified prototype audit; no other whitespace errors accepted."
+    }
+  ]
+}

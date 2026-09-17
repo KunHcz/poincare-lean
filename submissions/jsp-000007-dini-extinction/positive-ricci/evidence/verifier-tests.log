@@ -1,0 +1,11 @@
+test_duplicate_rejected (test_verify.PositiveRicciVerifierTests.test_duplicate_rejected) ... ok
+test_extra_lean_file_rejected (test_verify.PositiveRicciVerifierTests.test_extra_lean_file_rejected) ... ok
+test_local_dependency_rejected (test_verify.PositiveRicciVerifierTests.test_local_dependency_rejected) ... ok
+test_nonstandard_axiom_rejected (test_verify.PositiveRicciVerifierTests.test_nonstandard_axiom_rejected) ... ok
+test_standard_axioms (test_verify.PositiveRicciVerifierTests.test_standard_axioms) ... ok
+test_wrong_source_hash_rejected (test_verify.PositiveRicciVerifierTests.test_wrong_source_hash_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.002s
+
+OK

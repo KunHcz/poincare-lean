@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "exit_code": 0,
+  "command": "lake env lean .lake/statement-review/Statements.lean",
+  "scope": "Actual elaborated endpoint hypotheses, original metric PDE predicate and canonical scalar definition; not independent human review",
+  "log_sha256": "97f7258333fd8458f5cba0813e9291b56885755278d103ec221d098a25ed291f",
+  "source_sha256": "35ec2ab51d0b285c330dddf8fdfb47194c67c79e0b0ba0ef52c9d9888e54b5d8"
+}

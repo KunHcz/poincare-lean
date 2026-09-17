@@ -1,0 +1,484 @@
+{
+  "source_repository": "https://github.com/KunHcz/awards",
+  "source_branch": "feat/jsp-000007-dini-extinction",
+  "source_commit": "2e5df508d0fc71da3e1f65b9557567e2160c72f2",
+  "copied_tracked_files": {
+    "submissions/jsp-000007-dini-extinction/.gitignore": {
+      "sha256": "0386ec6b1aacf84c044544c3a2f6570ade328967d4f2d7959bff498c2fd7638b",
+      "bytes": 41
+    },
+    "submissions/jsp-000007-dini-extinction/LICENSE": {
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "bytes": 11358
+    },
+    "submissions/jsp-000007-dini-extinction/NOTICE": {
+      "sha256": "f2c417667c0f27b822a0de3cd362e8d446db40049a2ae6d7016947991b10a157",
+      "bytes": 812
+    },
+    "submissions/jsp-000007-dini-extinction/ORIENTABILITY_EXTENSION.md": {
+      "sha256": "aaa444f492d80ef24dc0aa2dd857f91558d20e605fe6ffe9b631ddfcdf121a8f",
+      "bytes": 4945
+    },
+    "submissions/jsp-000007-dini-extinction/PRIOR_ART.md": {
+      "sha256": "4e733cd20b291a6efda6dd35faa2d136b3172f62f7a701a044feb925c84702e3",
+      "bytes": 3096
+    },
+    "submissions/jsp-000007-dini-extinction/PoincareConjecture.lean": {
+      "sha256": "18f99c186eed3b2d5eeb383a76a1d00797e83e5c2abecfe46bb340d5b4b46ee4",
+      "bytes": 189
+    },
+    "submissions/jsp-000007-dini-extinction/PoincareConjecture/Analysis/FiniteJumps.lean": {
+      "sha256": "aa91ba4933600aa0a41951bddea02fc5c7b6a055587e47e209673111d3a841fb",
+      "bytes": 5103
+    },
+    "submissions/jsp-000007-dini-extinction/PoincareConjecture/Analysis/RightDini.lean": {
+      "sha256": "c776deff80c6143ca9c12539b46fc3d6cc490f33b497d1ec4982fc5f324b6fff",
+      "bytes": 5939
+    },
+    "submissions/jsp-000007-dini-extinction/PoincareConjecture/Basic.lean": {
+      "sha256": "6353eab34145af3cf95c81f236bdb2e211051e642083a1e13404ec07362da085",
+      "bytes": 283
+    },
+    "submissions/jsp-000007-dini-extinction/PoincareConjecture/Extinction/ScalarBarrier.lean": {
+      "sha256": "27decd1e28d891b7be74b7971a2159195cc1e4221066fd62413202cb9364b2c6",
+      "bytes": 7681
+    },
+    "submissions/jsp-000007-dini-extinction/PoincareConjectureTests.lean": {
+      "sha256": "bada39364ad487ff88db018235a60365b54b9dc148f98247669eb5c6ce1f0e06",
+      "bytes": 6610
+    },
+    "submissions/jsp-000007-dini-extinction/README.md": {
+      "sha256": "0898ddca1ee75137dae35413a284c070adfb2e8ad058ed463aac522bfc2bb84c",
+      "bytes": 7043
+    },
+    "submissions/jsp-000007-dini-extinction/STATEMENT.md": {
+      "sha256": "44110d9ffd4d4c4b589f535d33826e526e13fd5676e061a004fb631297f8e15d",
+      "bytes": 5123
+    },
+    "submissions/jsp-000007-dini-extinction/TOPOLOGY_EXTENSION.md": {
+      "sha256": "251d576102cb12c79faea2f31695ef18babf16d0838213c989ba22c93f773790",
+      "bytes": 6903
+    },
+    "submissions/jsp-000007-dini-extinction/constant-curvature/.gitignore": {
+      "sha256": "0386ec6b1aacf84c044544c3a2f6570ade328967d4f2d7959bff498c2fd7638b",
+      "bytes": 41
+    },
+    "submissions/jsp-000007-dini-extinction/constant-curvature/LICENSE": {
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "bytes": 11357
+    },
+    "submissions/jsp-000007-dini-extinction/constant-curvature/NOTICE": {
+      "sha256": "b4abf8a9fc63ab3c3fbf584eab10ec23e57a6f824a048271e9775fb92a340aaf",
+      "bytes": 916
+    },
+    "submissions/jsp-000007-dini-extinction/constant-curvature/PoincareHamilton.lean": {
+      "sha256": "8bda8d0e4c45b36dc602b4c709383788ca80163e27a74bb4f0b733822647ae83",
+      "bytes": 43
+    },
+    "submissions/jsp-000007-dini-extinction/constant-curvature/PoincareHamilton/RoundQuotient.lean": {
+      "sha256": "c58fbbcd4acf6f05cc4e765e83cedfdc106973eb11c979801e1a0ce1d998b0be",
+      "bytes": 5180
+    },
+    "submissions/jsp-000007-dini-extinction/constant-curvature/PoincareHamilton/SimplyConnectedCover.lean": {
+      "sha256": "d8b382e2d98c59f80d704a627bd651204872a77ca5a69dcc06cc593707b63d8b",
+      "bytes": 2802
+    },
+    "submissions/jsp-000007-dini-extinction/constant-curvature/PoincareHamilton/SpaceFormAudit.lean": {
+      "sha256": "221fdc5fff4f1ca499f493d74939aecf02e1b54927cef8274064d66da1d62023",
+      "bytes": 1324
+    },
+    "submissions/jsp-000007-dini-extinction/constant-curvature/PoincareHamilton/SphericalSpaceForm.lean": {
+      "sha256": "34098f22cf8bf333bcab41b3e3beca84f3d3cf85db6d94e05a25ab6a39f241ea",
+      "bytes": 2641
+    },
+    "submissions/jsp-000007-dini-extinction/constant-curvature/PoincareHamiltonAudit.lean": {
+      "sha256": "fba14683065e1a1a47c8843045f8ea707de164731b8b7c52318326cf388e0414",
+      "bytes": 1100
+    },
+    "submissions/jsp-000007-dini-extinction/constant-curvature/PoincareHamiltonTests.lean": {
+      "sha256": "4228c099da25b5bc20851a19a60b4715431568a40529bab9cc346d23ee9e047e",
+      "bytes": 2599
+    },
+    "submissions/jsp-000007-dini-extinction/constant-curvature/README.md": {
+      "sha256": "ea99797ebe987269a69e520bedb3f6ff5004c4f72549d3930e1af5489e53facc",
+      "bytes": 5916
+    },
+    "submissions/jsp-000007-dini-extinction/constant-curvature/evidence/axioms.log": {
+      "sha256": "0fd0951bfbb823fd10ccc20761ca695b38d9b7b900fb9fc08815548434ccb256",
+      "bytes": 1059
+    },
+    "submissions/jsp-000007-dini-extinction/constant-curvature/evidence/build.log": {
+      "sha256": "9d9ab07a46832e10cf05390452aaa41c2ae82c42c535a4b8725b4dcc536ada07",
+      "bytes": 1678
+    },
+    "submissions/jsp-000007-dini-extinction/constant-curvature/evidence/extra_axiom.log": {
+      "sha256": "7b72ec9a2707954765f8c9ce07ce0c770a3254c91e49fafe96fd7a8709059d48",
+      "bytes": 410
+    },
+    "submissions/jsp-000007-dini-extinction/constant-curvature/evidence/kernel-replay.log": {
+      "sha256": "e9dca0b94bba2e74d73254a979ff4c08342293fc9e70a47e3762a3ec74ae55b1",
+      "bytes": 45
+    },
+    "submissions/jsp-000007-dini-extinction/constant-curvature/evidence/missing_curvature.log": {
+      "sha256": "ca6263ebc23fea614ef2d44d0490d3f311df4d5b1380565b766ce062edc17335",
+      "bytes": 535
+    },
+    "submissions/jsp-000007-dini-extinction/constant-curvature/evidence/missing_simple_connectivity.log": {
+      "sha256": "7a15b1bce7724b25aac875168d3b9e51f57af9e51fed2e83e71e048e33546bfb",
+      "bytes": 294
+    },
+    "submissions/jsp-000007-dini-extinction/constant-curvature/evidence/package-checks.json": {
+      "sha256": "5e636858979923cabd6d597734357199288b40619a9678f05497e3725c68acd3",
+      "bytes": 8079
+    },
+    "submissions/jsp-000007-dini-extinction/constant-curvature/evidence/placeholder.log": {
+      "sha256": "7736fb4fed4d3f1a82114960f774820186f57953a33183045c1739e032a0a69e",
+      "bytes": 477
+    },
+    "submissions/jsp-000007-dini-extinction/constant-curvature/evidence/repository-checks.log": {
+      "sha256": "1d8ed2433e6fcd36f129a6badc3029c8dc584386b0ff8b246c946ac104258ab2",
+      "bytes": 2855
+    },
+    "submissions/jsp-000007-dini-extinction/constant-curvature/evidence/verification.json": {
+      "sha256": "6cc47ae1da7645d2d9180699c93316ac2e2d39eca7829d3019c16224ec667cad",
+      "bytes": 4943
+    },
+    "submissions/jsp-000007-dini-extinction/constant-curvature/evidence/verifier-tests.log": {
+      "sha256": "6ae4f30be7f171a4a7e543bb981639d96816ae44e85b3409d84b3d6d4fbf532e",
+      "bytes": 609
+    },
+    "submissions/jsp-000007-dini-extinction/constant-curvature/lake-manifest.json": {
+      "sha256": "f76e8daebca96550f72f72683244cb2481ffb020b89ab7a99de8862f71d7b619",
+      "bytes": 3941
+    },
+    "submissions/jsp-000007-dini-extinction/constant-curvature/lakefile.toml": {
+      "sha256": "c95bebcd592acdbf1e688f91853b996156a9f929e9aaa24947d0fdf777d1801c",
+      "bytes": 453
+    },
+    "submissions/jsp-000007-dini-extinction/constant-curvature/lean-toolchain": {
+      "sha256": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
+      "bytes": 25
+    },
+    "submissions/jsp-000007-dini-extinction/constant-curvature/scripts/test_verify.py": {
+      "sha256": "4f17ceb321f4fbd335822b437376589905986d25181138849177f90a2936e6eb",
+      "bytes": 1355
+    },
+    "submissions/jsp-000007-dini-extinction/constant-curvature/scripts/verify.py": {
+      "sha256": "0d88d7dedc66b48c70369f7e5fecbfc5537676c89c970b551c12f0221bfe6a76",
+      "bytes": 9109
+    },
+    "submissions/jsp-000007-dini-extinction/constant-curvature/source-manifest.json": {
+      "sha256": "468cfee77ddd04921de85c9d847f0a6d46291e6827281fbb5abe2aa9d13a5d83",
+      "bytes": 1165
+    },
+    "submissions/jsp-000007-dini-extinction/evidence/axioms.log": {
+      "sha256": "7c5fb9d3c6938be3f944ee7c084f88c4773509a5fdcd512d28353952740aee6f",
+      "bytes": 1598
+    },
+    "submissions/jsp-000007-dini-extinction/evidence/build.log": {
+      "sha256": "f2e49bbd0d5194ab6514bd82681402975ac026f7b4b3ec452948030a5457c953",
+      "bytes": 406
+    },
+    "submissions/jsp-000007-dini-extinction/evidence/extra_axiom.log": {
+      "sha256": "495efc3c0c90497fd7dbb0d5e1af1b2290314baf4f91f0f4ac9241d41a481a30",
+      "bytes": 156
+    },
+    "submissions/jsp-000007-dini-extinction/evidence/false_initial_value.log": {
+      "sha256": "b24bebe2472ade1afb523c8c64e30da49ec15c5c8fea600485955af041f75ece",
+      "bytes": 463
+    },
+    "submissions/jsp-000007-dini-extinction/evidence/kernel-replay.log": {
+      "sha256": "e1be273c7ddb774b93921861275060838bf8a91a6374961c9662999fa151d246",
+      "bytes": 47
+    },
+    "submissions/jsp-000007-dini-extinction/evidence/orientability-extension/axioms.log": {
+      "sha256": "1611458fd82f5df19a518ba979703128b05cddae514d43576fcccc7aeb3ee991",
+      "bytes": 6762
+    },
+    "submissions/jsp-000007-dini-extinction/evidence/orientability-extension/build.log": {
+      "sha256": "7251b120d10a0508ecdeddf4e6ac0775242b3847953a1367c8f7fa08d2cd9e28",
+      "bytes": 281
+    },
+    "submissions/jsp-000007-dini-extinction/evidence/orientability-extension/dependency-setup.log": {
+      "sha256": "f136cb28817407c2094760c11bd66df4871adcedb7e2f517c908549a6c6c705e",
+      "bytes": 138
+    },
+    "submissions/jsp-000007-dini-extinction/evidence/orientability-extension/extra_axiom.log": {
+      "sha256": "1bcc73089699d2a12c7b1a9416be393ef3145458d3f975ba04b682f5b5e45cf4",
+      "bytes": 212
+    },
+    "submissions/jsp-000007-dini-extinction/evidence/orientability-extension/kernel-replay.log": {
+      "sha256": "e1be273c7ddb774b93921861275060838bf8a91a6374961c9662999fa151d246",
+      "bytes": 47
+    },
+    "submissions/jsp-000007-dini-extinction/evidence/orientability-extension/no_sign_reversal.log": {
+      "sha256": "2ab9ea9bcf9cbd4ea021efd6d47203c2210745cee60b6b9a7d3d9e470566f73c",
+      "bytes": 6867
+    },
+    "submissions/jsp-000007-dini-extinction/evidence/orientability-extension/package-checks.json": {
+      "sha256": "901b45cd9d586cb08ea3f831dbbf7369ebadd18db41b33d280552ff48f751c20",
+      "bytes": 1576
+    },
+    "submissions/jsp-000007-dini-extinction/evidence/orientability-extension/placeholder.log": {
+      "sha256": "00bded0313be9227c7d870fa42ef81cf958c747e2664da78762603d64c7273a0",
+      "bytes": 309
+    },
+    "submissions/jsp-000007-dini-extinction/evidence/orientability-extension/removed_simple_connectivity.log": {
+      "sha256": "b3f6ca8d220a1ae79896d1168dc8ddf41f950364a586ad4c04d277be2e65585c",
+      "bytes": 849
+    },
+    "submissions/jsp-000007-dini-extinction/evidence/orientability-extension/repository-checks.log": {
+      "sha256": "da0baaa043de149e2d0400cde847f6fc15a0e6af385d5f8aca1a2a90af83d67f",
+      "bytes": 2855
+    },
+    "submissions/jsp-000007-dini-extinction/evidence/orientability-extension/verification.json": {
+      "sha256": "ab2a2a8542456cab19d9bd8d7c3f519f7db23caf4b2981845bc425a72def8a96",
+      "bytes": 15299
+    },
+    "submissions/jsp-000007-dini-extinction/evidence/orientability-extension/verifier-tests.log": {
+      "sha256": "1c5451ce49772fdf859057159f2562c30dbc76e4928967dfdc8bd5f2694ede60",
+      "bytes": 2117
+    },
+    "submissions/jsp-000007-dini-extinction/evidence/package-checks.json": {
+      "sha256": "d0ee1bccd80b1d49271f61a34d12aff38e220eda00dca72935ef5cecb7cfbfc7",
+      "bytes": 4230
+    },
+    "submissions/jsp-000007-dini-extinction/evidence/package-tests.log": {
+      "sha256": "eec118f123b3bc4c55fe7211afc3d251cd6271dac5b80a6d1d3ae74a60cf30d8",
+      "bytes": 510
+    },
+    "submissions/jsp-000007-dini-extinction/evidence/placeholder.log": {
+      "sha256": "e9410fa3f0e64461f6b43098f84e4c203c37c012cac2d25a3b84238a3c62e844",
+      "bytes": 215
+    },
+    "submissions/jsp-000007-dini-extinction/evidence/repository-checks.log": {
+      "sha256": "2fd9fee8d6a1059bd7e9ba3cd1f32abc330675b91db64560b9555eaf5381fcc2",
+      "bytes": 2855
+    },
+    "submissions/jsp-000007-dini-extinction/evidence/topology-extension/axioms.log": {
+      "sha256": "19dcb5359e8f11364de25582380c7a0e8c63bce57522e7bcf01e201080741531",
+      "bytes": 5096
+    },
+    "submissions/jsp-000007-dini-extinction/evidence/topology-extension/build.log": {
+      "sha256": "b21110599241b21e1b6595455c8de8c3a3b0c0bb539e8f866dbcfe79ec731168",
+      "bytes": 281
+    },
+    "submissions/jsp-000007-dini-extinction/evidence/topology-extension/dependency-setup.log": {
+      "sha256": "f136cb28817407c2094760c11bd66df4871adcedb7e2f517c908549a6c6c705e",
+      "bytes": 138
+    },
+    "submissions/jsp-000007-dini-extinction/evidence/topology-extension/extra_axiom.log": {
+      "sha256": "f02713e64e03f7ce5de38d7118655ce3c9349df0769383a11db7ec5f3b576ba2",
+      "bytes": 185
+    },
+    "submissions/jsp-000007-dini-extinction/evidence/topology-extension/kernel-replay.log": {
+      "sha256": "e1be273c7ddb774b93921861275060838bf8a91a6374961c9662999fa151d246",
+      "bytes": 47
+    },
+    "submissions/jsp-000007-dini-extinction/evidence/topology-extension/placeholder.log": {
+      "sha256": "69f295c46dad24f83216553ca1fda53a46e41eddafc59946952b8811d48bd5b8",
+      "bytes": 288
+    },
+    "submissions/jsp-000007-dini-extinction/evidence/topology-extension/removed_freeness.log": {
+      "sha256": "1eea527fde46b56e6dcd86cedb5cf5133ce6de6bf966f32925cd8adce64f89ba",
+      "bytes": 1226
+    },
+    "submissions/jsp-000007-dini-extinction/evidence/topology-extension/verification.json": {
+      "sha256": "e6b07a7df7b2231801c5fc3d4bfc567cc8d9c1345167ed8f823d4fc663605256",
+      "bytes": 11357
+    },
+    "submissions/jsp-000007-dini-extinction/evidence/verification.json": {
+      "sha256": "cc307a76ae5d81219655f71a7218ae550dba875f35e1c2ed46cc9fc2141b11b3",
+      "bytes": 5410
+    },
+    "submissions/jsp-000007-dini-extinction/lake-manifest.json": {
+      "sha256": "becbea7512c654ea8b05ff51e84461b8a2dca674f1c81b04dcb515e55ad5b434",
+      "bytes": 3161
+    },
+    "submissions/jsp-000007-dini-extinction/lakefile.lean": {
+      "sha256": "f5ba7703edb467afd05b368bfe6b4e42783c139abe4a16e589a27b134a2df952",
+      "bytes": 513
+    },
+    "submissions/jsp-000007-dini-extinction/lean-toolchain": {
+      "sha256": "8e3538e0ab5f81a3ee04927d8838c8c674e0e112838b4b3ce87ec218143276af",
+      "bytes": 25
+    },
+    "submissions/jsp-000007-dini-extinction/positive-ricci/.gitignore": {
+      "sha256": "0386ec6b1aacf84c044544c3a2f6570ade328967d4f2d7959bff498c2fd7638b",
+      "bytes": 41
+    },
+    "submissions/jsp-000007-dini-extinction/positive-ricci/LICENSE": {
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "bytes": 11357
+    },
+    "submissions/jsp-000007-dini-extinction/positive-ricci/NOTICE": {
+      "sha256": "70d4d97d05d8021ed590140b180f9b84903b8ea775d985a32f65c2cbb76a537e",
+      "bytes": 1096
+    },
+    "submissions/jsp-000007-dini-extinction/positive-ricci/PoincareHamilton.lean": {
+      "sha256": "e9b04c8eea944b4f59475b621a2682b0d58159fbac34fae6cbdd5cc95655d974",
+      "bytes": 38
+    },
+    "submissions/jsp-000007-dini-extinction/positive-ricci/PoincareHamilton/PositiveRicci.lean": {
+      "sha256": "ace1bc7f16565a4a19b803edab67aa9fe2ce0d60cd08e32558416ad1cf0fa61f",
+      "bytes": 1471
+    },
+    "submissions/jsp-000007-dini-extinction/positive-ricci/PoincareHamilton/RoundQuotient.lean": {
+      "sha256": "c58fbbcd4acf6f05cc4e765e83cedfdc106973eb11c979801e1a0ce1d998b0be",
+      "bytes": 5180
+    },
+    "submissions/jsp-000007-dini-extinction/positive-ricci/PoincareHamilton/SimplyConnectedCover.lean": {
+      "sha256": "d8b382e2d98c59f80d704a627bd651204872a77ca5a69dcc06cc593707b63d8b",
+      "bytes": 2802
+    },
+    "submissions/jsp-000007-dini-extinction/positive-ricci/PoincareHamilton/SphericalSpaceForm.lean": {
+      "sha256": "34098f22cf8bf333bcab41b3e3beca84f3d3cf85db6d94e05a25ab6a39f241ea",
+      "bytes": 2641
+    },
+    "submissions/jsp-000007-dini-extinction/positive-ricci/PoincareHamiltonAudit.lean": {
+      "sha256": "4021704ad78718325f82f967a03f65d96ab80634ae1ff3e565a1b5c5e38d1bfb",
+      "bytes": 1072
+    },
+    "submissions/jsp-000007-dini-extinction/positive-ricci/PoincareHamiltonTests.lean": {
+      "sha256": "89a70c3db653037152bb6b3fd86ce3b1999b4a3007d7bbf2c10cc0c65a89ad1e",
+      "bytes": 2218
+    },
+    "submissions/jsp-000007-dini-extinction/positive-ricci/README.md": {
+      "sha256": "59b29a537ed99f3e7dd6334ea6a4d361bdcffad480dfe2a9b65f83311a42359c",
+      "bytes": 6389
+    },
+    "submissions/jsp-000007-dini-extinction/positive-ricci/evidence/axioms.log": {
+      "sha256": "74de4de2937d4550c81a83912827226dbdfb69899b3c5efff729ee9612820c82",
+      "bytes": 477
+    },
+    "submissions/jsp-000007-dini-extinction/positive-ricci/evidence/build-process.json": {
+      "sha256": "ef1ca2a171991baed60f8979f760106b2993ce255fe93df0f072e1ec819bfd08",
+      "bytes": 119
+    },
+    "submissions/jsp-000007-dini-extinction/positive-ricci/evidence/build.log": {
+      "sha256": "77e356d78b5309df7b31b7a71b227a9a7fa67375cdd3569870dc6c24b2b1369a",
+      "bytes": 721
+    },
+    "submissions/jsp-000007-dini-extinction/positive-ricci/evidence/extra_axiom.log": {
+      "sha256": "8e11ac62bdbf1ddef4cada7fab919a3fc46a187a842f515ac71c23342b15eefb",
+      "bytes": 635
+    },
+    "submissions/jsp-000007-dini-extinction/positive-ricci/evidence/kernel-replay-process.json": {
+      "sha256": "63a37b747b6e5a83011d0d8604aee2ce5b3ea9428915521062637e8b1be13356",
+      "bytes": 124
+    },
+    "submissions/jsp-000007-dini-extinction/positive-ricci/evidence/kernel-replay.log": {
+      "sha256": "e9dca0b94bba2e74d73254a979ff4c08342293fc9e70a47e3762a3ec74ae55b1",
+      "bytes": 45
+    },
+    "submissions/jsp-000007-dini-extinction/positive-ricci/evidence/missing_positive_ricci.log": {
+      "sha256": "192e3e4e35a1c4a0df5eff696ce0fefeb64eadbf197a05bf90a74c7869881377",
+      "bytes": 135
+    },
+    "submissions/jsp-000007-dini-extinction/positive-ricci/evidence/missing_simple_connectivity.log": {
+      "sha256": "17f83af09b7b62359d8385b14732959f7e29634c1770fa68b8377c3359415714",
+      "bytes": 309
+    },
+    "submissions/jsp-000007-dini-extinction/positive-ricci/evidence/package-checks.json": {
+      "sha256": "07e1bea06a4226dee9c8e1f82bbfce539ed2828569574127a03cc1e81225b5de",
+      "bytes": 9046
+    },
+    "submissions/jsp-000007-dini-extinction/positive-ricci/evidence/placeholder.log": {
+      "sha256": "26d144fec07dffb05fcac6661135ac2e52e7e3cba6ba1b3573b3b5e9e7525927",
+      "bytes": 716
+    },
+    "submissions/jsp-000007-dini-extinction/positive-ricci/evidence/progress.json": {
+      "sha256": "6f548e1800268e39488ed74da2856197e1e47a3d96243cbde35c0a033d8213ba",
+      "bytes": 47
+    },
+    "submissions/jsp-000007-dini-extinction/positive-ricci/evidence/repository-checks.log": {
+      "sha256": "1e663fbd67a92be248a143a4e517489be47a7b7a7ff754e1cd37dfa3d4080d48",
+      "bytes": 2855
+    },
+    "submissions/jsp-000007-dini-extinction/positive-ricci/evidence/statement-check.json": {
+      "sha256": "3c75b55d66faee8230b7545d0e9c4ff3f266e9a7aed4103a676d46952dd9cdbe",
+      "bytes": 487
+    },
+    "submissions/jsp-000007-dini-extinction/positive-ricci/evidence/statement-review-source.txt": {
+      "sha256": "b07a37a6ba422684e9a5d083bdc9fc3e6ea7b199787c7ddb439d072d6eb2c2ea",
+      "bytes": 673
+    },
+    "submissions/jsp-000007-dini-extinction/positive-ricci/evidence/statements.log": {
+      "sha256": "12a3271be6d2bb69030b92c5298d0a80b679914757d565062ae952de693766e1",
+      "bytes": 8527
+    },
+    "submissions/jsp-000007-dini-extinction/positive-ricci/evidence/verification.json": {
+      "sha256": "58de9a56a6404e46338cc6a0b660519fd7630cb803d24989b796fa7f3c0bc10e",
+      "bytes": 4603
+    },
+    "submissions/jsp-000007-dini-extinction/positive-ricci/evidence/verifier-tests.log": {
+      "sha256": "ba8e02faa195bd94a9b2544cbff2ef79982c87a5060764cb06a287fb21888a99",
+      "bytes": 726
+    },
+    "submissions/jsp-000007-dini-extinction/positive-ricci/lake-manifest.json": {
+      "sha256": "10b48fcd7618cc44439f0b072f7fbd11883a3bc43b762a4797320600ac93fdb9",
+      "bytes": 3943
+    },
+    "submissions/jsp-000007-dini-extinction/positive-ricci/lakefile.toml": {
+      "sha256": "466ae28e54ed4298f481ef5ccf02321f13a82591cedf4b2d18158aa3b13d081b",
+      "bytes": 455
+    },
+    "submissions/jsp-000007-dini-extinction/positive-ricci/lean-toolchain": {
+      "sha256": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
+      "bytes": 25
+    },
+    "submissions/jsp-000007-dini-extinction/positive-ricci/scripts/test_verify.py": {
+      "sha256": "3eea80e682db6143cfe4bf0654e67af6bd290093e6f31bc850c32512e2345820",
+      "bytes": 2129
+    },
+    "submissions/jsp-000007-dini-extinction/positive-ricci/scripts/verify.py": {
+      "sha256": "74e64793b831102c7289715a6971dff125aedc9df457f7ac41fddcc79a731432",
+      "bytes": 11444
+    },
+    "submissions/jsp-000007-dini-extinction/positive-ricci/source-manifest.json": {
+      "sha256": "3ac1b6acdb2f3253e5c8a15af7b5dfeb316f7f1a628b55d5ad2c029ef2a76456",
+      "bytes": 1145
+    },
+    "submissions/jsp-000007-dini-extinction/scripts/test_orientability_extension.py": {
+      "sha256": "3f975078db278f9d1ef88c37d5bab064077b52ab9c94dcbdaccfcd96f76daec2",
+      "bytes": 2038
+    },
+    "submissions/jsp-000007-dini-extinction/scripts/test_topology_extension.py": {
+      "sha256": "29e73dc2df909ef4a31d34fe2092d791ac720abb66a7798a96a623216ace0aa1",
+      "bytes": 1901
+    },
+    "submissions/jsp-000007-dini-extinction/scripts/test_verify.py": {
+      "sha256": "5e45b75fae9dcbca489ce8b62a5ca9e6bcab34675ed10f8569eea0c3e4ec6bc6",
+      "bytes": 1242
+    },
+    "submissions/jsp-000007-dini-extinction/scripts/verify.py": {
+      "sha256": "2ae8a0d022f050556c5600cd0b3b5d6b06f6bf41d0aca583692fe4dc070f28ea",
+      "bytes": 8156
+    },
+    "submissions/jsp-000007-dini-extinction/scripts/verify_orientability_extension.py": {
+      "sha256": "ebc2bb409f9c3d36554f66fe965cd22bf94a880cb504786e15f450ec53d9e413",
+      "bytes": 9551
+    },
+    "submissions/jsp-000007-dini-extinction/scripts/verify_topology_extension.py": {
+      "sha256": "d03ec5f9eff170173f59de4c4ad763854fa5ea58ff45879f2996275414203539",
+      "bytes": 10913
+    },
+    "submissions/jsp-000007-dini-extinction/verification-config.json": {
+      "sha256": "a830633e526b928dbb6e6e89e7d44ddd793eaf37867ac01f1c0fa343c908636a",
+      "bytes": 2046
+    }
+  },
+  "new_scalar_source_files": {
+    "ScalarFlowBounds.lean": "f1775a5cac8b9a5d4207ae7e06e333da37cc473a4def9ac57e663e78162596f3",
+    "ScalarFlowBoundsTests.lean": "c872828c15ada01d310f1e03013700bf9aec089e78a4f807d1f9db294a0f7645",
+    "ScalarFlowBoundsAudit.lean": "d20fd771bd7fd8328e98134b3e3336dc6926a79616588adb9e6f721b2db780d4",
+    "lean-toolchain": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
+    "lakefile.toml": "b846f887619d984e3fadff2c24a850ce9ed78677cf15cbc2170937c7ac6e5f37",
+    "lake-manifest.json": "ffbf8a5ccf4a7fc4cca6bb615a147a5786f01c5c376ceda38f6d541cf4537d9a"
+  },
+  "excluded_unreviewed_candidates": [
+    "CURRENT_SCOPE.md",
+    "ricci-model-witnesses/"
+  ],
+  "full_poincare_formalization": false
+}

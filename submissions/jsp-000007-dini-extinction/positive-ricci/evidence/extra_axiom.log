@@ -1,0 +1,7 @@
+'DifferentialGeometry.PDE.RicciFlow.HamiltonPositiveRicci.hamilton_positive_ricci' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PoincareHamilton.positiveRicci_poincare' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareHamiltonTests.literal_positive_ricci_endpoint' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareHamiltonTests.literal_positive_ricci_homeomorph' depends on axioms: [propext, Classical.choice, Quot.sound]
+$PROJECT/.lake/verification-positive-ricci/extra_axiom.lean:10:0: error: PoincareHamilton.sentinel depends on non-whitelisted axiom PoincareHamilton.sentinel

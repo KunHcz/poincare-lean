@@ -1,0 +1,11 @@
+{
+  "scope": "Actual compact smooth Ricci-flow scalar estimates; not flow existence, surgery, or full Poincare",
+  "files": {
+    "ScalarFlowBounds.lean": "f1775a5cac8b9a5d4207ae7e06e333da37cc473a4def9ac57e663e78162596f3",
+    "ScalarFlowBoundsTests.lean": "c872828c15ada01d310f1e03013700bf9aec089e78a4f807d1f9db294a0f7645",
+    "ScalarFlowBoundsAudit.lean": "d20fd771bd7fd8328e98134b3e3336dc6926a79616588adb9e6f721b2db780d4",
+    "lean-toolchain": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
+    "lakefile.toml": "b846f887619d984e3fadff2c24a850ce9ed78677cf15cbc2170937c7ac6e5f37",
+    "lake-manifest.json": "ffbf8a5ccf4a7fc4cca6bb615a147a5786f01c5c376ceda38f6d541cf4537d9a"
+  }
+}

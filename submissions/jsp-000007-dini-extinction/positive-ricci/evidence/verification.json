@@ -1,0 +1,112 @@
+{
+  "status": "LOCAL_VERIFIED_NOT_OFFICIALLY_REVIEWED",
+  "problem_id": "JSP-000007",
+  "scope": "Closed simply connected smooth three-manifolds admitting a genuine positive-Ricci metric",
+  "full_poincare_formalization": false,
+  "positive_ricci_case_verified": true,
+  "started_at_utc": "2026-09-17T10:48:16.856672+00:00",
+  "completed_at_utc": "2026-09-17T11:42:27.076696+00:00",
+  "lean_version": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "source_files": {
+    "PoincareHamilton.lean": "e9b04c8eea944b4f59475b621a2682b0d58159fbac34fae6cbdd5cc95655d974",
+    "PoincareHamiltonTests.lean": "89a70c3db653037152bb6b3fd86ce3b1999b4a3007d7bbf2c10cc0c65a89ad1e",
+    "PoincareHamiltonAudit.lean": "4021704ad78718325f82f967a03f65d96ab80634ae1ff3e565a1b5c5e38d1bfb",
+    "PoincareHamilton/SimplyConnectedCover.lean": "d8b382e2d98c59f80d704a627bd651204872a77ca5a69dcc06cc593707b63d8b",
+    "PoincareHamilton/RoundQuotient.lean": "c58fbbcd4acf6f05cc4e765e83cedfdc106973eb11c979801e1a0ce1d998b0be",
+    "PoincareHamilton/SphericalSpaceForm.lean": "34098f22cf8bf333bcab41b3e3beca84f3d3cf85db6d94e05a25ab6a39f241ea",
+    "PoincareHamilton/PositiveRicci.lean": "ace1bc7f16565a4a19b803edab67aa9fe2ce0d60cd08e32558416ad1cf0fa61f",
+    "lakefile.toml": "466ae28e54ed4298f481ef5ccf02321f13a82591cedf4b2d18158aa3b13d081b",
+    "lake-manifest.json": "10b48fcd7618cc44439f0b072f7fbd11883a3bc43b762a4797320600ac93fdb9",
+    "lean-toolchain": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71"
+  },
+  "dependency_pins": {
+    "DifferentialGeometry": "ad76f2f1dfb959f4d8fc46fac9ed9feffdf497d9",
+    "mathlib": "0df444a360eaa60ab8c11dca51a86af692955474",
+    "plausible": "b7eb3304aeae834b12dda98993a37f6a41f6f0bb",
+    "LeanSearchClient": "5f4d51b81cbd3f6b32b156bfad9056621a040404",
+    "importGraph": "16f02aa7642864af59f1ff0e384a015994db9118",
+    "proofwidgets": "4be2e3d5087eeb272cf5a8853b8f9dd025ef5957",
+    "aesop": "3448c0bcc5ce01b2d1546e483ec3620e32df3d0e",
+    "Qq": "92c15be17b7caf78c2ad767ec40f89052d908d81",
+    "batteries": "4488d40d070b9700d4d5a6aa342f0d40c31b2a2d",
+    "Cli": "6130a47896ce867c6a4a55373441e59e565bad0f"
+  },
+  "upstream_geometry_original_commit": "1b535dd102b94cc42b107cca27059687888f08b3",
+  "upstream_geometry_proof_cost_fix": {
+    "commit": "ad76f2f1dfb959f4d8fc46fac9ed9feffdf497d9",
+    "file": "DifferentialGeometry/Geometry/Curvature/CovGradRoughLap/HomFieldCurvatureJetDecomposition.lean",
+    "pull_request": "https://github.com/qinz1yang/differential-geometry/pull/78"
+  },
+  "default_build_pass": true,
+  "warnings_as_errors": true,
+  "full_fresh_kernel_replay": true,
+  "build_process": {
+    "exit_code": 0,
+    "elapsed_seconds": 9.08,
+    "peak_rss_kib": 842496,
+    "memory_limit_mb": 24576,
+    "guard": null
+  },
+  "replay_process": {
+    "exit_code": 0,
+    "elapsed_seconds": 3212.61,
+    "peak_rss_kib": 17475584,
+    "memory_limit_mb": 24576,
+    "guard": null
+  },
+  "independent_checker_implementation": false,
+  "independent_human_review": false,
+  "clean_from_scratch_build": false,
+  "full_dependency_source_rebuild": false,
+  "source_and_dependencies_clean_before_and_after": true,
+  "axioms": {
+    "DifferentialGeometry.PDE.RicciFlow.HamiltonPositiveRicci.hamilton_positive_ricci": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareHamilton.positiveRicci_poincare": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareHamiltonTests.literal_positive_ricci_endpoint": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareHamiltonTests.literal_positive_ricci_homeomorph": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "namespace_wide_audit": true,
+  "regression_theorems": 3,
+  "negative_controls": {
+    "extra_axiom": {
+      "status": "REJECTED",
+      "exit_code": 1
+    },
+    "placeholder": {
+      "status": "REJECTED",
+      "exit_code": 1
+    },
+    "missing_positive_ricci": {
+      "status": "REJECTED",
+      "exit_code": 1
+    },
+    "missing_simple_connectivity": {
+      "status": "REJECTED",
+      "exit_code": 1
+    }
+  },
+  "concrete_positive_ricci_model_test": false,
+  "verifier_hashes": {
+    "scripts/verify.py": "74e64793b831102c7289715a6971dff125aedc9df457f7ac41fddcc79a731432",
+    "../constant-curvature/scripts/verify.py": "0d88d7dedc66b48c70369f7e5fecbfc5537676c89c970b551c12f0221bfe6a76"
+  },
+  "award_eligibility": "UNDETERMINED",
+  "novel_mathematical_discovery": false,
+  "formalization_priority": "NOT_ESTABLISHED"
+}

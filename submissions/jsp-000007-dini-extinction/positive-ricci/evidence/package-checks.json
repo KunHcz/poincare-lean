@@ -1,0 +1,314 @@
+{
+  "status": "PASS",
+  "base_commit": "f4e7173d89dfe91022a185427d63452c8ffbf6ae",
+  "source_bound_completed_record": true,
+  "repository_checks": [
+    {
+      "command": [
+        "python",
+        "scripts/manage.py",
+        "validate"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "python",
+        "scripts/manage.py",
+        "links"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "python",
+        "scripts/manage.py",
+        "build"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "python",
+        "scripts/manage.py",
+        "check"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "python",
+        "scripts/manage.py",
+        "history",
+        "--base",
+        "f4e7173d89dfe91022a185427d63452c8ffbf6ae"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "exit_code": 0
+    }
+  ],
+  "repository_unit_tests": 22,
+  "verifier_unit_tests": 6,
+  "local_links": [
+    {
+      "document": "submissions/jsp-000007-dini-extinction/positive-ricci/README.md",
+      "target": "PoincareHamilton/PositiveRicci.lean"
+    },
+    {
+      "document": "submissions/jsp-000007-dini-extinction/positive-ricci/README.md",
+      "target": "PoincareHamiltonTests.lean"
+    },
+    {
+      "document": "submissions/jsp-000007-dini-extinction/positive-ricci/README.md",
+      "target": "evidence/statements.log"
+    },
+    {
+      "document": "submissions/jsp-000007-dini-extinction/positive-ricci/README.md",
+      "target": "NOTICE"
+    },
+    {
+      "document": "submissions/jsp-000007-dini-extinction/positive-ricci/README.md",
+      "target": "lake-manifest.json"
+    },
+    {
+      "document": "submissions/jsp-000007-dini-extinction/positive-ricci/README.md",
+      "target": "evidence/verification.json"
+    },
+    {
+      "document": "submissions/jsp-000007-dini-extinction/README.md",
+      "target": "positive-ricci/README.md"
+    },
+    {
+      "document": "submissions/jsp-000007-dini-extinction/README.md",
+      "target": "positive-ricci/evidence/verification.json"
+    },
+    {
+      "document": "submissions/jsp-000007-dini-extinction/README.md",
+      "target": "TOPOLOGY_EXTENSION.md"
+    },
+    {
+      "document": "submissions/jsp-000007-dini-extinction/README.md",
+      "target": "constant-curvature/README.md"
+    },
+    {
+      "document": "submissions/jsp-000007-dini-extinction/README.md",
+      "target": "ORIENTABILITY_EXTENSION.md"
+    },
+    {
+      "document": "submissions/jsp-000007-dini-extinction/README.md",
+      "target": "../../problems/catalog-0001-0100.md#JSP-000007"
+    },
+    {
+      "document": "submissions/jsp-000007-dini-extinction/README.md",
+      "target": "STATEMENT.md"
+    },
+    {
+      "document": "submissions/jsp-000007-dini-extinction/README.md",
+      "target": "verification-config.json"
+    },
+    {
+      "document": "submissions/jsp-000007-dini-extinction/README.md",
+      "target": "evidence/verification.json"
+    },
+    {
+      "document": "submissions/jsp-000007-dini-extinction/README.md",
+      "target": "evidence/axioms.log"
+    },
+    {
+      "document": "submissions/jsp-000007-dini-extinction/README.md",
+      "target": "PRIOR_ART.md"
+    },
+    {
+      "document": "submissions/jsp-000007-dini-extinction/README.md",
+      "target": "LICENSE"
+    },
+    {
+      "document": "submissions/jsp-000007-dini-extinction/README.md",
+      "target": "NOTICE"
+    },
+    {
+      "document": "submissions/jsp-000007-dini-extinction/README.md",
+      "target": "../../LICENSE-CONTENT"
+    }
+  ],
+  "public_files": [
+    {
+      "path": "source-manifest.json",
+      "sha256": "3ac1b6acdb2f3253e5c8a15af7b5dfeb316f7f1a628b55d5ad2c029ef2a76456",
+      "bytes": 1145
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "bytes": 11357
+    },
+    {
+      "path": "lean-toolchain",
+      "sha256": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
+      "bytes": 25
+    },
+    {
+      "path": "NOTICE",
+      "sha256": "70d4d97d05d8021ed590140b180f9b84903b8ea775d985a32f65c2cbb76a537e",
+      "bytes": 1096
+    },
+    {
+      "path": "README.md",
+      "sha256": "59b29a537ed99f3e7dd6334ea6a4d361bdcffad480dfe2a9b65f83311a42359c",
+      "bytes": 6389
+    },
+    {
+      "path": "lake-manifest.json",
+      "sha256": "10b48fcd7618cc44439f0b072f7fbd11883a3bc43b762a4797320600ac93fdb9",
+      "bytes": 3943
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "0386ec6b1aacf84c044544c3a2f6570ade328967d4f2d7959bff498c2fd7638b",
+      "bytes": 41
+    },
+    {
+      "path": "lakefile.toml",
+      "sha256": "466ae28e54ed4298f481ef5ccf02321f13a82591cedf4b2d18158aa3b13d081b",
+      "bytes": 455
+    },
+    {
+      "path": "PoincareHamiltonTests.lean",
+      "sha256": "89a70c3db653037152bb6b3fd86ce3b1999b4a3007d7bbf2c10cc0c65a89ad1e",
+      "bytes": 2218
+    },
+    {
+      "path": "PoincareHamilton.lean",
+      "sha256": "e9b04c8eea944b4f59475b621a2682b0d58159fbac34fae6cbdd5cc95655d974",
+      "bytes": 38
+    },
+    {
+      "path": "PoincareHamiltonAudit.lean",
+      "sha256": "4021704ad78718325f82f967a03f65d96ab80634ae1ff3e565a1b5c5e38d1bfb",
+      "bytes": 1072
+    },
+    {
+      "path": "evidence/statements.log",
+      "sha256": "12a3271be6d2bb69030b92c5298d0a80b679914757d565062ae952de693766e1",
+      "bytes": 8527
+    },
+    {
+      "path": "evidence/build-process.json",
+      "sha256": "ef1ca2a171991baed60f8979f760106b2993ce255fe93df0f072e1ec819bfd08",
+      "bytes": 119
+    },
+    {
+      "path": "evidence/statement-check.json",
+      "sha256": "3c75b55d66faee8230b7545d0e9c4ff3f266e9a7aed4103a676d46952dd9cdbe",
+      "bytes": 487
+    },
+    {
+      "path": "evidence/placeholder.log",
+      "sha256": "26d144fec07dffb05fcac6661135ac2e52e7e3cba6ba1b3573b3b5e9e7525927",
+      "bytes": 716
+    },
+    {
+      "path": "evidence/missing_simple_connectivity.log",
+      "sha256": "17f83af09b7b62359d8385b14732959f7e29634c1770fa68b8377c3359415714",
+      "bytes": 309
+    },
+    {
+      "path": "evidence/statement-review-source.txt",
+      "sha256": "b07a37a6ba422684e9a5d083bdc9fc3e6ea7b199787c7ddb439d072d6eb2c2ea",
+      "bytes": 673
+    },
+    {
+      "path": "evidence/repository-checks.log",
+      "sha256": "1e663fbd67a92be248a143a4e517489be47a7b7a7ff754e1cd37dfa3d4080d48",
+      "bytes": 2855
+    },
+    {
+      "path": "evidence/kernel-replay.log",
+      "sha256": "e9dca0b94bba2e74d73254a979ff4c08342293fc9e70a47e3762a3ec74ae55b1",
+      "bytes": 45
+    },
+    {
+      "path": "evidence/axioms.log",
+      "sha256": "74de4de2937d4550c81a83912827226dbdfb69899b3c5efff729ee9612820c82",
+      "bytes": 477
+    },
+    {
+      "path": "evidence/missing_positive_ricci.log",
+      "sha256": "192e3e4e35a1c4a0df5eff696ce0fefeb64eadbf197a05bf90a74c7869881377",
+      "bytes": 135
+    },
+    {
+      "path": "evidence/progress.json",
+      "sha256": "6f548e1800268e39488ed74da2856197e1e47a3d96243cbde35c0a033d8213ba",
+      "bytes": 47
+    },
+    {
+      "path": "evidence/verification.json",
+      "sha256": "58de9a56a6404e46338cc6a0b660519fd7630cb803d24989b796fa7f3c0bc10e",
+      "bytes": 4603
+    },
+    {
+      "path": "evidence/verifier-tests.log",
+      "sha256": "ba8e02faa195bd94a9b2544cbff2ef79982c87a5060764cb06a287fb21888a99",
+      "bytes": 726
+    },
+    {
+      "path": "evidence/kernel-replay-process.json",
+      "sha256": "63a37b747b6e5a83011d0d8604aee2ce5b3ea9428915521062637e8b1be13356",
+      "bytes": 124
+    },
+    {
+      "path": "evidence/extra_axiom.log",
+      "sha256": "8e11ac62bdbf1ddef4cada7fab919a3fc46a187a842f515ac71c23342b15eefb",
+      "bytes": 635
+    },
+    {
+      "path": "evidence/build.log",
+      "sha256": "77e356d78b5309df7b31b7a71b227a9a7fa67375cdd3569870dc6c24b2b1369a",
+      "bytes": 721
+    },
+    {
+      "path": "PoincareHamilton/RoundQuotient.lean",
+      "sha256": "c58fbbcd4acf6f05cc4e765e83cedfdc106973eb11c979801e1a0ce1d998b0be",
+      "bytes": 5180
+    },
+    {
+      "path": "PoincareHamilton/PositiveRicci.lean",
+      "sha256": "ace1bc7f16565a4a19b803edab67aa9fe2ce0d60cd08e32558416ad1cf0fa61f",
+      "bytes": 1471
+    },
+    {
+      "path": "PoincareHamilton/SimplyConnectedCover.lean",
+      "sha256": "d8b382e2d98c59f80d704a627bd651204872a77ca5a69dcc06cc593707b63d8b",
+      "bytes": 2802
+    },
+    {
+      "path": "PoincareHamilton/SphericalSpaceForm.lean",
+      "sha256": "34098f22cf8bf333bcab41b3e3beca84f3d3cf85db6d94e05a25ab6a39f241ea",
+      "bytes": 2641
+    },
+    {
+      "path": "scripts/test_verify.py",
+      "sha256": "3eea80e682db6143cfe4bf0654e67af6bd290093e6f31bc850c32512e2345820",
+      "bytes": 2129
+    },
+    {
+      "path": "scripts/verify.py",
+      "sha256": "74e64793b831102c7289715a6971dff125aedc9df457f7ac41fddcc79a731432",
+      "bytes": 11444
+    }
+  ],
+  "official_records_changed": false,
+  "unreviewed_local_candidate_packages_included": false
+}

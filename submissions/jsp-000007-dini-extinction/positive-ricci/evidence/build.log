@@ -1,0 +1,8 @@
+ℹ [11530/11531] Replayed PoincareHamiltonAudit
+info: PoincareHamiltonAudit.lean:4:0: 'DifferentialGeometry.PDE.RicciFlow.HamiltonPositiveRicci.hamilton_positive_ricci' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: PoincareHamiltonAudit.lean:5:0: 'PoincareHamilton.positiveRicci_poincare' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: PoincareHamiltonAudit.lean:6:0: 'PoincareHamiltonTests.literal_positive_ricci_endpoint' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: PoincareHamiltonAudit.lean:7:0: 'PoincareHamiltonTests.literal_positive_ricci_homeomorph' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully (11531 jobs).

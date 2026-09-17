@@ -1,0 +1,25 @@
+test_exact_clean_source_accepted (test_orientability_extension.OrientabilityVerifierTests.test_exact_clean_source_accepted) ... ok
+test_local_dependency_rejected (test_orientability_extension.OrientabilityVerifierTests.test_local_dependency_rejected) ... ok
+test_modified_source_rejected (test_orientability_extension.OrientabilityVerifierTests.test_modified_source_rejected) ... ok
+test_nonstandard_axiom_rejected (test_orientability_extension.OrientabilityVerifierTests.test_nonstandard_axiom_rejected) ... ok
+test_unknown_warning_rejected (test_orientability_extension.OrientabilityVerifierTests.test_unknown_warning_rejected) ... ok
+test_wrong_mathematical_dependency_rejected (test_orientability_extension.OrientabilityVerifierTests.test_wrong_mathematical_dependency_rejected) ... ok
+test_wrong_source_revision_rejected (test_orientability_extension.OrientabilityVerifierTests.test_wrong_source_revision_rejected) ... ok
+test_clean (test_topology_extension.TopologyEvidenceTests.test_clean) ... ok
+test_error_formats (test_topology_extension.TopologyEvidenceTests.test_error_formats) ... ok
+test_extra_axiom (test_topology_extension.TopologyEvidenceTests.test_extra_axiom) ... ok
+test_known_pinned_warning (test_topology_extension.TopologyEvidenceTests.test_known_pinned_warning) ... ok
+test_missing_and_duplicate (test_topology_extension.TopologyEvidenceTests.test_missing_and_duplicate) ... ok
+test_other_warning_formats (test_topology_extension.TopologyEvidenceTests.test_other_warning_formats) ... ok
+test_wrapped_axioms (test_topology_extension.TopologyEvidenceTests.test_wrapped_axioms) ... ok
+test_duplicate (test_verify.AuditParserTests.test_duplicate) ... ok
+test_empty (test_verify.AuditParserTests.test_empty) ... ok
+test_exact_name (test_verify.AuditParserTests.test_exact_name) ... ok
+test_missing (test_verify.AuditParserTests.test_missing) ... ok
+test_standard_axioms (test_verify.AuditParserTests.test_standard_axioms) ... ok
+test_unapproved (test_verify.AuditParserTests.test_unapproved) ... ok
+
+----------------------------------------------------------------------
+Ran 20 tests in 0.002s
+
+OK

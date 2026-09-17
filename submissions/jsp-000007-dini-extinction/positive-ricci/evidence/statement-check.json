@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "command": "lake env lean .lake/statement-review/ExactStatements.lean",
+  "exit_code": 0,
+  "checks": "Elaborated endpoint signatures and expanded geometric predicates, plus a Lean proof of definitional equality with the unit sphere in real four-space; not independent human review",
+  "log_sha256": "12a3271be6d2bb69030b92c5298d0a80b679914757d565062ae952de693766e1",
+  "review_source_sha256": "b07a37a6ba422684e9a5d083bdc9fc3e6ea7b199787c7ddb439d072d6eb2c2ea"
+}

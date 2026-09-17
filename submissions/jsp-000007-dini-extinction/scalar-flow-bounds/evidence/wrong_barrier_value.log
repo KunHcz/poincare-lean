@@ -1,0 +1,2 @@
+$PROJECT/.lake/verification/wrong_barrier_value.lean:2:81: error: unsolved goals
+⊢ False
