@@ -1,0 +1,16 @@
+$PROJECT/.lake/verification/missing_cap_bound.lean:40:20: error: Function expected at
+  hcap
+but this term has type
+  True
+
+Note: Expected a function because this term is being applied to the argument
+  y
+$PROJECT/.lake/verification/missing_cap_bound.lean:136:17: error: Application type mismatch: The argument
+  hcap j hj
+has type
+  ∀ (y : M (j + 1)), ¬survives j y → 0 ≤ (S (j + 1)).scalar 0 y
+but is expected to have type
+  True
+in the application
+  transfer_of_survivors_and_nonnegative_caps ((S j).scalar (duration j)) ((S (j + 1)).scalar 0) (survives j)
+    (oldPoint j) (hkeep j hj) (hcap j hj)

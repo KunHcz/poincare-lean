@@ -1,0 +1,18 @@
+$PROJECT/.lake/verification/not_a_flow.lean:92:67: error: Application type mismatch: The argument
+  hS 0 hj
+has type
+  True
+but is expected to have type
+  IsSolutionOn (S 0)
+in the application
+  @normalized_scalar_lower_bound_after_restart (M 0) (inst✝⁴ 0) (inst✝³ 0) (inst✝² 0) ?m.282 ?m.283 (omega 0) (homega 0)
+    (S 0) (hS 0 hj)
+$PROJECT/.lake/verification/not_a_flow.lean:110:83: error: Application type mismatch: The argument
+  hS (j + 1) hj
+has type
+  True
+but is expected to have type
+  IsSolutionOn (S (j + 1))
+in the application
+  @normalized_scalar_lower_bound_after_restart (M (j + 1)) (inst✝⁴ (j + 1)) (inst✝³ (j + 1)) (inst✝² (j + 1)) ?m.522
+    ?m.523 (omega (j + 1)) (homega (j + 1)) (S (j + 1)) (hS (j + 1) hj)

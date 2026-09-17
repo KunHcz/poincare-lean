@@ -1,0 +1,12 @@
+The ScalarFlowBounds.lean module is copied unchanged from the same
+applicant's earlier scalar-flow-bounds component, under Apache License 2.0.
+Its reuse is not a new independent contribution.
+
+The independently authored DifferentialGeometry library supplies the metric
+Ricci-flow equation, canonical curvature and regularity, and the scalar
+maximum principle. Mathlib and Lean retain their respective authorship.
+Classical mathematical credit is unchanged. No full Poincare, surgery
+existence, formalization priority or prize decision is asserted.
+
+Dependencies and build caches are not redistributed. Local code is governed
+by LICENSE in this directory; prose follows the root LICENSE-CONTENT.

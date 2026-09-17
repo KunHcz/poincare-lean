@@ -33,6 +33,7 @@ The existing proofs remain useful work toward the original target.
 | Constant positive sectional curvature | Sphere recognition under that explicit metric restriction | [Constant-curvature root](submissions/jsp-000007-dini-extinction/constant-curvature/README.md) |
 | Positive Ricci curvature | Sphere recognition using the independently authored Hamilton formalization, under an explicit positive-Ricci metric restriction | [Positive-Ricci root](submissions/jsp-000007-dini-extinction/positive-ricci/README.md) |
 | General smooth-flow scalar estimates | The actual metric scalar bounds `R >= -6/(1+4t)` and `R >= -3/(2t)`, and the inherited global restart clock, without curvature positivity | [Scalar-flow root](submissions/jsp-000007-dini-extinction/scalar-flow-bounds/README.md) |
+| Finite regular-segment chains | A global scalar bound across changing manifolds, from explicit surviving-region and nonnegative-cap inequalities; the construction of those geometric transitions is not proved | [Finite-chain root](research/flow-chains/README.md) |
 
 The scalar-flow package's complete local replay finished successfully, as
 recorded in its [source-bound evidence](submissions/jsp-000007-dini-extinction/scalar-flow-bounds/evidence/verification.json).

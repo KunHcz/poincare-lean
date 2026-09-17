@@ -1,0 +1,14 @@
+'PoincareFlowChains.transfer_of_survivors_and_nonnegative_caps' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PoincareFlowChains.transfer_comp' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareFlowChains.elapsed_nonnegative' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareFlowChains.normalized_bound_on_finite_chain' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareFlowChains.normalized_bound_from_survivor_and_cap_data' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PoincareFlowChainsTests.elapsed_three_units' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareFlowChainsTests.elapsed_zero_segment' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareFlowChainsTests.restriction_preserves_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareFlowChainsTests.all_nonnegative_caps' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareFlowChainsTests.negative_cap_counterexample' depends on axioms: [propext, Classical.choice, Quot.sound]

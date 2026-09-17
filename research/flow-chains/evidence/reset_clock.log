@@ -1,0 +1,2 @@
+$PROJECT/.lake/verification/reset_clock.lean:2:65: error: unsolved goals
+⊢ False

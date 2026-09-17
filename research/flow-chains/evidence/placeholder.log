@@ -1,0 +1,9 @@
+'PoincareFlowChains.normalized_bound_on_finite_chain' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareFlowChains.normalized_bound_from_survivor_and_cap_data' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PoincareFlowChains.transfer_of_survivors_and_nonnegative_caps' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+$PROJECT/.lake/verification/placeholder.lean:8:8: warning: declaration uses `sorry`
+$PROJECT/.lake/verification/placeholder.lean:9:0: error: PoincareFlowChains.sentinel depends on non-whitelisted axiom sorryAx

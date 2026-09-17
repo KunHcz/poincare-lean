@@ -1,0 +1,12 @@
+{
+  "scope": "Finite chains of actual Ricci flow segments under explicit cap/retained-point scalar assumptions; not a complete Poincare proof",
+  "files": {
+    "ScalarFlowBounds.lean": "f1775a5cac8b9a5d4207ae7e06e333da37cc473a4def9ac57e663e78162596f3",
+    "FlowChainBounds.lean": "e1741f6a9a60bddc74b8dd1679eeb69e620ab8e7989bb2dcfeee5ae7fbd0ac98",
+    "FlowChainTests.lean": "ebf70b3c0fdf3eb507bacb968225f367fd45fe846e9828a8799261e085d200e9",
+    "FlowChainAudit.lean": "6216d13cbca00fdb07f14653e25433fcdf5c0e3b83205c864c05f17b5ba49b42",
+    "lean-toolchain": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
+    "lakefile.toml": "83f32400ef3b20e2cd523e892f6f78338d262152dd1fb2bf5585d9bcd8bace8a",
+    "lake-manifest.json": "694b79b493e6b8b40a33ab11aa74818ce0a0c5bd08b37861e3ae025ccbb5332f"
+  }
+}

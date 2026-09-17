@@ -1,0 +1,118 @@
+{
+  "status": "LOCAL_VERIFIED_NOT_OFFICIALLY_REVIEWED",
+  "scope": "Normalized scalar control on finite chains of genuine Ricci flows, allowing different manifolds, under explicit surviving-region and nonnegative-cap bounds",
+  "full_poincare_formalization": false,
+  "started_at_utc": "2026-09-17T13:49:49.800037+00:00",
+  "completed_at_utc": "2026-09-17T13:57:06.987980+00:00",
+  "lean_version": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "source_files": {
+    "ScalarFlowBounds.lean": "f1775a5cac8b9a5d4207ae7e06e333da37cc473a4def9ac57e663e78162596f3",
+    "FlowChainBounds.lean": "e1741f6a9a60bddc74b8dd1679eeb69e620ab8e7989bb2dcfeee5ae7fbd0ac98",
+    "FlowChainTests.lean": "ebf70b3c0fdf3eb507bacb968225f367fd45fe846e9828a8799261e085d200e9",
+    "FlowChainAudit.lean": "6216d13cbca00fdb07f14653e25433fcdf5c0e3b83205c864c05f17b5ba49b42",
+    "lean-toolchain": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
+    "lakefile.toml": "83f32400ef3b20e2cd523e892f6f78338d262152dd1fb2bf5585d9bcd8bace8a",
+    "lake-manifest.json": "694b79b493e6b8b40a33ab11aa74818ce0a0c5bd08b37861e3ae025ccbb5332f"
+  },
+  "dependency_pins": {
+    "DifferentialGeometry": "ad76f2f1dfb959f4d8fc46fac9ed9feffdf497d9",
+    "mathlib": "0df444a360eaa60ab8c11dca51a86af692955474",
+    "plausible": "b7eb3304aeae834b12dda98993a37f6a41f6f0bb",
+    "LeanSearchClient": "5f4d51b81cbd3f6b32b156bfad9056621a040404",
+    "importGraph": "16f02aa7642864af59f1ff0e384a015994db9118",
+    "proofwidgets": "4be2e3d5087eeb272cf5a8853b8f9dd025ef5957",
+    "aesop": "3448c0bcc5ce01b2d1546e483ec3620e32df3d0e",
+    "Qq": "92c15be17b7caf78c2ad767ec40f89052d908d81",
+    "batteries": "4488d40d070b9700d4d5a6aa342f0d40c31b2a2d",
+    "Cli": "6130a47896ce867c6a4a55373441e59e565bad0f"
+  },
+  "new_production_theorems": [
+    "PoincareFlowChains.transfer_of_survivors_and_nonnegative_caps",
+    "PoincareFlowChains.transfer_comp",
+    "PoincareFlowChains.elapsed_nonnegative",
+    "PoincareFlowChains.normalized_bound_on_finite_chain",
+    "PoincareFlowChains.normalized_bound_from_survivor_and_cap_data"
+  ],
+  "new_regression_theorems": [
+    "PoincareFlowChainsTests.elapsed_three_units",
+    "PoincareFlowChainsTests.elapsed_zero_segment",
+    "PoincareFlowChainsTests.restriction_preserves_bounds",
+    "PoincareFlowChainsTests.all_nonnegative_caps",
+    "PoincareFlowChainsTests.negative_cap_counterexample"
+  ],
+  "axioms": {
+    "PoincareFlowChains.transfer_of_survivors_and_nonnegative_caps": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareFlowChains.transfer_comp": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareFlowChains.elapsed_nonnegative": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareFlowChains.normalized_bound_on_finite_chain": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareFlowChains.normalized_bound_from_survivor_and_cap_data": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareFlowChainsTests.elapsed_three_units": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareFlowChainsTests.elapsed_zero_segment": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareFlowChainsTests.restriction_preserves_bounds": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareFlowChainsTests.all_nonnegative_caps": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareFlowChainsTests.negative_cap_counterexample": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "namespace_wide_audit": true,
+  "full_fresh_kernel_replay": true,
+  "replay_seconds": 408.83,
+  "default_warning_as_error_build": true,
+  "negative_controls": {
+    "extra_axiom": "REJECTED",
+    "placeholder": "REJECTED",
+    "missing_cap_bound": "REJECTED",
+    "not_a_flow": "REJECTED",
+    "reset_clock": "REJECTED"
+  },
+  "source_and_dependencies_checked_before_and_after": true,
+  "reused_scalar_proof_unchanged": true,
+  "surgery_or_cap_construction_proved": false,
+  "geometric_extinction_proved": false,
+  "independent_checker_implementation": false,
+  "independent_human_review": false,
+  "clean_full_dependency_rebuild": false,
+  "eligible_complete_original_problem_submission": false,
+  "verifier_hashes": {
+    "verify.py": "272f9c1d7b19121f4e3e9fd9087302cfabf7e82f1a32e4c6637a9a981dd8468b",
+    "../../submissions/jsp-000007-dini-extinction/constant-curvature/scripts/verify.py": "0d88d7dedc66b48c70369f7e5fecbfc5537676c89c970b551c12f0221bfe6a76"
+  }
+}

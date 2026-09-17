@@ -1,0 +1,9 @@
+ℹ [3839/3840] Replayed FlowChainAudit
+info: FlowChainAudit.lean:4:0: 'PoincareFlowChains.normalized_bound_on_finite_chain' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: FlowChainAudit.lean:5:0: 'PoincareFlowChains.normalized_bound_from_survivor_and_cap_data' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: FlowChainAudit.lean:6:0: 'PoincareFlowChains.transfer_of_survivors_and_nonnegative_caps' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Build completed successfully (3840 jobs).

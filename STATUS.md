@@ -36,16 +36,21 @@ remove these obligations by adding a metric-sign hypothesis to the target.
 
 The new scalar-flow estimates connect real metric curvature to the analytic
 barrier and preserve its elapsed-time clock when a regular segment is
-restarted. The new segment and its inherited initial bound are still inputs;
-the surgery theorem producing them has not been proved here.
+restarted. The finite-chain extension derives the inherited bound from
+explicit pointwise inequalities on surviving regions and nonnegative caps,
+allowing different manifolds in successive segments. The regular flows and
+these geometric transition inequalities remain inputs; the surgery theorem
+constructing them has not been proved here.
 
 ## Disposition of the previous award PR
 
 Awards PR #438 is retained as the same contribution's historical thread and
-changed to a draft. Source migration is completed before removing its
-noncompliant source-file diff. No ready-for-review assertion is made while
-the unrestricted proof is absent. Historical branches and commits remain
-available; no force push or destruction of proof history is used.
+changed to a draft. Its source-file diff was removed at
+`a7b83b3d4788262621542757a6deed0bee805c60`, after the external source copy
+was published and read back. The net diff against the current official main
+is empty. No ready-for-review assertion is made while the unrestricted proof
+is absent. Historical branches and commits remain available; no force push
+or destruction of proof history is used.
 
 A future eligible revision must name a real theorem with exactly the full
 original proposition and verified transitive proof dependencies, identify
