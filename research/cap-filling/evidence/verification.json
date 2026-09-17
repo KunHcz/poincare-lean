@@ -1,0 +1,375 @@
+{
+  "status": "LOCAL_VERIFIED_NOT_OFFICIALLY_REVIEWED",
+  "scope": "Simple connectivity of both actual ball-capped sides of a simply connected boundary adjunction, under explicit closed-embedding and normal/path-connected-piece hypotheses",
+  "started_at_utc": "2026-09-17T14:48:41.333106+00:00",
+  "completed_at_utc": "2026-09-17T14:54:32.596605+00:00",
+  "lean_version": "Lean (version 4.32.1, arm64-apple-darwin24.6.0, commit f054605aea4b840552cca2e725580bffd1e1b704, Release)",
+  "source_files": {
+    "CapFilling.lean": "9f281b4afc6837b0b79c6a4415f745e483d9ccd168397c905815046fd1f0363c",
+    "PuncturedCap.lean": "13c2f8f37e0cad9d66860c15a8f6501a62704c27b57962a75126d455471a36cc",
+    "AttachmentOpen.lean": "3cfa8836b43e00d324515ba00d7808431fe92b02da4fac0614f11ea94c16bae7",
+    "ConnectedCap.lean": "9818f38a07bd59b4df0da97c5ae70b876ae3a60f50e2d734deaf862299275807",
+    "HomotopicFactorization.lean": "c03d895b4ad40732c46e6318426b7fd0c456056e37d916bede443b0bf9d0945d",
+    "CappingTheorem.lean": "fda7cf780b782ed444d9d9876cc331ee1cebff3878a844176cd98ecc4483cbf0",
+    "CapFillingTests.lean": "0b784fa0fcef70ba963b9c33dddf21829e0d4523ec6083acf9ab0c5cc11f742f",
+    "CapFillingAudit.lean": "cb052d444aa4afdead29253d31129bb17acb32a407e44b00f8480e70327bfb93",
+    "lakefile.lean": "aec6e94a2f507d8f2f06b97c10af7322a4e2bf723a76c6783e4125c422b41e3a",
+    "lake-manifest.json": "fa4bf61c8ea36f2803881ed9b2ffda06c25973641bc38d71ae8c28e6b90db0fc",
+    "lean-toolchain": "8e3538e0ab5f81a3ee04927d8838c8c674e0e112838b4b3ce87ec218143276af"
+  },
+  "dependency_pins": {
+    "HatcherLib": "bb91a091f0b968f8bbe8d861e025a88d82b161be",
+    "mathlib": "520045ab14e26149ee970e2e617ca04b09bde5d6",
+    "plausible": "e12c1910fe855cbfc38803cd4e55543906d5fa62",
+    "LeanSearchClient": "c5d5b8fe6e5158def25cd28eb94e4141ad97c843",
+    "importGraph": "7e9612bf0b9ee66db3cb5b9988a35afc706f5a12",
+    "proofwidgets": "6e311e2a844da9b2cc3971187df2fe0066947b93",
+    "aesop": "a7dbf0c63b694e47f425f3dcddbc0e178bb432d3",
+    "Qq": "38d591e778f100aec9762bb582f9c7f55f50e9dc",
+    "batteries": "023ce7d62a0531e22a5331e20b587817a80d49ff",
+    "Cli": "88679d088c9720c27ebdf2ba4dafe17341747f94"
+  },
+  "production_theorems": [
+    "PoincareConjecture.simplyConnected_of_fundamentalGroup_subsingleton",
+    "PoincareConjecture.coverInclusion_surjective_of_other_members_simplyConnected",
+    "PoincareConjecture.inclusion_surjective_of_simplyConnected_cap",
+    "PoincareConjecture.boundaryGluing_boundary_eq",
+    "PoincareConjecture.boundaryGluingDesc_inl",
+    "PoincareConjecture.exists_boundaryGluing_capReplacement",
+    "PoincareConjecture.continuous_closedUnitBallRetraction",
+    "PoincareConjecture.closedUnitBallRetraction_coe",
+    "PoincareConjecture.euclidean_closedUnitBall_tietze",
+    "PoincareConjecture.simplyConnected_of_loop_generating_factorization",
+    "PoincareConjecture.ballAttachmentRadius_inl",
+    "PoincareConjecture.ballAttachmentRadius_inr",
+    "PoincareConjecture.ballAttachmentRadius_bounds",
+    "PoincareConjecture.ballAttachmentRetainedOpen_isOpen",
+    "PoincareConjecture.ballAttachmentCapOpen_isOpen",
+    "PoincareConjecture.ballAttachment_opens_cover",
+    "PoincareConjecture.exists_ballAttachment_coordinates",
+    "PoincareConjecture.puncturedBallDirection_boundary",
+    "PoincareConjecture.puncturedBallExpansion_zero",
+    "PoincareConjecture.puncturedBallExpansion_one",
+    "PoincareConjecture.puncturedBallExpansion_boundary",
+    "PoincareConjecture.puncturedAttachmentRetraction_inl",
+    "PoincareConjecture.puncturedAttachmentDeformation_fixed",
+    "PoincareConjecture.puncturedAttachmentFill_inl",
+    "PoincareConjecture.puncturedAttachmentFill_inr",
+    "PoincareConjecture.puncturedAttachmentFill_mem",
+    "PoincareConjecture.ballAttachmentUnfill_inl",
+    "PoincareConjecture.ballAttachmentUnfill_inr",
+    "PoincareConjecture.ballAttachmentUnfill_fill",
+    "PoincareConjecture.puncturedAttachmentFill_unfill",
+    "PoincareConjecture.continuousOn_ballAttachmentUnfill",
+    "PoincareConjecture.puncturedAttachment_pathConnected",
+    "PoincareConjecture.ballAttachmentRetainedOpen_pathConnected",
+    "PoincareConjecture.ballAttachmentCapOpen_simplyConnected",
+    "PoincareConjecture.capOverlapParametrization_range",
+    "PoincareConjecture.ballAttachment_overlap_pathConnected",
+    "PoincareConjecture.ballAttachment_pathConnected",
+    "PoincareConjecture.simplyConnected_of_loop_generating_homotopic_factorization",
+    "PoincareConjecture.ballAttachment_simplyConnected_of_retained",
+    "PoincareConjecture.capped_piece_simplyConnected",
+    "PoincareConjecture.capped_piece_simplyConnected_of_homeomorph",
+    "PoincareConjecture.both_capped_pieces_simplyConnected"
+  ],
+  "regression_theorems": [
+    "PoincareCapTests.boundaryInclusion_isClosedEmbedding",
+    "PoincareCapTests.doubled_closed_ball_simplyConnected",
+    "PoincareCapTests.two_different_caps_simplyConnected",
+    "PoincareCapTests.cap_center_is_not_retained",
+    "PoincareCapTests.cap_center_and_boundary_are_distinct",
+    "PoincareCapTests.boundary_is_identified_exactly_as_specified",
+    "PoincareCapTests.radial_deformation_fixes_retained_side",
+    "PoincareCapTests.residualCircle_retracts",
+    "PoincareCapTests.circle_product_attachment_not_simplyConnected"
+  ],
+  "axioms": {
+    "PoincareConjecture.simplyConnected_of_fundamentalGroup_subsingleton": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareConjecture.coverInclusion_surjective_of_other_members_simplyConnected": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareConjecture.inclusion_surjective_of_simplyConnected_cap": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareConjecture.boundaryGluing_boundary_eq": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareConjecture.boundaryGluingDesc_inl": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareConjecture.exists_boundaryGluing_capReplacement": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareConjecture.continuous_closedUnitBallRetraction": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareConjecture.closedUnitBallRetraction_coe": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareConjecture.euclidean_closedUnitBall_tietze": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareConjecture.simplyConnected_of_loop_generating_factorization": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareConjecture.ballAttachmentRadius_inl": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareConjecture.ballAttachmentRadius_inr": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareConjecture.ballAttachmentRadius_bounds": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareConjecture.ballAttachmentRetainedOpen_isOpen": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareConjecture.ballAttachmentCapOpen_isOpen": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareConjecture.ballAttachment_opens_cover": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareConjecture.exists_ballAttachment_coordinates": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareConjecture.puncturedBallDirection_boundary": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareConjecture.puncturedBallExpansion_zero": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareConjecture.puncturedBallExpansion_one": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareConjecture.puncturedBallExpansion_boundary": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareConjecture.puncturedAttachmentRetraction_inl": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareConjecture.puncturedAttachmentDeformation_fixed": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareConjecture.puncturedAttachmentFill_inl": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareConjecture.puncturedAttachmentFill_inr": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareConjecture.puncturedAttachmentFill_mem": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareConjecture.ballAttachmentUnfill_inl": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareConjecture.ballAttachmentUnfill_inr": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareConjecture.ballAttachmentUnfill_fill": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareConjecture.puncturedAttachmentFill_unfill": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareConjecture.continuousOn_ballAttachmentUnfill": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareConjecture.puncturedAttachment_pathConnected": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareConjecture.ballAttachmentRetainedOpen_pathConnected": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareConjecture.ballAttachmentCapOpen_simplyConnected": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareConjecture.capOverlapParametrization_range": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareConjecture.ballAttachment_overlap_pathConnected": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareConjecture.ballAttachment_pathConnected": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareConjecture.simplyConnected_of_loop_generating_homotopic_factorization": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareConjecture.ballAttachment_simplyConnected_of_retained": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareConjecture.capped_piece_simplyConnected": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareConjecture.capped_piece_simplyConnected_of_homeomorph": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareConjecture.both_capped_pieces_simplyConnected": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareCapTests.boundaryInclusion_isClosedEmbedding": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareCapTests.doubled_closed_ball_simplyConnected": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareCapTests.two_different_caps_simplyConnected": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareCapTests.cap_center_is_not_retained": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareCapTests.cap_center_and_boundary_are_distinct": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareCapTests.boundary_is_identified_exactly_as_specified": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareCapTests.radial_deformation_fixes_retained_side": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareCapTests.residualCircle_retracts": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareCapTests.circle_product_attachment_not_simplyConnected": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "namespace_wide_audit": true,
+  "default_build_pass": true,
+  "allowed_dependency_warnings": [
+    "warning: HatcherLib/Ch1/Circle.lean:38:0: Definition `unitCircleCov` is a proposition; use `theorem` instead of `def`"
+  ],
+  "full_fresh_kernel_replay": true,
+  "replay_seconds": 313.34,
+  "negative_controls": {
+    "extra_axiom": "REJECTED",
+    "placeholder": "REJECTED",
+    "missing_original_simple_connectivity": "REJECTED",
+    "missing_closed_boundary_embedding": "REJECTED",
+    "collapsed_ball_radius": "REJECTED"
+  },
+  "actual_boundary_quotients_and_ball_constructed": true,
+  "open_cover_and_loop_generation_derived": true,
+  "concrete_doubled_ball_regression": true,
+  "concrete_nonsimplyconnected_attachment_counterexample": true,
+  "geometric_cut_identification_constructed": false,
+  "ricci_surgery_or_curvature_control_constructed": false,
+  "geometric_extinction_proved": false,
+  "full_poincare_formalization": false,
+  "eligible_complete_original_problem_submission": false,
+  "independent_checker_implementation": false,
+  "independent_human_review": false,
+  "clean_full_dependency_rebuild": false,
+  "source_and_dependencies_checked_before_and_after": true,
+  "verifier_hashes": {
+    "verify.py": "5fe769acf12ec7ca97657c40a6bc3d3e2d3eba7ce7ae7f78b2997debe2287991",
+    "../../submissions/jsp-000007-dini-extinction/scripts/verify_topology_extension.py": "d03ec5f9eff170173f59de4c4ad763854fa5ea58ff45879f2996275414203539"
+  }
+}

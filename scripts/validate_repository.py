@@ -42,7 +42,7 @@ def public_files(root: Path):
         dirs[:] = [d for d in dirs if d not in EXCLUDED]
         for filename in files:
             path = Path(current) / filename
-            if path.suffix == ".pyc" or filename == ".DS_Store":
+            if path.suffix == ".pyc" or filename in {".DS_Store", ".git"}:
                 continue
             if path.is_symlink():
                 raise ValueError("Unexpected published symlink: " + str(path))
@@ -104,9 +104,10 @@ def validate(root: Path, require_complete: bool = False) -> dict:
     bindings = check_record(package, package / "evidence/verification.json")
     for component in ["constant-curvature", "positive-ricci", "scalar-flow-bounds"]:
         bindings += check_record(package / component, package / component / "evidence/verification.json")
-    chain = root / "research/flow-chains"
-    if chain.is_dir():
-        bindings += check_record(chain, chain / "evidence/verification.json")
+    for component in ["flow-chains", "cap-filling"]:
+        research = root / "research" / component
+        if research.is_dir():
+            bindings += check_record(research, research / "evidence/verification.json")
     cfg = json.loads((package / "verification-config.json").read_text())
     for relative, expected in cfg["unchanged_files"].items():
         if sha256(safe_path(package, relative)) != expected:

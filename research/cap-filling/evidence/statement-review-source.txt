@@ -1,0 +1,9 @@
+import CapFillingAudit
+#check @PoincareConjecture.capped_piece_simplyConnected
+#check @PoincareConjecture.both_capped_pieces_simplyConnected
+#check @PoincareConjecture.capped_piece_simplyConnected_of_homeomorph
+#print PoincareConjecture.BoundaryGluingRel
+#print PoincareConjecture.BoundaryGluing
+#print PoincareConjecture.BallAttachment
+#print PoincareConjecture.ThreeBall
+#print PoincareConjecture.Sphere2

@@ -1,0 +1,14 @@
+test_boolean_flip_is_not_a_proof (test_repository.CompletenessTests) ... ok
+test_cap_component_has_exact_source_bound_evidence (test_repository.CompletenessTests) ... ok
+test_component_theorem_cannot_be_named_as_full_proof (test_repository.CompletenessTests) ... ok
+test_escaping_path_is_rejected (test_repository.CompletenessTests) ... ok
+test_honest_research_state_accepted (test_repository.CompletenessTests) ... ok
+test_incomplete_submission_rejected (test_repository.CompletenessTests) ... ok
+test_preserved_repository (test_repository.CompletenessTests) ... ok
+test_string_false_is_rejected (test_repository.CompletenessTests) ... ok
+test_worktree_git_pointer_is_not_published_source (test_repository.CompletenessTests) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.025s
+
+OK

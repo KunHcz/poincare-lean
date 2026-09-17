@@ -1,0 +1,21 @@
+This component continues the same applicant's Poincare formalization work.
+
+The basepoint-independence helper was copied from the existing checked
+Poincare-Conjecture implementation at
+d5cf293fcee9164a449fcc833d049d51aab52bc3, under Apache License 2.0.
+An earlier unpublished cap-filling candidate by the same applicant supplied
+the quotient, Tietze and loop-generation starting code. The candidate was
+not a completed or publicly accepted theorem; its new extension, fixes and
+verification are documented in this component.
+
+HatcherLib is the separately authored reference library pinned at
+bb91a091f0b968f8bbe8d861e025a88d82b161be, in
+https://github.com/frenzymath/Poincare-Conjecture/tree/bb91a091f0b968f8bbe8d861e025a88d82b161be/formalized-sources/Hatcher
+The component uses its proved van Kampen surjectivity and circle group
+calculation, not a missing kernel-identification theorem. Those authors,
+Hatcher, Lean and Mathlib retain the relevant mathematical and code credit.
+
+Local Lean and Python code is under the included Apache License 2.0.
+Dependencies and build caches are not redistributed. This research component
+is not an eligible complete-original-problem prize submission and makes no
+formalization-priority, solver-credit, allocation or payment claim.

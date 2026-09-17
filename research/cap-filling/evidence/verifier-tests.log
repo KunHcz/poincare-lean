@@ -1,0 +1,13 @@
+test_changed_source_rejected (test_verify.CapVerificationTests) ... ok
+test_escaping_input_rejected (test_verify.CapVerificationTests) ... ok
+test_extra_axiom_rejected (test_verify.CapVerificationTests) ... ok
+test_missing_or_duplicate_audit (test_verify.CapVerificationTests) ... ok
+test_standard_axioms (test_verify.CapVerificationTests) ... ok
+test_unexpected_source_rejected (test_verify.CapVerificationTests) ... ok
+test_unexpected_warning_rejected (test_verify.CapVerificationTests) ... ok
+test_unpinned_dependency_rejected (test_verify.CapVerificationTests) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.004s
+
+OK
