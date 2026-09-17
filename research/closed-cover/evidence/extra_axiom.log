@@ -1,0 +1,7 @@
+'PoincareClosedCover.closedCoverHomeomorph' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareClosedCover.both_closed_cover_caps_simplyConnected' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareClosedCover.caps_of_collared_separation_simplyConnected' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PoincareClosedCoverTests.actual_closed_ball_cover_caps' depends on axioms: [propext, Classical.choice, Quot.sound]
+$PROJECT/.lake/verification-stages/extra_axiom.lean:10:0: error: PoincareClosedCover.sentinel depends on non-whitelisted axiom PoincareClosedCover.sentinel

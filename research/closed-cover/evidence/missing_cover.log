@@ -1,0 +1,2 @@
+$PROJECT/.lake/verification-stages/missing_cover.lean:84:32: error: Invalid rewrite argument: Expected an equality or iff proof or definition name, but `hcover` is a proof of
+  True

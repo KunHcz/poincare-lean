@@ -1,0 +1,4 @@
+$PROJECT/.lake/verification-stages/missing_original_simple_connectivity.lean:185:41: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  SimplyConnectedSpace M
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.

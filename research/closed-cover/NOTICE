@@ -1,0 +1,23 @@
+This is an additive component of the same Poincare formalization project.
+
+The six reused cap-filling source files are byte-identical to the checked
+research/cap-filling component at:
+KunHcz/poincare-lean@7cbfeafc6712a02782f44a7d2f36ab8e0f892add.
+Their original mathematical and code attribution is retained. They are not
+counted as newly originated theorems in this component.
+
+HatcherLib is pinned at bb91a091f0b968f8bbe8d861e025a88d82b161be in
+frenzymath/Poincare-Conjecture/formalized-sources/Hatcher. The inherited
+proof uses its proved van Kampen surjectivity, not an unproved kernel
+identification. Lean, Mathlib, Hatcher and the respective library authors
+retain their credit for the underlying mathematics and formalization.
+
+The local contribution is the checked closed-cover quotient recognition
+and the supplied-collar path-to-cap bridge. These are classical topological
+arguments, not a claim of discovering the Poincare proof. The exact original
+Poincare theorem and the official complete-proof submission gate stay open.
+
+Local Lean/Python code is governed by the included Apache License 2.0.
+No dependency sources, build caches, credentials or private local paths are
+redistributed. No formalization priority, solver share, prize eligibility,
+allocation or payment is asserted.

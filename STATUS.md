@@ -51,6 +51,15 @@ caps, curvature bounds, or a connected-sum recognition theorem. Those
 remaining geometric and reconstruction obligations are not discharged by
 this topology result.
 
+The closed-cover component now derives the boundary-adjunction homeomorphism
+from an actual compact Hausdorff closed cover, rather than taking a gluing
+homeomorphism as an input. It also derives path connectivity of complementary
+closed sides from given path-connected open regions and an actual two-sided
+open-embedded collar. Its final cap theorem therefore removes those previously
+separate caller obligations. Existence of the separating sphere and collar,
+the metric surgery construction, curvature control and the unrestricted
+Poincare proof remain distinct unproved obligations here.
+
 ## Disposition of the previous award PR
 
 Awards PR #438 is retained as the same contribution's historical thread and

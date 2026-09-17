@@ -35,6 +35,7 @@ The existing proofs remain useful work toward the original target.
 | General smooth-flow scalar estimates | The actual metric scalar bounds `R >= -6/(1+4t)` and `R >= -3/(2t)`, and the inherited global restart clock, without curvature positivity | [Scalar-flow root](submissions/jsp-000007-dini-extinction/scalar-flow-bounds/README.md) |
 | Finite regular-segment chains | A global scalar bound across changing manifolds, from explicit surviving-region and nonnegative-cap inequalities; the construction of those geometric transitions is not proved | [Finite-chain root](research/flow-chains/README.md) |
 | Topological ball capping | Both capped sides of an explicitly simply connected boundary gluing are simply connected; open sets, retraction homotopy and loop generation are constructed | [Cap-filling root](research/cap-filling/README.md) |
+| Closed-cover cutting | Derives the original-space gluing homeomorphism for actual closed subsets; a supplied two-sided collar gives closed-side paths and capped simple connectivity | [Closed-cover root](research/closed-cover/README.md) |
 
 The scalar-flow package's complete local replay finished successfully, as
 recorded in its [source-bound evidence](submissions/jsp-000007-dini-extinction/scalar-flow-bounds/evidence/verification.json).

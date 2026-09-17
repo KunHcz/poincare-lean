@@ -1,0 +1,30 @@
+'PoincareClosedCover.closedCoverProjection_left' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareClosedCover.closedCoverProjection_right' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareClosedCover.closedCoverProjection_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareClosedCover.closedCoverProjection_surjective' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareClosedCover.sphericalBoundaryLeft_isClosedEmbedding' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareClosedCover.sphericalBoundaryRight_isClosedEmbedding' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PoincareClosedCover.both_closed_cover_caps_simplyConnected' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareClosedCover.isPathConnected_of_boundary_access' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareClosedCover.complementSide_pathConnected_of_halfCollar' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PoincareClosedCover.positiveHalfTime_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareClosedCover.negativeHalfTime_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareClosedCover.complementary_closed_sides_pathConnected' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PoincareClosedCover.caps_of_collared_separation_simplyConnected' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PoincareClosedCoverTests.twoPointCover_left' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareClosedCoverTests.twoPointCover_right' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareClosedCoverTests.duplicate_cover_identifies_overlap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareClosedCoverTests.covering_condition_is_necessary' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareClosedCoverTests.ballBoundary_isClosed' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareClosedCoverTests.ballBoundary_pathConnected' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareClosedCoverTests.actual_closed_ball_cover_caps' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareClosedCoverTests.positive_half_stays_inside' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareClosedCoverTests.negative_half_stays_inside' depends on axioms: [propext, Classical.choice, Quot.sound]

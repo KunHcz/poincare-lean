@@ -1,0 +1,8 @@
+ℹ [3063/3064] Built ClosedCoverAudit (9.4s)
+info: ClosedCoverAudit.lean:4:0: 'PoincareClosedCover.closedCoverHomeomorph' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ClosedCoverAudit.lean:5:0: 'PoincareClosedCover.both_closed_cover_caps_simplyConnected' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ClosedCoverAudit.lean:6:0: 'PoincareClosedCover.caps_of_collared_separation_simplyConnected' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ClosedCoverAudit.lean:7:0: 'PoincareClosedCoverTests.actual_closed_ball_cover_caps' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully (3064 jobs).

@@ -1,0 +1,19 @@
+$PROJECT/.lake/verification-stages/missing_disjointness.lean:53:66: error: Application type mismatch: The argument
+  hdisjoint
+has type
+  True
+but is expected to have type
+  Disjoint ?m.47 ?m.48
+in the application
+  disjoint_left.mp hdisjoint
+$PROJECT/.lake/verification-stages/missing_disjointness.lean:144:67: error(lean.invalidField): Invalid field `symm`: The environment does not contain `True.symm`, so it is not possible to project the field `symm` from an expression
+  hdisjoint
+of type `True`
+$PROJECT/.lake/verification-stages/missing_disjointness.lean:173:52: error: Application type mismatch: The argument
+  hdisjoint
+has type
+  True
+but is expected to have type
+  Disjoint ?m.110 ?m.111
+in the application
+  disjoint_left.mp hdisjoint
