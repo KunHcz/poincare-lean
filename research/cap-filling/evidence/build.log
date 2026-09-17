@@ -1,0 +1,17 @@
+⚠ [3079/3083] Replayed HatcherLib.Ch1.Circle
+warning: HatcherLib/Ch1/Circle.lean:38:0: Definition `unitCircleCov` is a proposition; use `theorem` instead of `def`
+
+Note: This linter can be disabled with `set_option linter.defProp false`
+ℹ [3082/3083] Replayed CapFillingAudit
+info: CapFillingAudit.lean:4:0: 'PoincareConjecture.capped_piece_simplyConnected' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CapFillingAudit.lean:5:0: 'PoincareConjecture.capped_piece_simplyConnected_of_homeomorph' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: CapFillingAudit.lean:6:0: 'PoincareConjecture.ballAttachment_simplyConnected_of_retained' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: CapFillingAudit.lean:7:0: 'PoincareCapTests.doubled_closed_ball_simplyConnected' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: CapFillingAudit.lean:8:0: 'PoincareCapTests.circle_product_attachment_not_simplyConnected' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Build completed successfully (3083 jobs).

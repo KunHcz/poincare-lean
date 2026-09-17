@@ -1,0 +1,16 @@
+$PROJECT/.lake/verification/missing_closed_boundary_embedding.lean:85:54: error: Application type mismatch: The argument
+  hj
+has type
+  True
+but is expected to have type
+  IsClosedEmbedding ⇑j
+in the application
+  exists_boundaryGluing_capReplacement (⇑i) (⇑j) hj
+$PROJECT/.lake/verification/missing_closed_boundary_embedding.lean:154:41: error: Application type mismatch: The argument
+  hj
+has type
+  True
+but is expected to have type
+  IsClosedEmbedding ⇑j
+in the application
+  capped_piece_simplyConnected j i hj

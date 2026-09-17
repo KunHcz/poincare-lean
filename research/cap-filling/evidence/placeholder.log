@@ -1,0 +1,13 @@
+'PoincareConjecture.capped_piece_simplyConnected' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareConjecture.capped_piece_simplyConnected_of_homeomorph' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PoincareConjecture.ballAttachment_simplyConnected_of_retained' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PoincareCapTests.doubled_closed_ball_simplyConnected' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareCapTests.circle_product_attachment_not_simplyConnected' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+$PROJECT/.lake/verification/placeholder.lean:10:8: warning: declaration uses `sorry`
+$PROJECT/.lake/verification/placeholder.lean:11:0: error: PoincareConjecture.capSentinel depends on non-whitelisted axiom sorryAx

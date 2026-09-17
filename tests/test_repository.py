@@ -30,9 +30,19 @@ class CompletenessTests(unittest.TestCase):
                 verify.check_completeness(state, False)
 
     def test_component_theorem_cannot_be_named_as_full_proof(self):
-        self.state["full_theorem_declaration"] = "PoincareHamilton.positiveRicci_poincare"
-        with self.assertRaisesRegex(ValueError, "Unverified"):
-            verify.check_completeness(self.state, False)
+        for name in ["PoincareHamilton.positiveRicci_poincare",
+                     "PoincareConjecture.capped_piece_simplyConnected"]:
+            state = copy.deepcopy(self.state)
+            state["full_theorem_declaration"] = name
+            with self.subTest(theorem=name), self.assertRaisesRegex(ValueError, "Unverified"):
+                verify.check_completeness(state, False)
+
+    def test_cap_component_has_exact_source_bound_evidence(self):
+        component = ROOT / "research/cap-filling"
+        self.assertGreater(verify.check_record(component, component / "evidence/verification.json"), 8)
+        record = json.loads((component / "evidence/verification.json").read_text())
+        self.assertFalse(record["eligible_complete_original_problem_submission"])
+        self.assertIn("PoincareConjecture.capped_piece_simplyConnected", record["production_theorems"])
 
     def test_string_false_is_rejected(self):
         self.state["submission_ready"] = "false"
@@ -43,6 +53,13 @@ class CompletenessTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as temp:
             with self.assertRaises(ValueError):
                 verify.safe_path(Path(temp), "../outside")
+
+    def test_worktree_git_pointer_is_not_published_source(self):
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp)
+            (root / ".git").write_text("gitdir: external-worktree-metadata\n")
+            (root / "proof.lean").write_text("-- public proof source\n")
+            self.assertEqual([p.name for p in verify.public_files(root)], ["proof.lean"])
 
     def test_preserved_repository(self):
         result = verify.validate(ROOT)

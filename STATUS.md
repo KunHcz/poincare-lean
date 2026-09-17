@@ -42,6 +42,15 @@ allowing different manifolds in successive segments. The regular flows and
 these geometric transition inequalities remain inputs; the surgery theorem
 constructing them has not been proved here.
 
+The cap-filling component now proves preservation of simple connectivity
+when either or both normal path-connected sides of a simply connected
+boundary adjunction are capped by standard closed three-balls. It constructs
+the topological quotient, its open cover, radial deformation and generating
+loop map. It does not construct a manifold cut/collar identification, metric
+caps, curvature bounds, or a connected-sum recognition theorem. Those
+remaining geometric and reconstruction obligations are not discharged by
+this topology result.
+
 ## Disposition of the previous award PR
 
 Awards PR #438 is retained as the same contribution's historical thread and

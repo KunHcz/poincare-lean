@@ -1,0 +1,38 @@
+@PoincareConjecture.capped_piece_simplyConnected : ∀ {X : Type u_1} [inst : TopologicalSpace X] [NormalSpace X]
+  [PathConnectedSpace X] {Y : Type u_2} [inst_3 : TopologicalSpace Y] [NormalSpace Y]
+  (i : C(PoincareConjecture.Sphere2, X)) (j : C(PoincareConjecture.Sphere2, Y)),
+  Topology.IsClosedEmbedding ⇑i →
+    Topology.IsClosedEmbedding ⇑j →
+      ∀ [SimplyConnectedSpace (PoincareConjecture.BoundaryGluing ⇑i ⇑j)],
+        SimplyConnectedSpace (PoincareConjecture.BallAttachment i)
+@PoincareConjecture.both_capped_pieces_simplyConnected : ∀ {X : Type u_1} [inst : TopologicalSpace X] [NormalSpace X]
+  [PathConnectedSpace X] {Y : Type u_2} [inst_3 : TopologicalSpace Y] [NormalSpace Y] [PathConnectedSpace Y]
+  (i : C(PoincareConjecture.Sphere2, X)) (j : C(PoincareConjecture.Sphere2, Y)),
+  Topology.IsClosedEmbedding ⇑i →
+    Topology.IsClosedEmbedding ⇑j →
+      ∀ [SimplyConnectedSpace (PoincareConjecture.BoundaryGluing ⇑i ⇑j)],
+        SimplyConnectedSpace (PoincareConjecture.BallAttachment i) ∧
+          SimplyConnectedSpace (PoincareConjecture.BallAttachment j)
+@PoincareConjecture.capped_piece_simplyConnected_of_homeomorph : ∀ {X : Type u_1} [inst : TopologicalSpace X]
+  [NormalSpace X] [PathConnectedSpace X] {Y : Type u_2} [inst_3 : TopologicalSpace Y] [NormalSpace Y] {M : Type u_3}
+  [inst_5 : TopologicalSpace M] [SimplyConnectedSpace M] (i : C(PoincareConjecture.Sphere2, X))
+  (j : C(PoincareConjecture.Sphere2, Y)),
+  Topology.IsClosedEmbedding ⇑i →
+    Topology.IsClosedEmbedding ⇑j →
+      ∀ (e : M ≃ₜ PoincareConjecture.BoundaryGluing ⇑i ⇑j), SimplyConnectedSpace (PoincareConjecture.BallAttachment i)
+inductive PoincareConjecture.BoundaryGluingRel.{u, v, w} : {C : Type u} →
+  {X : Type v} → {Y : Type w} → (C → X) → (C → Y) → X ⊕ Y → X ⊕ Y → Prop
+number of parameters: 5
+constructors:
+PoincareConjecture.BoundaryGluingRel.glue : ∀ {C : Type u} {X : Type v} {Y : Type w} {i : C → X} {j : C → Y} (c : C),
+  PoincareConjecture.BoundaryGluingRel i j (Sum.inl (i c)) (Sum.inr (j c))
+@[reducible] def PoincareConjecture.BoundaryGluing.{u, v, w} : {C : Type u} →
+  {X : Type v} → {Y : Type w} → (C → X) → (C → Y) → Type (max w v) :=
+fun {C} {X} {Y} i j => Quot (PoincareConjecture.BoundaryGluingRel i j)
+@[reducible] def PoincareConjecture.BallAttachment.{u} : {X : Type u} →
+  [inst : TopologicalSpace X] → C(PoincareConjecture.Sphere2, X) → Type (max 0 u) :=
+fun {X} [TopologicalSpace X] i => PoincareConjecture.BoundaryGluing ⇑i ⇑PoincareConjecture.sphere2BoundaryInclusion
+@[reducible] def PoincareConjecture.ThreeBall : Type :=
+↑(Metric.closedBall 0 1)
+@[reducible] def PoincareConjecture.Sphere2 : Type :=
+↑(Metric.sphere 0 1)

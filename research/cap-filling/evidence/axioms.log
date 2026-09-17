@@ -1,0 +1,69 @@
+'PoincareConjecture.simplyConnected_of_fundamentalGroup_subsingleton' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PoincareConjecture.coverInclusion_surjective_of_other_members_simplyConnected' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PoincareConjecture.inclusion_surjective_of_simplyConnected_cap' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PoincareConjecture.boundaryGluing_boundary_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareConjecture.boundaryGluingDesc_inl' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareConjecture.exists_boundaryGluing_capReplacement' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareConjecture.continuous_closedUnitBallRetraction' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareConjecture.closedUnitBallRetraction_coe' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareConjecture.euclidean_closedUnitBall_tietze' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareConjecture.simplyConnected_of_loop_generating_factorization' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PoincareConjecture.ballAttachmentRadius_inl' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareConjecture.ballAttachmentRadius_inr' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareConjecture.ballAttachmentRadius_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareConjecture.ballAttachmentRetainedOpen_isOpen' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareConjecture.ballAttachmentCapOpen_isOpen' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareConjecture.ballAttachment_opens_cover' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareConjecture.exists_ballAttachment_coordinates' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareConjecture.puncturedBallDirection_boundary' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareConjecture.puncturedBallExpansion_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareConjecture.puncturedBallExpansion_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareConjecture.puncturedBallExpansion_boundary' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareConjecture.puncturedAttachmentRetraction_inl' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareConjecture.puncturedAttachmentDeformation_fixed' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareConjecture.puncturedAttachmentFill_inl' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareConjecture.puncturedAttachmentFill_inr' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareConjecture.puncturedAttachmentFill_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareConjecture.ballAttachmentUnfill_inl' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareConjecture.ballAttachmentUnfill_inr' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareConjecture.ballAttachmentUnfill_fill' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareConjecture.puncturedAttachmentFill_unfill' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareConjecture.continuousOn_ballAttachmentUnfill' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareConjecture.puncturedAttachment_pathConnected' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareConjecture.ballAttachmentRetainedOpen_pathConnected' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareConjecture.ballAttachmentCapOpen_simplyConnected' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareConjecture.capOverlapParametrization_range' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareConjecture.ballAttachment_overlap_pathConnected' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareConjecture.ballAttachment_pathConnected' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareConjecture.simplyConnected_of_loop_generating_homotopic_factorization' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PoincareConjecture.ballAttachment_simplyConnected_of_retained' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PoincareConjecture.capped_piece_simplyConnected' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareConjecture.capped_piece_simplyConnected_of_homeomorph' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PoincareConjecture.both_capped_pieces_simplyConnected' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareCapTests.boundaryInclusion_isClosedEmbedding' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareCapTests.doubled_closed_ball_simplyConnected' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareCapTests.two_different_caps_simplyConnected' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareCapTests.cap_center_is_not_retained' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareCapTests.cap_center_and_boundary_are_distinct' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareCapTests.boundary_is_identified_exactly_as_specified' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PoincareCapTests.radial_deformation_fixes_retained_side' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareCapTests.residualCircle_retracts' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareCapTests.circle_product_attachment_not_simplyConnected' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

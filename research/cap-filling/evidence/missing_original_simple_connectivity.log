@@ -1,0 +1,13 @@
+$PROJECT/.lake/verification/missing_original_simple_connectivity.lean:103:8: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  SimplyConnectedSpace (BoundaryGluing ⇑i ⇑j)
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+$PROJECT/.lake/verification/missing_original_simple_connectivity.lean:114:5: warning: Variable name `e` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+$PROJECT/.lake/verification/missing_original_simple_connectivity.lean:153:4: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  SimplyConnectedSpace (BoundaryGluing ⇑i ⇑j)
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
