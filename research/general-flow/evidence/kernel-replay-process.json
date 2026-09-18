@@ -1,0 +1,8 @@
+{
+  "exit_code": 0,
+  "elapsed_seconds": 4418.7,
+  "peak_rss_kib": 10746368,
+  "memory_limit_mb": 24576,
+  "time_limit_seconds": 7200,
+  "guard": null
+}

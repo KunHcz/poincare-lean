@@ -1,0 +1,39 @@
+{
+  "scope": "Arbitrary initial metric maximal smooth Ricci flow, uniqueness and actual scalar control; not surgery or full Poincare",
+  "root": "GeneralRicciFlowAudit",
+  "files": {
+    "GeneralRicciFlow.lean": "8991a57b96b514c51e7f6fb55524c383942f592fddb976b54b63675d30a583e4",
+    "GeneralRicciFlowTests.lean": "b77553b266fe448ff8ef61e2f4dcbc810d8a0cb27222b63e53e38e09800492c6",
+    "GeneralRicciFlowAudit.lean": "ec866d48f54506016c0b06dd5788c488378e2c86bd19c9e672c2236b5a662e57",
+    "ScalarFlowBounds.lean": "f1775a5cac8b9a5d4207ae7e06e333da37cc473a4def9ac57e663e78162596f3",
+    "lean-toolchain": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
+    "lakefile.toml": "c12b4b9e01b3cd5634556e68ae1b4789a689392ee5b74022913a32d0310578a9",
+    "lake-manifest.json": "b43145b210d6127969660a5efb363b01fecdc13f74e03552e9c673d36bc5b58c"
+  },
+  "production_theorems": [
+    "PoincareGeneralFlow.initial_metric_exists",
+    "PoincareGeneralFlow.arbitrary_metric_maximal_flow",
+    "PoincareGeneralFlow.initial_metric_and_maximal_flow",
+    "PoincareGeneralFlow.restrictFlowTo_metric",
+    "PoincareGeneralFlow.restrictImmortal_metric",
+    "PoincareGeneralFlow.solution_agrees_of_metrics",
+    "PoincareGeneralFlow.finite_maximal_dominates",
+    "PoincareGeneralFlow.finite_maximal_excludes_immortal",
+    "PoincareGeneralFlow.maximal_endpoint_unique",
+    "PoincareGeneralFlow.maximal_metric_unique",
+    "PoincareGeneralFlow.maximal_has_finite_view",
+    "PoincareGeneralFlow.maximal_normalized_scalar_bound",
+    "PoincareGeneralFlow.maximal_universal_scalar_bound",
+    "PoincareGeneralFlow.maximal_has_global_scalar_barrier",
+    "PoincareGeneralFlow.finite_maximal_curvature_unbounded"
+  ],
+  "regression_theorems": [
+    "PoincareGeneralFlowTests.sphere_model_has_distinct_points",
+    "PoincareGeneralFlowTests.sphere_initial_metric_and_maximal_flow",
+    "PoincareGeneralFlowTests.sphere_flow_has_positive_lifetime",
+    "PoincareGeneralFlowTests.maximal_flow_satisfies_literal_metric_PDE",
+    "PoincareGeneralFlowTests.maximal_and_immortal_cannot_coexist",
+    "PoincareGeneralFlowTests.finite_view_of_immortal_is_not_maximal",
+    "PoincareGeneralFlowTests.literal_scalar_bound"
+  ]
+}

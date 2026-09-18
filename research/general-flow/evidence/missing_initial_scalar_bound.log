@@ -1,0 +1,7 @@
+$PROJECT/.lake/verification/missing_initial_scalar_bound.lean:205:12: error: Function expected at
+  hinit
+but this term has type
+  True
+
+Note: Expected a function because this term is being applied to the argument
+  y

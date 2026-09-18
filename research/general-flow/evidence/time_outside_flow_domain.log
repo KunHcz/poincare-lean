@@ -1,0 +1,39 @@
+$PROJECT/.lake/verification/time_outside_flow_domain.lean:174:4: error: Type mismatch
+  ht
+has type
+  True
+but is expected to have type
+  0 ≤ t ∧ TimeEndpoint.upperLt t P.endpoint
+$PROJECT/.lake/verification/time_outside_flow_domain.lean:175:48: error: Application type mismatch: The argument
+  ht
+has type
+  True
+but is expected to have type
+  P.IsDefinedAt t
+in the application
+  MaximalForwardRicciFlow.metric_eq P Q t ht
+$PROJECT/.lake/verification/time_outside_flow_domain.lean:186:36: error: Invalid projection: Projections extract constructor fields for one-constructor inductive types. The expression
+  ht
+has type `True` which has no fields.
+$PROJECT/.lake/verification/time_outside_flow_domain.lean:188:40: error: Invalid projection: Projections extract constructor fields for one-constructor inductive types. The expression
+  ht
+has type `True` which has no fields.
+$PROJECT/.lake/verification/time_outside_flow_domain.lean:205:21: error: Invalid projection: Projections extract constructor fields for one-constructor inductive types. The expression
+  ht
+has type `True` which has no fields.
+$PROJECT/.lake/verification/time_outside_flow_domain.lean:222:53: error: Application type mismatch: The argument
+  MaximalForwardRicciFlow.zero_defined P
+has type
+  P.IsDefinedAt 0
+but is expected to have type
+  True
+in the application
+  maximal_has_finite_view P (MaximalForwardRicciFlow.zero_defined P)
+$PROJECT/.lake/verification/time_outside_flow_domain.lean:231:54: error: Application type mismatch: The argument
+  ht
+has type
+  P.IsDefinedAt t
+but is expected to have type
+  True
+in the application
+  maximal_has_finite_view P ht

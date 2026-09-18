@@ -1,0 +1,42 @@
+'PoincareGeneralFlow.initial_metric_exists' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareGeneralFlow.arbitrary_metric_maximal_flow' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareGeneralFlow.initial_metric_and_maximal_flow' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareGeneralFlow.restrictFlowTo_metric' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareGeneralFlow.restrictImmortal_metric' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareGeneralFlow.solution_agrees_of_metrics' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareGeneralFlow.finite_maximal_dominates' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareGeneralFlow.finite_maximal_excludes_immortal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareGeneralFlow.maximal_endpoint_unique' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareGeneralFlow.maximal_metric_unique' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareGeneralFlow.maximal_has_finite_view' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareGeneralFlow.maximal_normalized_scalar_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareGeneralFlow.maximal_universal_scalar_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareGeneralFlow.maximal_has_global_scalar_barrier' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareGeneralFlow.finite_maximal_curvature_unbounded' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareGeneralFlowTests.sphere_model_has_distinct_points' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareGeneralFlowTests.sphere_initial_metric_and_maximal_flow' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PoincareGeneralFlowTests.sphere_flow_has_positive_lifetime' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareGeneralFlowTests.maximal_flow_satisfies_literal_metric_PDE' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PoincareGeneralFlowTests.maximal_and_immortal_cannot_coexist' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PoincareGeneralFlowTests.finite_view_of_immortal_is_not_maximal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PoincareGeneralFlowTests.literal_scalar_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DifferentialGeometry.PDE.RicciFlow.exists_maximal_forward_ricci_flow' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'DifferentialGeometry.PDE.RicciFlow.exists_immortal_or_finite_singularity' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'DifferentialGeometry.PDE.RicciFlow.ricci_flow_short_time_existence' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'DifferentialGeometry.Geometry.nonempty_smoothRiemannianMetric' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

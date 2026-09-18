@@ -1,0 +1,11 @@
+'DifferentialGeometry.PDE.RicciFlow.exists_maximal_forward_ricci_flow' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'DifferentialGeometry.PDE.RicciFlow.exists_immortal_or_finite_singularity' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PoincareGeneralFlow.initial_metric_and_maximal_flow' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareGeneralFlow.maximal_endpoint_unique' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareGeneralFlow.maximal_universal_scalar_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareGeneralFlowTests.sphere_flow_has_positive_lifetime' depends on axioms: [propext, Classical.choice, Quot.sound]
+$PROJECT/.lake/verification/extra_axiom.lean:12:0: error: PoincareGeneralFlow.sentinel depends on non-whitelisted axiom PoincareGeneralFlow.sentinel

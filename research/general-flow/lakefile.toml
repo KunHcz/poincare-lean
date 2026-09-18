@@ -1,0 +1,23 @@
+name = "GeneralRicciFlow"
+version = "0.1.0"
+defaultTargets = ["GeneralRicciFlow", "GeneralRicciFlowTests", "GeneralRicciFlowAudit"]
+
+[leanOptions]
+autoImplicit = false
+
+[[require]]
+name = "DifferentialGeometry"
+git = "https://github.com/KunHcz/differential-geometry.git"
+rev = "1ccb5e688b253701690300867ffb20e467855d2b"
+
+[[lean_lib]]
+name = "GeneralRicciFlow"
+
+[[lean_lib]]
+name = "ScalarFlowBounds"
+
+[[lean_lib]]
+name = "GeneralRicciFlowTests"
+
+[[lean_lib]]
+name = "GeneralRicciFlowAudit"

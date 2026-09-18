@@ -1,0 +1,6 @@
+$PROJECT/.lake/verification/discarded_immortal_branch.lean:8:2: error: Type mismatch
+  PoincareGeneralFlow.arbitrary_metric_maximal_flow g0
+has type
+  Nonempty (MaximalForwardRicciFlow g0)
+but is expected to have type
+  Nonempty (FiniteMaximalFlow g0)
