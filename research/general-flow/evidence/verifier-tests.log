@@ -1,0 +1,12 @@
+test_changed_source_rejected (test_verify.GeneralFlowVerifierTests) ... ok
+test_extra_source_rejected (test_verify.GeneralFlowVerifierTests) ... ok
+test_missing_or_duplicate_audit_rejected (test_verify.GeneralFlowVerifierTests) ... ok
+test_nonstandard_axiom_rejected (test_verify.GeneralFlowVerifierTests) ... ok
+test_source_escape_rejected (test_verify.GeneralFlowVerifierTests) ... ok
+test_standard_axioms (test_verify.GeneralFlowVerifierTests) ... ok
+test_unpinned_dependency_rejected (test_verify.GeneralFlowVerifierTests) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.007s
+
+OK

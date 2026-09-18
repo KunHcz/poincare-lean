@@ -86,6 +86,17 @@ construction is claimed. Those geometric input-production tasks, Ricci
 surgery/control, geometric extinction, reconstruction and smoothability
 remain separate from this completed local-to-global step.
 
+The general-flow component now constructs an initial smooth metric and an
+actual maximal forward smooth Ricci flow for every initial metric, using the
+independently authored maximal-flow extension with a disclosed checked repair.
+The local integration proves uniqueness of the lifetime and metric, attaches
+the actual scalar estimates and records unbounded curvature in the finite
+maximal branch. It retains the immortal alternative. Existence of these
+smooth flows is no longer merely an input to this component, but surgery,
+singular-region control, geometric extinction and the topological smoothing
+bridge remain separate obligations. The general existence foundation is
+credited to its original authors, not to ownership of the checked fork.
+
 ## Latest rule recheck
 
 On September 18, 2026, the live official contribution instructions were

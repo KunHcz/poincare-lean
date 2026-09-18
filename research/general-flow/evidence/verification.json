@@ -1,0 +1,239 @@
+{
+  "status": "LOCAL_VERIFIED_NOT_OFFICIALLY_REVIEWED",
+  "scope": "Actual smooth initial metric and arbitrary-metric maximal forward Ricci flow, unique lifetime, finite/immortal distinction, canonical singular curvature and global scalar control",
+  "started_at_utc": "2026-09-18T02:35:42.921065+00:00",
+  "completed_at_utc": "2026-09-18T03:51:03.995581+00:00",
+  "lean_version": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "source_files": {
+    "GeneralRicciFlow.lean": "8991a57b96b514c51e7f6fb55524c383942f592fddb976b54b63675d30a583e4",
+    "GeneralRicciFlowTests.lean": "b77553b266fe448ff8ef61e2f4dcbc810d8a0cb27222b63e53e38e09800492c6",
+    "GeneralRicciFlowAudit.lean": "ec866d48f54506016c0b06dd5788c488378e2c86bd19c9e672c2236b5a662e57",
+    "ScalarFlowBounds.lean": "f1775a5cac8b9a5d4207ae7e06e333da37cc473a4def9ac57e663e78162596f3",
+    "lean-toolchain": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
+    "lakefile.toml": "c12b4b9e01b3cd5634556e68ae1b4789a689392ee5b74022913a32d0310578a9",
+    "lake-manifest.json": "b43145b210d6127969660a5efb363b01fecdc13f74e03552e9c673d36bc5b58c"
+  },
+  "dependency_pins": {
+    "DifferentialGeometry": "1ccb5e688b253701690300867ffb20e467855d2b",
+    "mathlib": "0df444a360eaa60ab8c11dca51a86af692955474",
+    "plausible": "b7eb3304aeae834b12dda98993a37f6a41f6f0bb",
+    "LeanSearchClient": "5f4d51b81cbd3f6b32b156bfad9056621a040404",
+    "importGraph": "16f02aa7642864af59f1ff0e384a015994db9118",
+    "proofwidgets": "4be2e3d5087eeb272cf5a8853b8f9dd025ef5957",
+    "aesop": "3448c0bcc5ce01b2d1546e483ec3620e32df3d0e",
+    "Qq": "92c15be17b7caf78c2ad767ec40f89052d908d81",
+    "batteries": "4488d40d070b9700d4d5a6aa342f0d40c31b2a2d",
+    "Cli": "6130a47896ce867c6a4a55373441e59e565bad0f"
+  },
+  "dependency_general_extension_origin": {
+    "commit": "f34543166960b38bed82a78a5bd583611cbcdf9d",
+    "git_author_name": "Arthur Freitas Ramos",
+    "included_in_official_upstream_main": false
+  },
+  "dependency_repair_commit": "1ccb5e688b253701690300867ffb20e467855d2b",
+  "dependency_repair_files": [
+    "DifferentialGeometry/Geometry/Curvature/CovGradRoughLap/HomFieldCurvatureJetDecomposition.lean",
+    "DifferentialGeometry/Geometry/Flow/RicciFlow/Extension/MaximalFlow.lean",
+    "DifferentialGeometry/Geometry/Flow/RicciFlow/Extension/Regularity.lean"
+  ],
+  "production_theorems": [
+    "PoincareGeneralFlow.initial_metric_exists",
+    "PoincareGeneralFlow.arbitrary_metric_maximal_flow",
+    "PoincareGeneralFlow.initial_metric_and_maximal_flow",
+    "PoincareGeneralFlow.restrictFlowTo_metric",
+    "PoincareGeneralFlow.restrictImmortal_metric",
+    "PoincareGeneralFlow.solution_agrees_of_metrics",
+    "PoincareGeneralFlow.finite_maximal_dominates",
+    "PoincareGeneralFlow.finite_maximal_excludes_immortal",
+    "PoincareGeneralFlow.maximal_endpoint_unique",
+    "PoincareGeneralFlow.maximal_metric_unique",
+    "PoincareGeneralFlow.maximal_has_finite_view",
+    "PoincareGeneralFlow.maximal_normalized_scalar_bound",
+    "PoincareGeneralFlow.maximal_universal_scalar_bound",
+    "PoincareGeneralFlow.maximal_has_global_scalar_barrier",
+    "PoincareGeneralFlow.finite_maximal_curvature_unbounded"
+  ],
+  "regression_theorems": [
+    "PoincareGeneralFlowTests.sphere_model_has_distinct_points",
+    "PoincareGeneralFlowTests.sphere_initial_metric_and_maximal_flow",
+    "PoincareGeneralFlowTests.sphere_flow_has_positive_lifetime",
+    "PoincareGeneralFlowTests.maximal_flow_satisfies_literal_metric_PDE",
+    "PoincareGeneralFlowTests.maximal_and_immortal_cannot_coexist",
+    "PoincareGeneralFlowTests.finite_view_of_immortal_is_not_maximal",
+    "PoincareGeneralFlowTests.literal_scalar_bound"
+  ],
+  "audited_upstream_theorems": [
+    "DifferentialGeometry.PDE.RicciFlow.exists_maximal_forward_ricci_flow",
+    "DifferentialGeometry.PDE.RicciFlow.exists_immortal_or_finite_singularity",
+    "DifferentialGeometry.PDE.RicciFlow.ricci_flow_short_time_existence",
+    "DifferentialGeometry.Geometry.nonempty_smoothRiemannianMetric"
+  ],
+  "axioms": {
+    "PoincareGeneralFlow.initial_metric_exists": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareGeneralFlow.arbitrary_metric_maximal_flow": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareGeneralFlow.initial_metric_and_maximal_flow": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareGeneralFlow.restrictFlowTo_metric": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareGeneralFlow.restrictImmortal_metric": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareGeneralFlow.solution_agrees_of_metrics": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareGeneralFlow.finite_maximal_dominates": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareGeneralFlow.finite_maximal_excludes_immortal": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareGeneralFlow.maximal_endpoint_unique": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareGeneralFlow.maximal_metric_unique": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareGeneralFlow.maximal_has_finite_view": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareGeneralFlow.maximal_normalized_scalar_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareGeneralFlow.maximal_universal_scalar_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareGeneralFlow.maximal_has_global_scalar_barrier": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareGeneralFlow.finite_maximal_curvature_unbounded": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareGeneralFlowTests.sphere_model_has_distinct_points": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareGeneralFlowTests.sphere_initial_metric_and_maximal_flow": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareGeneralFlowTests.sphere_flow_has_positive_lifetime": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareGeneralFlowTests.maximal_flow_satisfies_literal_metric_PDE": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareGeneralFlowTests.maximal_and_immortal_cannot_coexist": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareGeneralFlowTests.finite_view_of_immortal_is_not_maximal": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PoincareGeneralFlowTests.literal_scalar_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DifferentialGeometry.PDE.RicciFlow.exists_maximal_forward_ricci_flow": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DifferentialGeometry.PDE.RicciFlow.exists_immortal_or_finite_singularity": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DifferentialGeometry.PDE.RicciFlow.ricci_flow_short_time_existence": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DifferentialGeometry.Geometry.nonempty_smoothRiemannianMetric": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "namespace_wide_audit": true,
+  "default_warning_as_error_build": true,
+  "full_fresh_kernel_replay": true,
+  "replay_process": {
+    "exit_code": 0,
+    "elapsed_seconds": 4418.7,
+    "peak_rss_kib": 10746368,
+    "memory_limit_mb": 24576,
+    "time_limit_seconds": 7200,
+    "guard": null
+  },
+  "negative_controls": {
+    "extra_axiom": "REJECTED",
+    "placeholder": "REJECTED",
+    "discarded_immortal_branch": "REJECTED",
+    "missing_initial_scalar_bound": "REJECTED",
+    "time_outside_flow_domain": "REJECTED",
+    "wrong_initial_metric": "REJECTED"
+  },
+  "source_and_dependencies_checked_before_and_after": true,
+  "concrete_closed_nonempty_3sphere_existence_model": true,
+  "explicit_closed_form_ricci_solution_computed": false,
+  "positive_curvature_assumed": false,
+  "finite_lifetime_assumed": false,
+  "immortal_branch_eliminated": false,
+  "general_surgery_constructed": false,
+  "geometric_extinction_proved": false,
+  "full_poincare_formalization": false,
+  "eligible_complete_original_problem_submission": false,
+  "independent_checker_implementation": false,
+  "independent_human_review": false,
+  "clean_full_dependency_rebuild": false,
+  "verifier_hashes": {
+    "verify.py": "bd112b11dc8ed8e5aa505b0cb8894fefe4cda1ef7e6c6ffceb41918805ce1a6e",
+    "../../submissions/jsp-000007-dini-extinction/constant-curvature/scripts/verify.py": "0d88d7dedc66b48c70369f7e5fecbfc5537676c89c970b551c12f0221bfe6a76"
+  }
+}

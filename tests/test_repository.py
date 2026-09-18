@@ -104,6 +104,21 @@ class CompletenessTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "Unverified"):
             verify.check_completeness(self.state, False)
 
+    def test_general_flow_source_bound_evidence(self):
+        component = ROOT / "research/general-flow"
+        self.assertGreater(verify.check_record(component, component / "evidence/verification.json"), 5)
+        record = json.loads((component / "evidence/verification.json").read_text())
+        self.assertFalse(record["positive_curvature_assumed"])
+        self.assertFalse(record["finite_lifetime_assumed"])
+        self.assertFalse(record["immortal_branch_eliminated"])
+        self.assertFalse(record["general_surgery_constructed"])
+        self.assertIn("PoincareGeneralFlow.maximal_endpoint_unique", record["production_theorems"])
+
+    def test_general_flow_is_not_a_complete_poincare_proof(self):
+        self.state["full_theorem_declaration"] = "PoincareGeneralFlow.initial_metric_and_maximal_flow"
+        with self.assertRaisesRegex(ValueError, "Unverified"):
+            verify.check_completeness(self.state, False)
+
     def test_preserved_repository(self):
         result = verify.validate(ROOT)
         self.assertFalse(result["submission_ready"])

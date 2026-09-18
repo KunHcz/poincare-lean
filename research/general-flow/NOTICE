@@ -1,0 +1,24 @@
+This is an additive component of the same Poincare research project.
+
+The independently authored DifferentialGeometry library supplies the metric,
+PDE, scalar evolution, regularity, uniqueness and singularity foundations.
+Repository: https://github.com/qinz1yang/differential-geometry
+
+Arthur Freitas Ramos authored the arbitrary maximal-forward-flow extension
+at f34543166960b38bed82a78a5bd583611cbcdf9d. His authorship is retained;
+the applicant does not claim this extension as their own discovery or code.
+The published checked integration is pinned at
+1ccb5e688b253701690300867ffb20e467855d2b in KunHcz/differential-geometry.
+The exact three-file repair scope relative to d88910233464ea6ff54bd55f92b7d5ea0b9034e8
+is recorded and checked by the verifier. A fork owner is not automatically
+the author of its inherited proof sources.
+
+ScalarFlowBounds.lean is reused unchanged from this project's previously
+verified component and is not counted as a new contribution here. The local
+restriction/uniqueness/scalar integration and verification are AI-assisted.
+
+Lean, Mathlib and the source authors retain their mathematical and code
+attribution. Local Lean/Python code is covered by the included Apache2.0
+license. Dependencies and compiled caches are not redistributed.
+No full-Poincare, independent-review, formalization-priority or prize claim
+is made by this component.

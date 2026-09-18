@@ -1,0 +1,12 @@
+ℹ [11014/11015] Replayed GeneralRicciFlowAudit
+info: GeneralRicciFlowAudit.lean:4:0: 'DifferentialGeometry.PDE.RicciFlow.exists_maximal_forward_ricci_flow' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: GeneralRicciFlowAudit.lean:5:0: 'DifferentialGeometry.PDE.RicciFlow.exists_immortal_or_finite_singularity' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: GeneralRicciFlowAudit.lean:6:0: 'PoincareGeneralFlow.initial_metric_and_maximal_flow' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GeneralRicciFlowAudit.lean:7:0: 'PoincareGeneralFlow.maximal_endpoint_unique' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GeneralRicciFlowAudit.lean:8:0: 'PoincareGeneralFlow.maximal_universal_scalar_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GeneralRicciFlowAudit.lean:9:0: 'PoincareGeneralFlowTests.sphere_flow_has_positive_lifetime' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully (11015 jobs).

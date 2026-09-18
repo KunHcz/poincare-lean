@@ -1,0 +1,6 @@
+$PROJECT/.lake/verification/wrong_initial_metric.lean:7:66: error: Type mismatch
+  MaximalForwardRicciFlow.metric_zero P
+has type
+  P.metric 0 = g0
+but is expected to have type
+  P.metric 0 = g1
