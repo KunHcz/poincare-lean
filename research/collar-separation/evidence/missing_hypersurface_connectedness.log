@@ -1,0 +1,12 @@
+$PROJECT/.lake/verification/missing_hypersurface_connectedness.lean:36:18: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  Nonempty S
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+$PROJECT/.lake/verification/missing_hypersurface_connectedness.lean:47:10: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  PreconnectedSpace (S × CollarTime)
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+$PROJECT/.lake/verification/missing_hypersurface_connectedness.lean:91:18: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  Nonempty S
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.

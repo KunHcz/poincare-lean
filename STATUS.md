@@ -60,6 +60,29 @@ separate caller obligations. Existence of the separating sphere and collar,
 the metric surgery construction, curvature control and the unrestricted
 Poincare proof remain distinct unproved obligations here.
 
+The collar-separation component now derives the complementary regions,
+their nonemptiness and path connectivity directly from an actual open
+collar of a compact connected hypersurface in a simply connected, locally
+path-connected Hausdorff space. The sphere case then supplies its central
+boundary homeomorphism and both capped simple-connectivity conclusions.
+Separation is no longer a caller assumption in this endpoint. The actual
+collar, general Ricci surgery, geometric extinction, reconstruction and
+three-dimensional smoothability remain separate obligations. A compact
+three-dimensional cylinder supplies a concrete full-input regression model;
+it is not a closed Poincare manifold or an example of Ricci surgery.
+
+## Latest rule recheck
+
+On September 18, 2026, the live official contribution instructions were
+checked at `ff33abd13163e789790eb1014e55f57c05f94432`. They retain the
+complete-original-problem restriction, external repository/branch/full-SHA
+references, limited catalog edits, and maintainer review. The updated claim
+instructions additionally emphasize self-claims, an original repository
+owned by the submitter, and genuine contribution attribution: ownership is
+not authorship of dependent libraries. No claim issue or intermediate
+proof submission is made for these research components. The earlier rule
+snapshot above remains its historical snapshot, not an asserted latest SHA.
+
 ## Disposition of the previous award PR
 
 Awards PR #438 is retained as the same contribution's historical thread and

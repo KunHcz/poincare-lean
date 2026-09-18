@@ -1,0 +1,5 @@
+$PROJECT/.lake/verification/missing_ambient_simple_connectivity.lean:42:23: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  SimplyConnectedSpace M
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+$PROJECT/.lake/verification/missing_ambient_simple_connectivity.lean:42:9: error: Tactic `rcases` failed: `x✝ : ?m.120` is not an inductive datatype

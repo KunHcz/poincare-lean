@@ -1,0 +1,2 @@
+$PROJECT/.lake/verification/incorrect_crossing_value.lean:3:45: error: unsolved goals
+⊢ False

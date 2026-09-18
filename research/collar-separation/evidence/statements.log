@@ -1,0 +1,65 @@
+@PoincareSeparation.exists_global_crossing_lift : ∀ {S : Type u_1} {M : Type u_2} [inst : TopologicalSpace S]
+  [inst_1 : CompactSpace S] [inst_2 : T2Space S] [ConnectedSpace S] [inst_4 : TopologicalSpace M] [inst_5 : T2Space M]
+  [SimplyConnectedSpace M] [LocallyPathConnectedSpace M] (c : S × PoincareClosedCover.CollarTime → M)
+  (hc : Topology.IsOpenEmbedding c),
+  ∃ H,
+    (∀ (x : M), ↑(H x) = (PoincareSeparation.globalCrossing c hc) x) ∧
+      ∀ (s : S) (t : PoincareClosedCover.CollarTime), H (c (s, t)) = PoincareSeparation.crossingHeight ↑t
+@PoincareSeparation.exists_pathConnected_separation_of_collar : ∀ {S : Type u_1} {M : Type u_2}
+  [inst : TopologicalSpace S] [PathConnectedSpace S] [inst_2 : TopologicalSpace M] [CompactSpace S] [T2Space S]
+  [T2Space M] [SimplyConnectedSpace M] [LocallyPathConnectedSpace M] (c : S × PoincareClosedCover.CollarTime → M),
+  Topology.IsOpenEmbedding c →
+    ∃ U V,
+      IsOpen U ∧
+        IsOpen V ∧
+          IsPathConnected U ∧
+            IsPathConnected V ∧
+              Disjoint U V ∧
+                U ∪ V = (PoincareSeparation.centralSphere c)ᶜ ∧
+                  (∀ (s : S) (t : PoincareClosedCover.CollarTime), ↑t < 0 → c (s, t) ∈ U) ∧
+                    ∀ (s : S) (t : PoincareClosedCover.CollarTime), 0 < ↑t → c (s, t) ∈ V
+@PoincareSeparation.sphere_collar_separates_and_caps : ∀ {M : Type u_1} [inst : TopologicalSpace M] [T2Space M]
+  [CompactSpace M] [SimplyConnectedSpace M] [LocallyPathConnectedSpace M]
+  (c : PoincareConjecture.Sphere2 × PoincareClosedCover.CollarTime → M),
+  Topology.IsOpenEmbedding c →
+    ∃ U V e,
+      IsOpen U ∧
+        IsOpen V ∧
+          IsPathConnected U ∧
+            IsPathConnected V ∧
+              Disjoint U V ∧
+                (∀ (s : PoincareConjecture.Sphere2), ↑(e s) = c (s, PoincareClosedCover.collarCentre)) ∧
+                  (∀ (s : PoincareConjecture.Sphere2) (t : PoincareClosedCover.CollarTime), ↑t < 0 → c (s, t) ∈ U) ∧
+                    (∀ (s : PoincareConjecture.Sphere2) (t : PoincareClosedCover.CollarTime), 0 < ↑t → c (s, t) ∈ V) ∧
+                      have e' := e.trans (PoincareClosedCover.complementBoundaryHomeomorph U V);
+                      SimplyConnectedSpace
+                          (PoincareConjecture.BallAttachment (PoincareClosedCover.sphericalBoundaryLeft Vᶜ Uᶜ e')) ∧
+                        SimplyConnectedSpace
+                          (PoincareConjecture.BallAttachment (PoincareClosedCover.sphericalBoundaryRight Vᶜ Uᶜ e'))
+PoincareSeparationTests.actual_cylinder_both_caps_simplyConnected : ∃ U V e,
+  IsOpen U ∧
+    IsOpen V ∧
+      IsPathConnected U ∧
+        IsPathConnected V ∧
+          Disjoint U V ∧
+            (∀ (s : PoincareConjecture.Sphere2),
+                ↑(e s) = PoincareSeparationTests.cylinderCollar (s, PoincareClosedCover.collarCentre)) ∧
+              (∀ (s : PoincareConjecture.Sphere2) (t : PoincareClosedCover.CollarTime),
+                  ↑t < 0 → PoincareSeparationTests.cylinderCollar (s, t) ∈ U) ∧
+                (∀ (s : PoincareConjecture.Sphere2) (t : PoincareClosedCover.CollarTime),
+                    0 < ↑t → PoincareSeparationTests.cylinderCollar (s, t) ∈ V) ∧
+                  have e' := e.trans (PoincareClosedCover.complementBoundaryHomeomorph U V);
+                  SimplyConnectedSpace
+                      (PoincareConjecture.BallAttachment (PoincareClosedCover.sphericalBoundaryLeft Vᶜ Uᶜ e')) ∧
+                    SimplyConnectedSpace
+                      (PoincareConjecture.BallAttachment (PoincareClosedCover.sphericalBoundaryRight Vᶜ Uᶜ e'))
+def PoincareSeparation.centralSphere.{u_1, u_2} : {S : Type u_1} →
+  {M : Type u_2} → (S × PoincareClosedCover.CollarTime → M) → Set M :=
+fun {S} {M} c => Set.range fun s => c (s, PoincareClosedCover.collarCentre)
+def PoincareSeparation.crossingHeight : ℝ → ℝ :=
+fun t => min 1 (max 0 (t + 1 / 2))
+@[reducible] def PoincareSeparationTests.CompactCylinder : Type :=
+PoincareConjecture.Sphere2 × PoincareSeparationTests.ThickInterval
+def PoincareSeparationTests.cylinderCollar : PoincareConjecture.Sphere2 × PoincareClosedCover.CollarTime →
+  PoincareSeparationTests.CompactCylinder :=
+fun p => (p.1, ⟨↑p.2, ⋯⟩)
