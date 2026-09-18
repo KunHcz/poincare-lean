@@ -1,0 +1,4 @@
+$PROJECT/.lake/verification/missing_compact_support_hypothesis.lean:91:45: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  CompactSpace (S × ↑(Icc (-(1 / 2)) (1 / 2)))
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.

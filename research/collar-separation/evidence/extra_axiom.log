@@ -1,0 +1,10 @@
+'PoincareSeparation.globalCrossing' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareSeparation.exists_global_crossing_lift' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareSeparation.exists_pathConnected_separation_of_collar' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PoincareSeparation.sphere_collar_separates_and_caps' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareSeparationTests.actual_cylinder_both_caps_simplyConnected' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+$PROJECT/.lake/verification/extra_axiom.lean:11:0: error: PoincareSeparation.sentinel depends on non-whitelisted axiom PoincareSeparation.sentinel

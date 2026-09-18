@@ -1,0 +1,15 @@
+⚠ [3084/3131] Replayed HatcherLib.Ch1.Circle
+warning: HatcherLib/Ch1/Circle.lean:38:0: Definition `unitCircleCov` is a proposition; use `theorem` instead of `def`
+
+Note: This linter can be disabled with `set_option linter.defProp false`
+ℹ [3130/3131] Built SeparationAudit (10s)
+info: SeparationAudit.lean:4:0: 'PoincareSeparation.globalCrossing' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: SeparationAudit.lean:5:0: 'PoincareSeparation.exists_global_crossing_lift' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: SeparationAudit.lean:6:0: 'PoincareSeparation.exists_pathConnected_separation_of_collar' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: SeparationAudit.lean:7:0: 'PoincareSeparation.sphere_collar_separates_and_caps' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: SeparationAudit.lean:8:0: 'PoincareSeparationTests.actual_cylinder_both_caps_simplyConnected' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Build completed successfully (3131 jobs).

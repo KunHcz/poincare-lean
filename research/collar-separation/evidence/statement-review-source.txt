@@ -1,0 +1,9 @@
+import SeparationAudit
+#check @PoincareSeparation.exists_global_crossing_lift
+#check @PoincareSeparation.exists_pathConnected_separation_of_collar
+#check @PoincareSeparation.sphere_collar_separates_and_caps
+#check @PoincareSeparationTests.actual_cylinder_both_caps_simplyConnected
+#print PoincareSeparation.centralSphere
+#print PoincareSeparation.crossingHeight
+#print PoincareSeparationTests.CompactCylinder
+#print PoincareSeparationTests.cylinderCollar

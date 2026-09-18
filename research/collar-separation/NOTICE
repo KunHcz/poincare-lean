@@ -1,0 +1,23 @@
+This is an additive component of the same Poincare formalization project.
+
+Eight cap-filling and closed-cover source files are preserved byte-for-byte
+from KunHcz/poincare-lean@c0695e2e2ca9f7ffead14675b80fdddd3dcc01eb.
+Their repeated declarations are not counted as new contributions.
+
+Mathlib supplies the real-to-additive-circle covering, covering lifts and
+their uniqueness, compact-support zero extension, quotient topology and
+path-component machinery. Their authors retain their attribution. The
+proof of simple connectivity of the standard two-sphere used in the
+concrete model belongs to the pinned HatcherLib reference formalization at
+bb91a091f0b968f8bbe8d861e025a88d82b161be, not to this new component.
+
+The local contribution constructs the concrete collar crossing map,
+normalizes its global real lift, derives the separating path-connected
+regions and connects them to actual capping, with a full-input compact
+cylinder regression. These are classical topological facts, not claims
+of a new mathematical discovery or complete Poincare formalization.
+
+Local Lean and Python source follows the included Apache License 2.0.
+Dependencies, compiler caches and credentials are not redistributed. No
+solver share, formalization priority, prize eligibility or payment is
+asserted by this research contribution.

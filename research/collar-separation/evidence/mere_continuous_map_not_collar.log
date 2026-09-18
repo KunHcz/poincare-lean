@@ -1,0 +1,14 @@
+$PROJECT/.lake/verification/mere_continuous_map_not_collar.lean:124:46: error: Application type mismatch: The argument
+  hc
+has type
+  Continuous[instTopologicalSpaceProd, inst✝¹] c
+but is expected to have type
+  IsOpenEmbedding c
+in the application
+  continuous_extend_zero_of_openEmbedding c hc
+$PROJECT/.lake/verification/mere_continuous_map_not_collar.lean:129:42: error(lean.invalidField): Invalid field `injective`: The environment does not contain `Continuous.injective`, so it is not possible to project the field `injective` from an expression
+  hc
+of type
+  Continuous[instTopologicalSpaceProd, inst✝¹] c
+$PROJECT/.lake/verification/mere_continuous_map_not_collar.lean:129:70: error: numerals are data in Lean, but the expected type is universe polymorphic and may be a proposition
+  ?m.25 → PeriodicCircle : Sort (max 1 ?u.35)

@@ -1,0 +1,13 @@
+test_changed_source_rejected (test_verify.SeparationVerificationTests) ... ok
+test_escaping_source_rejected (test_verify.SeparationVerificationTests) ... ok
+test_extra_lean_source_rejected (test_verify.SeparationVerificationTests) ... ok
+test_local_dependency_rejected (test_verify.SeparationVerificationTests) ... ok
+test_missing_and_duplicate_audit_rejected (test_verify.SeparationVerificationTests) ... ok
+test_nonstandard_axiom_rejected (test_verify.SeparationVerificationTests) ... ok
+test_standard_axioms (test_verify.SeparationVerificationTests) ... ok
+test_unexpected_warning_rejected (test_verify.SeparationVerificationTests) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.004s
+
+OK

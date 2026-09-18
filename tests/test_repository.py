@@ -74,6 +74,21 @@ class CompletenessTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "Unverified"):
             verify.check_completeness(self.state, False)
 
+    def test_separation_component_has_exact_source_bound_evidence(self):
+        component = ROOT / "research/collar-separation"
+        self.assertGreater(verify.check_record(component, component / "evidence/verification.json"), 15)
+        record = json.loads((component / "evidence/verification.json").read_text())
+        self.assertTrue(record["original_separation_assumption_removed"])
+        self.assertTrue(record["actual_compact_3d_cylinder_complete_endpoint_regression"])
+        self.assertFalse(record["collar_existence_proved"])
+        self.assertFalse(record["eligible_complete_original_problem_submission"])
+        self.assertIn("PoincareSeparation.sphere_collar_separates_and_caps", record["production_theorems"])
+
+    def test_separation_result_cannot_replace_full_poincare(self):
+        self.state["full_theorem_declaration"] = "PoincareSeparation.sphere_collar_separates_and_caps"
+        with self.assertRaisesRegex(ValueError, "Unverified"):
+            verify.check_completeness(self.state, False)
+
     def test_preserved_repository(self):
         result = verify.validate(ROOT)
         self.assertFalse(result["submission_ready"])

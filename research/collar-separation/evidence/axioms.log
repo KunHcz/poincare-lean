@@ -1,0 +1,37 @@
+'PoincareSeparation.crossingHeight_continuous' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareSeparation.crossingHeight_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareSeparation.crossingHeight_le_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareSeparation.crossingHeight_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareSeparation.crossingHeight_upper' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareSeparation.crossingHeight_middle' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareSeparation.halfPeriod_ne_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareSeparation.crossingCircle_half_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareSeparation.localCrossing_hasCompactSupport' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareSeparation.continuous_extend_zero_of_openEmbedding' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareSeparation.globalCrossing_on_collar' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareSeparation.globalCrossing_off_collar' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareSeparation.globalCrossing_half_fiber' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareSeparation.exists_global_crossing_lift' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareSeparation.lift_half_fiber' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareSeparation.exists_open_separation_of_collar' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareSeparation.central_complement_not_preconnected' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareSeparation.open_side_pathConnected_of_trace' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareSeparation.collar_negative_trace_range' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareSeparation.collar_positive_trace_range' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareSeparation.exists_pathConnected_separation_of_collar' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PoincareSeparation.centralSliceHomeomorph_coe' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareSeparation.sphere_collar_separates_and_caps' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareSeparationTests.crossing_at_negative_edge' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareSeparationTests.crossing_at_positive_edge' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareSeparationTests.circle_glues_both_edges' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareSeparationTests.real_lift_distinguishes_edges' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareSeparationTests.half_fiber_is_unique' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareSeparationTests.cylinderCollar_isOpenEmbedding' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareSeparationTests.actual_cylinder_complement_is_disconnected' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PoincareSeparationTests.actual_cylinder_both_caps_simplyConnected' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
