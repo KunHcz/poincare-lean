@@ -1,0 +1,7 @@
+$PROJECT/.lake/verification/colliding_zero_section.lean:72:23: error: Function expected at
+  hzero
+but this term has type
+  True
+
+Note: Expected a function because this term is being applied to the argument
+  heq

@@ -71,6 +71,21 @@ three-dimensional smoothability remain separate obligations. A compact
 three-dimensional cylinder supplies a concrete full-input regression model;
 it is not a closed Poincare manifold or an example of Ricci surgery.
 
+The local-collar component derives a uniform positive-width global open
+collar from a continuous family that is only locally invertible around each
+point of its compact injective zero section. A coordinate inverse-function
+bridge derives the local inverses from actual invertible strict or C1
+coordinate derivatives. The resulting collar is the original family with
+its time parameter rescaled; separation and both cap conclusions then
+follow. A globally noninjective clipped-cylinder family exercises the full
+topological endpoint, and explicit folding/colliding-sheet examples show
+why the pointwise hypotheses matter. Producing a suitable transverse family
+and its derivative data for an arbitrary embedded sphere remains unproved;
+no general normal-field, exponential-map or smooth tubular-neighbourhood
+construction is claimed. Those geometric input-production tasks, Ricci
+surgery/control, geometric extinction, reconstruction and smoothability
+remain separate from this completed local-to-global step.
+
 ## Latest rule recheck
 
 On September 18, 2026, the live official contribution instructions were

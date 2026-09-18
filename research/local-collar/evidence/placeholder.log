@@ -1,0 +1,10 @@
+'PoincareLocalCollar.exists_uniform_openEmbedding_band' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareLocalCollar.local_open_chart_of_strict_coordinate_derivative' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PoincareLocalCollar.exists_collar_of_C1_coordinates' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareLocalCollar.coordinate_derivatives_separate_and_cap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareLocalCollarTests.clipped_family_separates_and_caps' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareLocalCollarTests.polynomial_has_local_open_chart' depends on axioms: [propext, Classical.choice, Quot.sound]
+$PROJECT/.lake/verification/placeholder.lean:11:8: warning: declaration uses `sorry`
+$PROJECT/.lake/verification/placeholder.lean:12:0: error: PoincareLocalCollar.sentinel depends on non-whitelisted axiom sorryAx

@@ -1,0 +1,33 @@
+$PROJECT/.lake/verification/unproved_coordinate_derivative.lean:38:16: error(lean.invalidField): Invalid field `toOpenPartialHomeomorph`: The environment does not contain `True.toOpenPartialHomeomorph`, so it is not possible to project the field `toOpenPartialHomeomorph` from an expression
+  hder
+of type `True`
+$PROJECT/.lake/verification/unproved_coordinate_derivative.lean:36:70: error: unsolved goals
+X : Type u_1
+Y : Type u_2
+E : Type u_3
+F : Type u_4
+inst✝⁶ : TopologicalSpace X
+inst✝⁵ : TopologicalSpace Y
+inst✝⁴ : NormedAddCommGroup E
+inst✝³ : NormedSpace ℝ E
+inst✝² : CompleteSpace E
+inst✝¹ : NormedAddCommGroup F
+inst✝ : NormedSpace ℝ F
+f : C(X, Y)
+x : X
+a : OpenPartialHomeomorph X E
+b : OpenPartialHomeomorph Y F
+ha : x ∈ a.source
+hb : f x ∈ b.source
+L : E ≃L[ℝ] F
+hder : True
+ar : OpenPartialHomeomorph X E := a.restr (⇑f ⁻¹' b.source)
+⊢ ∃ U, IsOpen[inst✝⁶] U ∧ x ∈ U ∧ IsOpenEmbedding (U.restrict ⇑f)
+$PROJECT/.lake/verification/unproved_coordinate_derivative.lean:83:78: error: Application type mismatch: The argument
+  hf
+has type
+  HasStrictFDerivAt (↑b ∘ ⇑f ∘ ↑a.symm) (↑L) (↑a (s, 0))
+but is expected to have type
+  True
+in the application
+  local_open_chart_of_strict_coordinate_derivative f (s, 0) a b ha hb L hf
