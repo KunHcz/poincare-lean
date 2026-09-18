@@ -1,0 +1,9 @@
+{
+  "status": "PASS_RESEARCH_INTEGRITY_NOT_FULL_PROOF",
+  "migrated_files_unchanged": 116,
+  "checked_source_evidence_bindings": 120,
+  "relative_links_checked": 65,
+  "public_bytes": 1138483,
+  "full_original_theorem_proved": false,
+  "submission_ready": false
+}

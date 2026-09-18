@@ -37,6 +37,7 @@ The existing proofs remain useful work toward the original target.
 | Topological ball capping | Both capped sides of an explicitly simply connected boundary gluing are simply connected; open sets, retraction homotopy and loop generation are constructed | [Cap-filling root](research/cap-filling/README.md) |
 | Closed-cover cutting | Derives the original-space gluing homeomorphism for actual closed subsets; a supplied two-sided collar gives closed-side paths and capped simple connectivity | [Closed-cover root](research/closed-cover/README.md) |
 | Collar-derived separation | Constructs two path-connected open sides and capped simple connectivity from an actual compact sphere collar, without assuming separation | [Separation root](research/collar-separation/README.md) |
+| Local inverse to uniform collar | Constructs a positive-width collar from an actual continuous family with an injective compact zero section and pointwise inverse data; real C1 coordinate derivatives supply that data | [Local-collar root](research/local-collar/README.md) |
 
 The scalar-flow package's complete local replay finished successfully, as
 recorded in its [source-bound evidence](submissions/jsp-000007-dini-extinction/scalar-flow-bounds/evidence/verification.json).

@@ -89,6 +89,21 @@ class CompletenessTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "Unverified"):
             verify.check_completeness(self.state, False)
 
+    def test_local_collar_source_bound_evidence(self):
+        component = ROOT / "research/local-collar"
+        self.assertGreater(verify.check_record(component, component / "evidence/verification.json"), 18)
+        record = json.loads((component / "evidence/verification.json").read_text())
+        self.assertTrue(record["uniform_collar_radius_constructed"])
+        self.assertTrue(record["coordinate_inverse_function_theorem_applied"])
+        self.assertFalse(record["transverse_family_constructed_for_arbitrary_embedded_sphere"])
+        self.assertFalse(record["eligible_complete_original_problem_submission"])
+        self.assertIn("PoincareLocalCollar.exists_collar_of_C1_coordinates", record["production_theorems"])
+
+    def test_local_collar_result_cannot_replace_full_poincare(self):
+        self.state["full_theorem_declaration"] = "PoincareLocalCollar.coordinate_derivatives_separate_and_cap"
+        with self.assertRaisesRegex(ValueError, "Unverified"):
+            verify.check_completeness(self.state, False)
+
     def test_preserved_repository(self):
         result = verify.validate(ROOT)
         self.assertFalse(result["submission_ready"])

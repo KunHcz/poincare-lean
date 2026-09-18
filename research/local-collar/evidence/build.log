@@ -1,0 +1,14 @@
+⚠ [3470/3518] Replayed HatcherLib.Ch1.Circle
+warning: HatcherLib/Ch1/Circle.lean:38:0: Definition `unitCircleCov` is a proposition; use `theorem` instead of `def`
+
+Note: This linter can be disabled with `set_option linter.defProp false`
+ℹ [3517/3518] Replayed LocalCollarAudit
+info: LocalCollarAudit.lean:4:0: 'PoincareLocalCollar.exists_uniform_openEmbedding_band' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: LocalCollarAudit.lean:5:0: 'PoincareLocalCollar.local_open_chart_of_strict_coordinate_derivative' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: LocalCollarAudit.lean:6:0: 'PoincareLocalCollar.exists_collar_of_C1_coordinates' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: LocalCollarAudit.lean:7:0: 'PoincareLocalCollar.coordinate_derivatives_separate_and_cap' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: LocalCollarAudit.lean:8:0: 'PoincareLocalCollarTests.clipped_family_separates_and_caps' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: LocalCollarAudit.lean:9:0: 'PoincareLocalCollarTests.polynomial_has_local_open_chart' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully (3518 jobs).

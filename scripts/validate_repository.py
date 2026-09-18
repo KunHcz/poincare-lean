@@ -104,7 +104,7 @@ def validate(root: Path, require_complete: bool = False) -> dict:
     bindings = check_record(package, package / "evidence/verification.json")
     for component in ["constant-curvature", "positive-ricci", "scalar-flow-bounds"]:
         bindings += check_record(package / component, package / component / "evidence/verification.json")
-    for component in ["flow-chains", "cap-filling", "closed-cover", "collar-separation"]:
+    for component in ["flow-chains", "cap-filling", "closed-cover", "collar-separation", "local-collar"]:
         research = root / "research" / component
         if research.is_dir():
             bindings += check_record(research, research / "evidence/verification.json")

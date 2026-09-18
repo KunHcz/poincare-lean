@@ -1,0 +1,34 @@
+'PoincareLocalCollar.timeBand_isOpen' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareLocalCollar.zero_mem_timeBand' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareLocalCollar.exists_uniform_band_subset' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareLocalCollar.exists_uniform_injective_band' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareLocalCollar.localCharts_injectiveAtZero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareLocalCollar.localCharts_open_neighbourhood' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareLocalCollar.exists_uniform_openEmbedding_band' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareLocalCollar.scaled_time_mem_ball' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareLocalCollar.scaledCollar_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareLocalCollar.exists_scaled_open_collar' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareLocalCollar.local_family_separates_and_caps' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareLocalCollar.local_open_chart_of_strict_coordinate_derivative' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PoincareLocalCollar.localCharts_of_coordinate_derivatives' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareLocalCollar.exists_collar_of_coordinate_derivatives' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareLocalCollar.localCharts_of_C1_coordinates' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareLocalCollar.exists_collar_of_C1_coordinates' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareLocalCollar.coordinate_derivatives_separate_and_cap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareLocalCollarTests.clippedTime_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareLocalCollarTests.clipped_zero_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareLocalCollarTests.clipped_family_not_globally_injective' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PoincareLocalCollarTests.clipped_family_has_local_charts' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareLocalCollarTests.clipped_family_uniform_collar_exists' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PoincareLocalCollarTests.clipped_family_separates_and_caps' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareLocalCollarTests.folded_family_no_injective_band' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareLocalCollarTests.twoSheetFamily_local_charts' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareLocalCollarTests.twoSheetFamily_no_injective_band' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareLocalCollarTests.polynomial_not_globally_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PoincareLocalCollarTests.polynomial_has_local_open_chart' depends on axioms: [propext, Classical.choice, Quot.sound]

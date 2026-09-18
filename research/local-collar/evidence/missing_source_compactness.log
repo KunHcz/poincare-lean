@@ -1,0 +1,32 @@
+$PROJECT/.lake/verification/missing_source_compactness.lean:41:4: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  CompactSpace S
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+$PROJECT/.lake/verification/missing_source_compactness.lean:39:31: error: unsolved goals
+case refine_1
+S : Type u_1
+inst✝ : TopologicalSpace S
+W : Set (S × ℝ)
+hW : IsOpen[instTopologicalSpaceProd] W
+hzero : ∀ (s : S), (s, 0) ∈ W
+⊢ CompactSpace S
+$PROJECT/.lake/verification/missing_source_compactness.lean:78:4: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  CompactSpace (S × S)
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+$PROJECT/.lake/verification/missing_source_compactness.lean:52:41: error: unsolved goals
+case refine_1
+S : Type u_1
+M : Type u_2
+inst✝² : TopologicalSpace S
+inst✝¹ : TopologicalSpace M
+inst✝ : T2Space M
+f : C(S × ℝ, M)
+hzero : Injective fun s => f (s, 0)
+hlocal : ∀ (s : S), ∃ U ∈ 𝓝 (s, 0), InjOn (⇑f) U
+left : (ℝ × ℝ) × S × S → S × ℝ := ⋯
+right : (ℝ × ℝ) × S × S → S × ℝ := ⋯
+hleft : Continuous[instTopologicalSpaceProd, instTopologicalSpaceProd] left
+hright : Continuous[instTopologicalSpaceProd, instTopologicalSpaceProd] right
+hevent : ∀ p ∈ univ, ∀ᶠ (z : (ℝ × ℝ) × S × S) in 𝓝 ((0, 0), p), f (left z) = f (right z) → left z = right z
+⊢ CompactSpace (S × S)

@@ -1,0 +1,4 @@
+$PROJECT/.lake/verification/missing_target_separation.lean:73:17: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  T2Space M
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.

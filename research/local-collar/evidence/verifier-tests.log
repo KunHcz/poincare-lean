@@ -1,0 +1,13 @@
+test_changed_source_rejected (test_verify.LocalCollarVerifierTests) ... ok
+test_escaping_source_rejected (test_verify.LocalCollarVerifierTests) ... ok
+test_extra_axiom_rejected (test_verify.LocalCollarVerifierTests) ... ok
+test_extra_lean_source_rejected (test_verify.LocalCollarVerifierTests) ... ok
+test_missing_and_duplicate_audit_rejected (test_verify.LocalCollarVerifierTests) ... ok
+test_standard_axioms (test_verify.LocalCollarVerifierTests) ... ok
+test_unpinned_dependency_rejected (test_verify.LocalCollarVerifierTests) ... ok
+test_unrelated_warning_rejected (test_verify.LocalCollarVerifierTests) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.002s
+
+OK

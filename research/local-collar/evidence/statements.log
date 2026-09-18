@@ -1,0 +1,91 @@
+@PoincareLocalCollar.exists_uniform_openEmbedding_band : ∀ {S : Type u_1} {M : Type u_2} [inst : TopologicalSpace S]
+  [inst_1 : TopologicalSpace M] [CompactSpace S] [T2Space M] (f : C(S × ℝ, M)),
+  (Function.Injective fun s => f (s, 0)) →
+    PoincareLocalCollar.HasLocalOpenChartsAtZero ⇑f →
+      ∃ r > 0, Topology.IsOpenEmbedding ((PoincareLocalCollar.timeBand r).restrict ⇑f)
+@PoincareLocalCollar.exists_collar_of_C1_coordinates : ∀ {E : Type u_1} {F : Type u_2} [inst : NormedAddCommGroup E]
+  [inst_1 : NormedSpace ℝ E] [CompleteSpace E] [inst_3 : NormedAddCommGroup F] [inst_4 : NormedSpace ℝ F] {S : Type u_3}
+  {M : Type u_4} [inst_5 : TopologicalSpace S] [inst_6 : TopologicalSpace M] [CompactSpace S] [T2Space M]
+  (f : C(S × ℝ, M)),
+  (Function.Injective fun s => f (s, 0)) →
+    (∀ (s : S),
+        ∃ a b L,
+          (s, 0) ∈ a.source ∧
+            f (s, 0) ∈ b.source ∧
+              ContDiffAt ℝ 1 (↑b ∘ ⇑f ∘ ↑a.symm) (↑a (s, 0)) ∧ HasFDerivAt (↑b ∘ ⇑f ∘ ↑a.symm) (↑L) (↑a (s, 0))) →
+      ∃ r > 0, Topology.IsOpenEmbedding ⇑(PoincareLocalCollar.scaledCollar f r)
+@PoincareLocalCollar.coordinate_derivatives_separate_and_cap : ∀ {E : Type u_1} {F : Type u_2}
+  [inst : NormedAddCommGroup E] [inst_1 : NormedSpace ℝ E] [CompleteSpace E] [inst_3 : NormedAddCommGroup F]
+  [inst_4 : NormedSpace ℝ F] {M : Type u_3} [inst_5 : TopologicalSpace M] [CompactSpace M] [T2Space M]
+  [SimplyConnectedSpace M] [LocallyPathConnectedSpace M] (f : C(PoincareConjecture.Sphere2 × ℝ, M)),
+  (Function.Injective fun s => f (s, 0)) →
+    PoincareLocalCollar.HasInvertibleCoordinateDerivativesAtZero f E F →
+      ∃ r > 0,
+        Topology.IsOpenEmbedding ⇑(PoincareLocalCollar.scaledCollar f r) ∧
+          ∃ U V e,
+            IsOpen U ∧
+              IsOpen V ∧
+                IsPathConnected U ∧
+                  IsPathConnected V ∧
+                    Disjoint U V ∧
+                      (∀ (s : PoincareConjecture.Sphere2), ↑(e s) = f (s, 0)) ∧
+                        (∀ (s : PoincareConjecture.Sphere2) (t : PoincareClosedCover.CollarTime),
+                            ↑t < 0 → (PoincareLocalCollar.scaledCollar f r) (s, t) ∈ U) ∧
+                          (∀ (s : PoincareConjecture.Sphere2) (t : PoincareClosedCover.CollarTime),
+                              0 < ↑t → (PoincareLocalCollar.scaledCollar f r) (s, t) ∈ V) ∧
+                            have e' := e.trans (PoincareClosedCover.complementBoundaryHomeomorph U V);
+                            SimplyConnectedSpace
+                                (PoincareConjecture.BallAttachment
+                                  (PoincareClosedCover.sphericalBoundaryLeft Vᶜ Uᶜ e')) ∧
+                              SimplyConnectedSpace
+                                (PoincareConjecture.BallAttachment
+                                  (PoincareClosedCover.sphericalBoundaryRight Vᶜ Uᶜ e'))
+def PoincareLocalCollar.HasLocalOpenChartsAtZero.{u_1, u_2} : {S : Type u_1} →
+  {M : Type u_2} → [TopologicalSpace S] → [TopologicalSpace M] → (S × ℝ → M) → Prop :=
+fun {S} {M} [TopologicalSpace S] [TopologicalSpace M] f =>
+  ∀ (s : S), ∃ U, IsOpen U ∧ (s, 0) ∈ U ∧ Topology.IsOpenEmbedding (U.restrict f)
+def PoincareLocalCollar.HasInvertibleCoordinateDerivativesAtZero.{u_5, u_6, u_7, u_8} : {S : Type u_5} →
+  {M : Type u_6} →
+    [inst : TopologicalSpace S] →
+      [inst_1 : TopologicalSpace M] →
+        C(S × ℝ, M) →
+          (E : Type u_7) →
+            (F : Type u_8) →
+              [inst : NormedAddCommGroup E] →
+                [NormedSpace ℝ E] → [inst : NormedAddCommGroup F] → [NormedSpace ℝ F] → Prop :=
+fun {S} {M} [TopologicalSpace S] [TopologicalSpace M] f E F [NormedAddCommGroup E] [NormedSpace ℝ E]
+    [NormedAddCommGroup F] [NormedSpace ℝ F] =>
+  ∀ (s : S), ∃ a b L, (s, 0) ∈ a.source ∧ f (s, 0) ∈ b.source ∧ HasStrictFDerivAt (↑b ∘ ⇑f ∘ ↑a.symm) (↑L) (↑a (s, 0))
+def PoincareLocalCollar.scaledCollar.{u_1, u_2} : {S : Type u_1} →
+  {M : Type u_2} →
+    [inst : TopologicalSpace S] →
+      [inst_1 : TopologicalSpace M] → C(S × ℝ, M) → ℝ → C(S × PoincareClosedCover.CollarTime, M) :=
+fun {S} {M} [TopologicalSpace S] [TopologicalSpace M] f r =>
+  { toFun := fun p => f (p.1, r * ↑p.2), continuous_toFun := ⋯ }
+def PoincareLocalCollarTests.clippedCylinderFamily : C(PoincareConjecture.Sphere2 × ℝ,
+  PoincareSeparationTests.CompactCylinder) :=
+{ toFun := fun p => (p.1, PoincareLocalCollarTests.clippedTime p.2),
+  continuous_toFun := PoincareLocalCollarTests.clippedCylinderFamily._proof_1 }
+PoincareLocalCollarTests.clipped_family_separates_and_caps :
+  ∃ r > 0,
+    Topology.IsOpenEmbedding ⇑(PoincareLocalCollar.scaledCollar PoincareLocalCollarTests.clippedCylinderFamily r) ∧
+      ∃ U V e,
+        IsOpen U ∧
+          IsOpen V ∧
+            IsPathConnected U ∧
+              IsPathConnected V ∧
+                Disjoint U V ∧
+                  (∀ (s : PoincareConjecture.Sphere2), ↑(e s) = PoincareLocalCollarTests.clippedCylinderFamily (s, 0)) ∧
+                    (∀ (s : PoincareConjecture.Sphere2) (t : PoincareClosedCover.CollarTime),
+                        ↑t < 0 →
+                          (PoincareLocalCollar.scaledCollar PoincareLocalCollarTests.clippedCylinderFamily r) (s, t) ∈
+                            U) ∧
+                      (∀ (s : PoincareConjecture.Sphere2) (t : PoincareClosedCover.CollarTime),
+                          0 < ↑t →
+                            (PoincareLocalCollar.scaledCollar PoincareLocalCollarTests.clippedCylinderFamily r) (s, t) ∈
+                              V) ∧
+                        have e' := e.trans (PoincareClosedCover.complementBoundaryHomeomorph U V);
+                        SimplyConnectedSpace
+                            (PoincareConjecture.BallAttachment (PoincareClosedCover.sphericalBoundaryLeft Vᶜ Uᶜ e')) ∧
+                          SimplyConnectedSpace
+                            (PoincareConjecture.BallAttachment (PoincareClosedCover.sphericalBoundaryRight Vᶜ Uᶜ e'))

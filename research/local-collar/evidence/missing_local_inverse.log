@@ -1,0 +1,9 @@
+$PROJECT/.lake/verification/missing_local_inverse.lean:95:29: error: Function expected at
+  hlocal
+but this term has type
+  True
+
+Note: Expected a function because this term is being applied to the argument
+  s
+$PROJECT/.lake/verification/missing_local_inverse.lean:95:9: error: Tactic `rcases` failed: `x✝ : ?m.21` is not an inductive datatype
+$PROJECT/.lake/verification/missing_local_inverse.lean:100:2: error: expected a term of the shape `∀ xs, ∃ a, p xs a` or `∀ xs, p xs ∧ q xs`

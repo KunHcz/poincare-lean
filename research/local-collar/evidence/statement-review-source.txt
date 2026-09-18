@@ -1,0 +1,9 @@
+import LocalCollarAudit
+#check @PoincareLocalCollar.exists_uniform_openEmbedding_band
+#check @PoincareLocalCollar.exists_collar_of_C1_coordinates
+#check @PoincareLocalCollar.coordinate_derivatives_separate_and_cap
+#print PoincareLocalCollar.HasLocalOpenChartsAtZero
+#print PoincareLocalCollar.HasInvertibleCoordinateDerivativesAtZero
+#print PoincareLocalCollar.scaledCollar
+#print PoincareLocalCollarTests.clippedCylinderFamily
+#check PoincareLocalCollarTests.clipped_family_separates_and_caps

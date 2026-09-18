@@ -1,0 +1,23 @@
+This component is additive work in the same Poincare research repository.
+
+Thirteen reused proof/model files are byte-identical to research/collar-separation
+at KunHcz/poincare-lean@d4d27d1b4d8c0d447ddf02df4999b35bb3118213.
+They retain all earlier attribution and are not counted as new results here.
+
+The new proofs use Mathlib's compact-set neighbourhood theorem, local
+homeomorphisms, strict/C1 inverse function theorems, standard topology and
+calculus. The inherited cap/separation chain uses the proved Hatcher
+van Kampen surjectivity, not an unproved kernel-identification theorem.
+Lean, Mathlib, Hatcher and the respective formalization authors retain their
+mathematical and code credit. No dependent-library authorship is claimed by
+the applicant merely because this repository is owned by that applicant.
+
+The local contribution constructs and checks the uniform collar from the
+pointwise data and connects genuine coordinate inverse-function input to the
+existing separation/capping proof. It does not prove the necessary family
+exists for every embedded sphere or complete the Poincare theorem.
+
+Local Lean/Python code uses the included Apache License 2.0. Dependency source,
+compiled caches, private paths and credentials are not redistributed. This
+intermediate research component is not a complete-original-problem award
+submission and makes no priority, solver-share or payment claim.
